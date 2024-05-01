@@ -1,0 +1,37 @@
+---
+title: "_"
+date: 2024-08-13
+institute: ""
+date-format: " "
+format:
+  revealjs: 
+    slide-number: true
+    width: 1690
+    height: 1080
+    margin: .2
+    editor: source
+    linkcolor: "#ffffff"
+    highlight-style: github
+    code-copy: true
+    code-overflow: scroll
+    code-block-bg: true
+    transition: fade
+css: "scripts/style.css"
+title-slide-attributes: 
+  data-background-image: "images/plmm.gif"
+  data-background-size: "stretch"
+  data-background-position: "center"
+  data-background-color: "#1a1a1a"
+  data-notes: "Some notes for the title slide"
+transition: fade
+---
+
+## About/Some Story Probably
+
+## What is Git and GitHub
+
+## Ways to Interact with Git
+
+## What Git Merge Conflicts Are
+
+## Preparing for Better Git Merges

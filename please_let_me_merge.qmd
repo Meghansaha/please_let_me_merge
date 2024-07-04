@@ -1,5 +1,6 @@
 ---
-title: "_"
+title: "Please Let Me Merge Before I Start Crying"
+subtitle: "And Other Things I've Said At The Git Terminal"
 date: 2024-08-13
 institute: ""
 date-format: " "
@@ -26,12 +27,31 @@ title-slide-attributes:
 transition: fade
 ---
 
-## About/Some Story Probably
+## I Can't Do This {#section-header background-image="images/1.png" background-size="cover"}
 
-## What is Git and GitHub
+::: {#bigquote}
+"I CAN'T Do This"
+:::
 
-## Ways to Interact with Git
+## Please Let Me Merge Before I Start Crying {#section-header background-image="images/2.png" background-size="cover"}
 
-## What Git Merge Conflicts Are
+::: {#medquote}
+"Please Let Me Merge Before I Start Crying"
+:::
 
-## Preparing for Better Git Merges
+## Oh {#section-header background-image="images/3.png" background-size="cover"}
+
+::: {#bigquote}
+"Oh"
+:::
+
+## Maybe This Won't Be So Bad {#section-header background-image="images/4.png" background-size="cover"}
+
+::: {#medquote}
+"Maybe This Won't Be So Bad"
+:::
+
+## I Got This {#section-header background-image="images/5.png" background-size="cover"}
+::: {#bigquote}
+"I Got This"
+:::

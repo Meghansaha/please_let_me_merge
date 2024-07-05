@@ -27,31 +27,56 @@ title-slide-attributes:
 transition: fade
 ---
 
-## I Can't Do This {#section-header background-image="images/1.png" background-size="cover"}
+## I Can't Do This {#section-header background-image="images/1.png" background-size="stretch"}
 
 ::: {#bigquote}
 "I CAN'T Do This"
 :::
 
-## Please Let Me Merge Before I Start Crying {#section-header background-image="images/2.png" background-size="cover"}
+## Git's First Learning Curve {#section-header background-image="images/first_curve.png" background-size="stretch"}
+
+## Git's Second Learning Curve {#section-header background-image="images/second_curve.png" background-size="stretch"}
+
+## Git is like Driving {#section-header background-image="images/git_driving.png" background-size="stretch"}
+
+## Long Road Trips Require Planning {#section-header background-image="images/prep_1.png" background-size="stretch"}
+
+## Collaborating With Git Requires Planning {#section-header background-image="images/prep_2.png" background-size="stretch"}
+
+## Road Trips are a Journey from Point A to Point B {#section-header background-image="images/travel_1.png" background-size="stretch"}
+
+## Merging in Git is like a Journey from Point A to Point B {#section-header background-image="images/travel_2.png" background-size="stretch"}
+
+## I Work well on Road Trips with my Husband {#section-header background-image="images/support_1.png" background-size="stretch"}
+
+## My Team at the PCCTC and I work well outside of Git{#section-header background-image="images/support_2.png" background-size="stretch"}
+
+## My Mom is well-meaning, smart, and just wants to help, even if too much{#section-header background-image="images/git_1.png" background-size="stretch"}
+
+## Git does so much on its own, and just wants to help, but can make the process hard sometimes{#section-header background-image="images/git_2.png" background-size="stretch"}
+
+## Please Let Me Merge Before I Start Crying {#section-header background-image="images/2.png" background-size="stretch"}
+
+
+
 
 ::: {#medquote}
 "Please Let Me Merge Before I Start Crying"
 :::
 
-## Oh {#section-header background-image="images/3.png" background-size="cover"}
+## Oh {#section-header background-image="images/3.png" background-size="stretch"}
 
 ::: {#bigquote}
 "Oh"
 :::
 
-## Maybe This Won't Be So Bad {#section-header background-image="images/4.png" background-size="cover"}
+## Maybe This Won't Be So Bad {#section-header background-image="images/4.png" background-size="stretch"}
 
 ::: {#medquote}
 "Maybe This Won't Be So Bad"
 :::
 
-## I Got This {#section-header background-image="images/5.png" background-size="cover"}
+## I Got This {#section-header background-image="images/5.png" background-size="stretch"}
 ::: {#bigquote}
 "I Got This"
 :::

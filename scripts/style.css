@@ -4,6 +4,12 @@
 @font-face {
     font-family: 'GothicHighway';
     src:  url('../fonts/HWYGOTH.ttf') format('truetype');
+    
+}
+
+@font-face {
+font-family: 'GothicHighwaywide';
+    src:  url('../fonts/HWYGWDE.ttf') format('truetype');
 }
 
 body > div.reveal.focused.has-horizontal-slides.has-dark-background.ready.fade > div.slides{
@@ -63,11 +69,29 @@ body {
 
 /* Remove standard Slide Headers for Big Quote slides*/
 
-#section-header > h2 {
+.section-header h2 {
   visibility: hidden;
 }
 
+.content-header h2 {
+  color: #ffffff;
+  font-size: 85px;
+  line-height: 200px;
+  position: absolute;
+  margin-top: -80px;
+  margin-left: -450px;
+  font-family: 'GothicHighwaywide';
+}
 
+.content {
+  margin-top: 160px;
+  margin-left: -500px;
+  font-size: 60px;
+}
+
+li:nth-child(n) {
+  margin-left: 150px;
+}
 /*
 li {
     font-size: 1.2em;

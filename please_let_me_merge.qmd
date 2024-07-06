@@ -6,7 +6,7 @@ institute: ""
 date-format: " "
 format:
   revealjs: 
-    slide-number: true
+    slide-number: false
     width: 1690
     height: 1080
     margin: .2
@@ -126,10 +126,24 @@ And honestly, I felt the same with Git. To understand how to work collaborativel
 
 <br>
 
+:::{.fragment}
 -   Three ways (R Users) can interact with Git
-    -   A Terminal
+    -   A CLI Terminal
     -   The RStudio GUI
-    -   A Third Party Client (e.g. GitHub Desktop)
+    -   A Third Party Client (e.g. [GitHub Desktop](https://desktop.github.com/download/))
+    
+:::
+:::
+
+
+## Do Whatever You want {.section-header background-image="images/dwyw.png" background-size="stretch"}
+
+:::{.notes}
+- Github isn't the only thing
+<br>
+- DS card being revoked isn't a thing
+<br>
+- I use all 3
 :::
 
 ## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="stretch"}

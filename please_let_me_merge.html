@@ -8,7 +8,7 @@
 <link href="please_let_me_merge_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="please_let_me_merge_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="please_let_me_merge_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.528">
+  <meta name="generator" content="quarto-1.5.24">
 
   <title>Please Let Me Merge Before I Start Crying</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -560,15 +560,37 @@
 </ul></li>
 </ul>
 <p><br></p>
+<div class="fragment">
 <ul>
 <li>Three ways (R Users) can interact with Git
 <ul>
-<li>A Terminal</li>
+<li>A CLI Terminal</li>
 <li>The RStudio GUI</li>
-<li>A Third Party Client (e.g.&nbsp;GitHub Desktop)</li>
+<li>A Third Party Client (e.g.&nbsp;<a href="https://desktop.github.com/download/">GitHub Desktop</a>)</li>
 </ul></li>
 </ul>
 </div>
+</div>
+</section>
+<section id="do-whatever-you-want" class="slide level2 section-header" data-background-image="images/dwyw.png" data-background-size="stretch">
+<h2>Do Whatever You want</h2>
+<aside class="notes">
+<ul>
+<li>Github isn’t the only thing <br></li>
+<li>DS card being revoked isn’t a thing <br></li>
+<li>I use all 3</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="what-is-a-git-merge" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="stretch">
 <h2>What is a Git Merge?</h2>
@@ -593,13 +615,13 @@
 <div id="bigquote">
 <p>“I Got This”</p>
 </div>
-
-</section>
-    <div class="quarto-auto-generated-content">
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
-</div></div>
+</div>
+</section>
+    </div>
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
@@ -650,7 +672,7 @@
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: 'c/t',
+        slideNumber: false,
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -885,6 +907,24 @@
         // clear code selection
         e.clearSelection();
       });
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -921,7 +961,11 @@
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

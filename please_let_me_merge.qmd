@@ -23,40 +23,92 @@ title-slide-attributes:
   data-background-size: "stretch"
   data-background-position: "center"
   data-background-color: "#1a1a1a"
-  data-notes: "Some notes for the title slide"
+  data-notes: "As I've been growing into my role as a Data Scientist, **I've said..**"
 transition: fade
 ---
 
 ## I Can't Do This {#section-header background-image="images/1.png" background-size="stretch"}
 
+
 ::: {#bigquote}
 "I CAN'T Do This"
 :::
 
+:::{.notes}
+... this phrase every time I've felt victimized by our beloved versioning control system, Git. But today, I come to you from the other side of the elusive second learning curve that comes with using Git. **You know, because**
+::::
+
 ## Git's First Learning Curve {#section-header background-image="images/first_curve.png" background-size="stretch"}
 
+:::{.notes}
+You have the initial challenge of learning to just use Git, **but then you have the..**
+:::
 ## Git's Second Learning Curve {#section-header background-image="images/second_curve.png" background-size="stretch"}
 
+:::{.notes}
+..the additional mountain to climb when learning how to handle merges and conflicts so you can use it collaboratively. <br>
+
+Understanding Git merges and conflicts felt impossible at first, but it started to make sense when I realized that using Git collaboratively **is alot like...**
+:::
 ## Git is like Driving {#section-header background-image="images/git_driving.png" background-size="stretch"}
 
+:::{.notes}
+Driving.. So let me explain that.<br>
+Last spring, I took a long road trip that I've done by myself and with my husband many times.<br>
+However, this time was different because it was the first time doing the drive with my teething baby and my well-meaning but slightly overbearing mother in tow. <br>
+For me, this scenario was similar to my experiences ***using git collaboratively...**
+:::
 ## Long Road Trips Require Planning {#section-header background-image="images/prep_1.png" background-size="stretch"}
 
+:::{.notes}
+..Just like I have the urge to make compulsive packing lists **before my road trips...**
+:::
 ## Collaborating With Git Requires Planning {#section-header background-image="images/prep_2.png" background-size="stretch"}
 
+:::{.notes}
+...I also make compulsive task lists to prepare myself and everyone involved for Git merges.
+:::
 ## Road Trips are a Journey from Point A to Point B {#section-header background-image="images/travel_1.png" background-size="stretch"}
+
+:::{.notes}
+Getting my precious cargo from point A to point B **on this road trip...**
+:::
 
 ## Merging in Git is like a Journey from Point A to Point B {#section-header background-image="images/travel_2.png" background-size="stretch"}
 
+:::{.notes}
+..felt like getting my precious code from my local computer to the **git repository via git merge...**
+:::
 ## I Work well on Road Trips with my Husband {#section-header background-image="images/support_1.png" background-size="stretch"}
 
+:::{.notes}
+My supportive husband who I usually work well with when tasked with caring for my baby...
+:::
 ## My Team at the PCCTC and I work well outside of Git{#section-header background-image="images/support_2.png" background-size="stretch"}
+
+:::{.notes}
+Could be considered any one of my awesome coworkers I usually work with outside of Git. 
+:::
 
 ## My Mom is well-meaning, smart, and just wants to help, even if too much{#section-header background-image="images/git_1.png" background-size="stretch"}
 
+:::{.notes}
+Having my mother in the car, providing maybe a little too much **love and care to my baby... **
+:::
 ## Git does so much on its own, and just wants to help, but can make the process hard sometimes{#section-header background-image="images/git_2.png" background-size="stretch"}
 
+:::{.notes}
+...felt like Git wanting to help with my code, but it actually creating more work for everyone but with justified reason.<br>
+It goes without saying, I was Stressed on this trip. I knew how to take care of my baby and drive, but I suddenly felt like I had to learn these things all over again.
+
+And honestly, I felt the same with Git. To understand how to work collaboratively with Git, I realized I needed to have a better understanding of it, because that lack of knowledge **lead me to say things like...** 
+:::
 ## Please Let Me Merge Before I Start Crying {#section-header background-image="images/2.png" background-size="stretch"}
 
+:::{.notes}
+"Please let me merge Before I start Crying."<br>
+Friction: Because we don't understand
+:::
 
 
 

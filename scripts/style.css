@@ -37,36 +37,6 @@ body {
   font-family: 'GothicHighway', sans-serif;
 }
 
-/* Big Quotes */
-#bigquote {
-    text-align: center;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    font-size: 200pt;
-    font-family: 'GothicHighway';
-    width: 150%;
-    color: #ffffff;
-}
-
-/* Med Quotes */
-#medquote {
-    text-align: center;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    font-size: 200pt;
-    font-family: 'GothicHighway';
-    width: 100%;
-    color: #ffffff;
-}
-
 /* Remove standard Slide Headers for Big Quote slides*/
 
 .section-header h2 {
@@ -77,16 +47,18 @@ body {
   color: #ffffff;
   font-size: 85px;
   line-height: 200px;
-  position: absolute;
-  margin-top: -80px;
-  margin-left: -450px;
+  position: relative;
+  margin-top: 0%;
+  margin-left: -15%;
   font-family: 'GothicHighwaywide';
 }
 
-.content {
-  margin-top: 160px;
-  margin-left: -500px;
+.content{
+  margin-top: 3%;
+  margin-left: -25%;
+  position: relative;
   font-size: 60px;
+  color: #000000;
 }
 
 li:nth-child(n) {

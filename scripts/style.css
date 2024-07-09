@@ -18,11 +18,6 @@ body > div.reveal.focused.has-horizontal-slides.has-dark-background.ready.fade >
 }
 
 
-img{
-  border: 5px solid #000000;
-  border-radius: 255px 8px 225px 15px/15px 225px 15px 255px;
-}
-
 .false{
   border: 0px solid #000000;
 }
@@ -37,7 +32,15 @@ body {
   font-family: 'GothicHighway', sans-serif;
 }
 
-/* Remove standard Slide Headers for Big Quote slides*/
+blockquote > p:nth-child(n) > a {
+  color: #048781;
+}
+
+
+
+li:nth-child(n) > a {
+  color: #048781;
+}
 
 .section-header h2 {
   visibility: hidden;
@@ -56,6 +59,20 @@ body {
 .content{
   margin-top: 3%;
   margin-left: -25%;
+  position: relative;
+  font-size: 60px;
+  color: #000000;
+}
+
+.column{
+  font-size: 60px;
+  color: #000000;
+}
+
+
+.reveal blockquote{
+    margin-top: 3%;
+  margin-left: -10%;
   position: relative;
   font-size: 60px;
   color: #000000;

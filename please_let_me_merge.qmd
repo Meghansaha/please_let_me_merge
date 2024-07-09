@@ -11,7 +11,7 @@ format:
     height: 1080
     margin: .2
     editor: source
-    linkcolor: "#ffffff"
+    linkcolor: "#048781"
     highlight-style: github
     code-copy: true
     code-overflow: scroll
@@ -31,7 +31,7 @@ transition: fade
 
 
 ::: notes
-... this phrase every time I've felt victimized by our beloved versioning control system, Git. But today, I come to you from the other side of the elusive second learning curve that comes with using Git. **You know, because**
+... this phrase every time I've felt victimized by Git. But today, I come to you from the other side of the elusive second learning curve that comes with using Git. **You know, because**
 :::
 
 ## Git's First Learning Curve {.section-header background-image="images/first_curve.png" background-size="contain" background-color="#1a1a1a"}
@@ -63,7 +63,7 @@ Driving.. So let me explain that.<br> Last spring, I took a long road trip that 
 ## Collaborating With Git Requires Planning {.section-header background-image="images/prep_2.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: notes
-...I also make compulsive task lists to prepare myself and everyone involved for Git merges.
+...I also make compulsive task lists to prepare myself for Git merges.
 :::
 
 ## Road Trips are a Journey from Point A to Point B {.section-header background-image="images/travel_1.png" background-size="contain" background-color="#1a1a1a"}
@@ -99,8 +99,9 @@ Having my mother in the car, providing maybe a little too much **love and care t
 ## Git does so much on its own, and just wants to help, but can make the process hard sometimes {.section-header background-image="images/git_2.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: notes
-...felt like Git wanting to help with my code, but it actually creating more work for everyone but with justified reason.<br> It goes without saying, I was Stressed on this trip. I knew how to take care of my baby and drive, but I suddenly felt like I had to learn these things all over again.
-
+...felt like Git wanting to help me with my code, but it actually creates more work for justified reasons.<br><br>
+As you can probably guess, I was Stressed on this trip. I knew how to take care of my baby and drive, but I suddenly felt like I had to learn these things all over again.
+<br><br>
 And honestly, I felt the same with Git. To understand how to work collaboratively with Git, I realized I needed to have a better understanding of it, because that lack of knowledge **lead me to say things like...**
 :::
 
@@ -108,7 +109,9 @@ And honestly, I felt the same with Git. To understand how to work collaborativel
 
 
 ::: notes
-"Please let me merge Before I start Crying."<br> Phrases stem from desperation and frustration <br> Because we don't understand<br>
+"Please let me merge Before I start Crying."<br>
+These phrases stem from desperation and frustration <br>
+Because we don't understand<br>
 :::
 
 ## Quick Things to Understand About Git {.content-header background-image="images/content_back_long.png" background-size="contain" background-color="#1a1a1a"}
@@ -130,10 +133,11 @@ And honestly, I felt the same with Git. To understand how to work collaborativel
 :::
 
 :::{.notes}
-Github is synonymous with Git, But they aren't interchangeable
-<br><br>
-Call out for knowledge <br>
-Alot of reliable ways to interact with git
+-Github is synonymous with Git, But they aren't interchangeable
+<br>
+-Call out for knowledge (I've made this mistake)<br> 
+-Proof of -> Alot of reliable ways to interact with git
+- Which are (click)
 :::
 
 ## Do Whatever You want {.section-header background-image="images/dwyw.png" background-size="contain" background-color="#1a1a1a"}
@@ -148,10 +152,107 @@ Alot of reliable ways to interact with git
 
 ## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
+<br>
 
+::: columns
+::: {.column width="50%"}
+
+<br><br>
+"Join two or more development histories together"
+
+<br><br>
+
+<small>[Git Merge Docs](https://git-scm.com/docs/git-merge) *("Git - git-merge Documentation")*</small>
+
+:::
+
+::: {.column width="50%"}
+
+![](images/git_merge1.png)
+:::
+
+:::
+
+
+
+:::{.notes}
+- development history == "A Branch"
+<br>
+- Merges come in lots of flavors
+<br>
+- Most common merge types
+<br>
+- via pulls and pushes
+:::
+
+## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+
+<br><br>
+"Join two or more development histories together"
+
+<br><br>
+
+<small>[Git Merge Docs](https://git-scm.com/docs/git-merge) *("Git - git-merge Documentation")*</small>
+
+:::
+
+::: {.column width="50%"}
+
+![](images/git_merge2.png)
+:::
+
+:::
+
+
+
+## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+
+<br><br>
+"Join two or more development histories together"
+
+<br><br>
+
+<small>[Git Merge Docs](https://git-scm.com/docs/git-merge) *("Git - git-merge Documentation")*</small>
+
+:::
+
+::: {.column width="50%"}
+
+![](images/git_merge3.png)
+:::
+
+:::
+
+
+
+:::{.notes}
+
+- essential b/c how we use Git's functionality of version control
+
+- allows safe modifications or additions to work
+
+- So if a merge is **simple in theory...**
+:::
 
 ## Why is a Git Merge Scary? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
+::: content
+- It's Not...
+
+:::{.fragment}
+- No really...
+:::
+:::
 
 ## Oh {.section-header background-image="images/3.png" background-size="contain" background-color="#1a1a1a"}
 

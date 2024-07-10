@@ -81,7 +81,7 @@ Getting my precious cargo from point A to point B **on this road trip...**
 ## I Work well on Road Trips with my Husband {.section-header background-image="images/support_1.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: notes
-My supportive husband who I usually work well with when tasked with caring for my baby...
+My supportive husband that I work well with when parenting at home
 :::
 
 ## My Team at the PCCTC and I work well outside of Git {.section-header background-image="images/support_2.png" background-size="contain" background-color="#1a1a1a"}
@@ -99,8 +99,8 @@ Having my mother in the car, providing maybe a little too much **love and care t
 ## Git does so much on its own, and just wants to help, but can make the process hard sometimes {.section-header background-image="images/git_2.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: notes
-...felt like Git wanting to help me with my code, but it actually creates more work for justified reasons.<br><br>
-As you can probably guess, I was Stressed on this trip. I knew how to take care of my baby and drive, but I suddenly felt like I had to learn these things all over again.
+...felt like Git wanting to help me with my code, but actually creating more work for justified reasons.<br><br>
+As you can probably guess, I was Stressed on this road trip. I knew how to take care of my baby and drive, but I suddenly felt like I had to learn these things all over again.
 <br><br>
 And honestly, I felt the same with Git. To understand how to work collaboratively with Git, I realized I needed to have a better understanding of it, because that lack of knowledge **lead me to say things like...**
 :::
@@ -109,9 +109,10 @@ And honestly, I felt the same with Git. To understand how to work collaborativel
 
 
 ::: notes
-"Please let me merge Before I start Crying."<br>
 These phrases stem from desperation and frustration <br>
 Because we don't understand<br>
+So before we talk about merges, conflicts, and collaboration let's talk about some **quick things we should understand about Git...**
+
 :::
 
 ## Quick Things to Understand About Git {.content-header background-image="images/content_back_long.png" background-size="contain" background-color="#1a1a1a"}
@@ -133,9 +134,9 @@ Because we don't understand<br>
 :::
 
 :::{.notes}
--Github is synonymous with Git, But they aren't interchangeable
-<br>
--Call out for knowledge (I've made this mistake)<br> 
+-Github is synonymous with Git, But they are not interchangeable<br>
+-Point this out (I've made this mistake)<br>
+- GH personal workflow comes later<br>
 -Proof of -> Alot of reliable ways to interact with git
 - Which are (click)
 :::
@@ -148,6 +149,8 @@ Because we don't understand<br>
 - DS card being revoked isn't a thing
 <br>
 - I use all 3
+
+So now that that's out the way, let's talk about the git merge.
 :::
 
 ## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -158,7 +161,7 @@ Because we don't understand<br>
 ::: {.column width="50%"}
 
 <br><br>
-"Join two or more development histories together"
+"Join two or more development histories *(Branches)* together"
 
 <br><br>
 
@@ -169,6 +172,7 @@ Because we don't understand<br>
 ::: {.column width="50%"}
 
 ![](images/git_merge1.png)
+
 :::
 
 :::
@@ -183,6 +187,8 @@ Because we don't understand<br>
 - Most common merge types
 <br>
 - via pulls and pushes
+<br>
+- This is the most common**...**
 :::
 
 ## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -193,7 +199,7 @@ Because we don't understand<br>
 ::: {.column width="50%"}
 
 <br><br>
-"Join two or more development histories together"
+"Join two or more development histories *(Branches)* together"
 
 <br><br>
 
@@ -208,7 +214,9 @@ Because we don't understand<br>
 
 :::
 
-
+:::{.notes}
+- Pull to update local**...**
+:::
 
 ## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -218,7 +226,7 @@ Because we don't understand<br>
 ::: {.column width="50%"}
 
 <br><br>
-"Join two or more development histories together"
+"Join two or more development histories *(Branches)* together"
 
 <br><br>
 
@@ -236,6 +244,7 @@ Because we don't understand<br>
 
 
 :::{.notes}
+- actual merge
 
 - essential b/c how we use Git's functionality of version control
 
@@ -247,7 +256,9 @@ Because we don't understand<br>
 ## Why is a Git Merge Scary? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
+:::{.fragment}
 - It's Not...
+:::
 
 :::{.fragment}
 - No really...

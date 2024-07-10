@@ -155,7 +155,6 @@ So now that that's out the way, let's talk about the git merge.
 
 ## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
-<br>
 
 ::: columns
 ::: {.column width="50%"}
@@ -193,8 +192,6 @@ So now that that's out the way, let's talk about the git merge.
 
 ## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
-<br>
-
 ::: columns
 ::: {.column width="50%"}
 
@@ -219,8 +216,6 @@ So now that that's out the way, let's talk about the git merge.
 :::
 
 ## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-<br>
 
 ::: columns
 ::: {.column width="50%"}
@@ -255,14 +250,72 @@ So now that that's out the way, let's talk about the git merge.
 
 ## Why is a Git Merge Scary? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
-::: content
-:::{.fragment}
-- It's Not...
+::: columns
+::: {.column width="50%"}
+
 :::
 
-:::{.fragment}
-- No really...
+::: {.column width="50%"}
+![](images/scary.png)
 :::
+
+
+:::
+
+## Why is a Git Merge Scary? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: columns
+::: {.column width="50%"}
+<br><br><br>
+
+<large>It's Not...</large>
+
+:::
+
+::: {.column width="50%"}
+![](images/not_scary1.png)
+:::
+
+
+:::
+
+## Why is a Git Merge Scary? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: columns
+::: {.column width="50%"}
+<br><br><br>
+
+It's Not...
+ 
+...No really
+
+:::
+
+::: {.column width="50%"}
+![](images/not_scary2.png)
+:::
+
+
+:::
+
+## People are afraid of git merge conflicts {.section-header background-image="images/conflict.png" background-size="contain" background-color="#1a1a1a"}
+
+::: {.notes}
+Ok, so let's talk about conflicts then.
+Let's understand them
+:::
+## What is a Git Merge Conflict? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+
+<br>
+
+“Merge conflicts occur when competing changes are made to the same line of a file, **or** when one person edits a file and another person deletes the same file.”
+
+<br>
+
+<small>- [GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line) *("Resolving a merge conflict using the command line")*</small>
+
 :::
 
 ## Oh {.section-header background-image="images/3.png" background-size="contain" background-color="#1a1a1a"}

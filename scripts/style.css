@@ -64,6 +64,15 @@ li:nth-child(n) > a {
   color: #000000;
 }
 
+
+ p:nth-child(n){
+  margin-top: 3%;
+  margin-left: 15%;
+  position: relative;
+  font-size: 60px;
+  color: #000000;
+}
+
 .column{
   font-size: 60px;
   color: #000000;

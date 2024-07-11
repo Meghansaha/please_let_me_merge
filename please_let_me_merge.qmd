@@ -318,6 +318,13 @@ Let's understand them
 
 :::
 
+::: {.notes}
+- Two types of conflicts
+- content
+- structural 
+:::
+
+
 ## Oh {.section-header background-image="images/3.png" background-size="contain" background-color="#1a1a1a"}
 
 

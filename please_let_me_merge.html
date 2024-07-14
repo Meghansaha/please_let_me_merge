@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #24292e;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #24292e; } /* Normal */
+    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
+    code span.an { color: #6a737d; } /* Annotation */
+    code span.at { color: #d73a49; } /* Attribute */
+    code span.bn { color: #005cc5; } /* BaseN */
+    code span.bu { color: #d73a49; } /* BuiltIn */
+    code span.cf { color: #d73a49; } /* ControlFlow */
+    code span.ch { color: #032f62; } /* Char */
+    code span.cn { color: #005cc5; } /* Constant */
+    code span.co { color: #6a737d; } /* Comment */
+    code span.cv { color: #6a737d; } /* CommentVar */
+    code span.do { color: #6a737d; } /* Documentation */
+    code span.dt { color: #d73a49; } /* DataType */
+    code span.dv { color: #005cc5; } /* DecVal */
+    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
+    code span.ex { color: #d73a49; font-weight: bold; } /* Extension */
+    code span.fl { color: #005cc5; } /* Float */
+    code span.fu { color: #6f42c1; } /* Function */
+    code span.im { color: #032f62; } /* Import */
+    code span.in { color: #6a737d; } /* Information */
+    code span.kw { color: #d73a49; } /* Keyword */
+    code span.op { color: #24292e; } /* Operator */
+    code span.ot { color: #6f42c1; } /* Other */
+    code span.pp { color: #d73a49; } /* Preprocessor */
+    code span.re { color: #6a737d; } /* RegionMarker */
+    code span.sc { color: #005cc5; } /* SpecialChar */
+    code span.ss { color: #032f62; } /* SpecialString */
+    code span.st { color: #032f62; } /* String */
+    code span.va { color: #e36209; } /* Variable */
+    code span.vs { color: #032f62; } /* VerbatimString */
+    code span.wa { color: #ff5555; } /* Warning */
   </style>
   <link rel="stylesheet" href="please_let_me_merge_files/libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="scripts/style.css">
@@ -910,6 +975,101 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="simple-merge-conflict-example" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Simple Merge Conflict Example</h2>
+<div class="content">
+<p><img data-src="images/simple_ex_1.png"></p>
+</div>
+</section>
+<section id="simple-merge-conflict-example-1" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Simple Merge Conflict Example</h2>
+<div class="content">
+<p><img data-src="images/simple_ex_1.png"></p>
+<p><img data-src="images/simple_ex_2.png"></p>
+</div>
+</section>
+<section id="simple-merge-conflict-example-2" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Simple Merge Conflict Example</h2>
+<div class="content">
+<p><img data-src="images/simple_ex_1_highlight.png"></p>
+<p><img data-src="images/simple_ex_2_highlight.png"></p>
+</div>
+</section>
+<section id="simple-merge-conflict-example-3" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Simple Merge Conflict Example</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href=""></a><span class="co">#=============================#</span></span>
+<span id="cb1-2"><a href=""></a><span class="co"># Data Cut Dates---------------</span></span>
+<span id="cb1-3"><a href=""></a><span class="co">#=============================#</span></span>
+<span id="cb1-4"><a href=""></a></span>
+<span id="cb1-5"><a href=""></a><span class="at">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span></span>
+<span id="cb1-6"><a href=""></a><span class="fu">main_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2024-06-01"</span></span>
+<span id="cb1-7"><a href=""></a><span class="at">=======</span></span>
+<span id="cb1-8"><a href=""></a><span class="fu">main_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2024-01-01"</span></span>
+<span id="cb1-9"><a href=""></a><span class="at">&gt;&gt;&gt;&gt;&gt;&gt;&gt; master</span></span>
+<span id="cb1-10"><a href=""></a><span class="fu">vendor_1_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2023-12-13"</span></span>
+<span id="cb1-11"><a href=""></a><span class="fu">vendor_2_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2024-01-05"</span></span>
+<span id="cb1-12"><a href=""></a><span class="fu">vendor_3_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2023-12-15"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="simple-merge-conflict-example-4" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Simple Merge Conflict Example</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href=""></a><span class="co">#=============================#</span></span>
+<span id="cb2-2"><a href=""></a><span class="co"># Data Cut Dates---------------</span></span>
+<span id="cb2-3"><a href=""></a><span class="co">#=============================#</span></span>
+<span id="cb2-4"><a href=""></a></span>
+<span id="cb2-5"><a href=""></a><span class="at">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span></span>
+<span id="cb2-6"><a href=""></a><span class="fu">main_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2024-06-01"</span></span>
+<span id="cb2-7"><a href=""></a></span>
+<span id="cb2-8"><a href=""></a></span>
+<span id="cb2-9"><a href=""></a></span>
+<span id="cb2-10"><a href=""></a></span>
+<span id="cb2-11"><a href=""></a></span>
+<span id="cb2-12"><a href=""></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="simple-merge-conflict-example-5" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Simple Merge Conflict Example</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href=""></a><span class="co">#=============================#</span></span>
+<span id="cb3-2"><a href=""></a><span class="co"># Data Cut Dates---------------</span></span>
+<span id="cb3-3"><a href=""></a><span class="co">#=============================#</span></span>
+<span id="cb3-4"><a href=""></a></span>
+<span id="cb3-5"><a href=""></a><span class="at">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span></span>
+<span id="cb3-6"><a href=""></a><span class="fu">main_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2024-06-01"</span></span>
+<span id="cb3-7"><a href=""></a><span class="at">=======</span></span>
+<span id="cb3-8"><a href=""></a></span>
+<span id="cb3-9"><a href=""></a></span>
+<span id="cb3-10"><a href=""></a></span>
+<span id="cb3-11"><a href=""></a></span>
+<span id="cb3-12"><a href=""></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="simple-merge-conflict-example-6" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Simple Merge Conflict Example</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href=""></a><span class="co">#=============================#</span></span>
+<span id="cb4-2"><a href=""></a><span class="co"># Data Cut Dates---------------</span></span>
+<span id="cb4-3"><a href=""></a><span class="co">#=============================#</span></span>
+<span id="cb4-4"><a href=""></a></span>
+<span id="cb4-5"><a href=""></a><span class="at">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span></span>
+<span id="cb4-6"><a href=""></a><span class="fu">main_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2024-06-01"</span></span>
+<span id="cb4-7"><a href=""></a><span class="at">=======</span></span>
+<span id="cb4-8"><a href=""></a><span class="fu">main_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2024-01-01"</span></span>
+<span id="cb4-9"><a href=""></a><span class="at">&gt;&gt;&gt;&gt;&gt;&gt;&gt; master</span></span>
+<span id="cb4-10"><a href=""></a></span>
+<span id="cb4-11"><a href=""></a></span>
+<span id="cb4-12"><a href=""></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="simple-merge-conflict-example-7" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Simple Merge Conflict Example</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href=""></a><span class="co">#=============================#</span></span>
+<span id="cb5-2"><a href=""></a><span class="co"># Data Cut Dates---------------</span></span>
+<span id="cb5-3"><a href=""></a><span class="co">#=============================#</span></span>
+<span id="cb5-4"><a href=""></a></span>
+<span id="cb5-5"><a href=""></a><span class="at">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span></span>
+<span id="cb5-6"><a href=""></a><span class="fu">main_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2024-06-01"</span></span>
+<span id="cb5-7"><a href=""></a><span class="at">=======</span></span>
+<span id="cb5-8"><a href=""></a><span class="fu">main_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2024-01-01"</span></span>
+<span id="cb5-9"><a href=""></a><span class="at">&gt;&gt;&gt;&gt;&gt;&gt;&gt; master</span></span>
+<span id="cb5-10"><a href=""></a><span class="fu">vendor_1_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2023-12-13"</span></span>
+<span id="cb5-11"><a href=""></a><span class="fu">vendor_2_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2024-01-05"</span></span>
+<span id="cb5-12"><a href=""></a><span class="fu">vendor_3_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2023-12-15"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="oh" class="slide level2 section-header" data-background-image="images/3.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Oh</h2>

@@ -17,6 +17,7 @@ format:
     code-overflow: scroll
     code-block-bg: true
     transition: fade
+    code-block-height: 1000px
 css: "scripts/style.css"
 title-slide-attributes: 
   data-background-image: "images/plmm.gif"
@@ -480,6 +481,127 @@ If scared of merges, might I suggest.. **scared of conflicts?**
 - But, there has to be a reason we're all so afraid of merge conflicts<br>
 - Let's actually look at some examples of some conflicts to see if these things are **really scary or not...**
 :::
+
+## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+
+![](images/simple_ex_1.png)
+
+
+:::
+
+## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+
+![](images/simple_ex_1.png)
+
+![](images/simple_ex_2.png)
+
+:::
+
+## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+
+![](images/simple_ex_1_highlight.png)
+
+![](images/simple_ex_2_highlight.png)
+
+:::
+
+
+## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+```yaml
+#=============================#
+# Data Cut Dates---------------
+#=============================#
+
+<<<<<<< HEAD
+main_data_cut: "2024-06-01"
+=======
+main_data_cut: "2024-01-01"
+>>>>>>> master
+vendor_1_data_cut: "2023-12-13"
+vendor_2_data_cut: "2024-01-05"
+vendor_3_data_cut: "2023-12-15"
+
+```
+
+## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+```yaml
+#=============================#
+# Data Cut Dates---------------
+#=============================#
+
+<<<<<<< HEAD
+main_data_cut: "2024-06-01"
+
+
+
+
+
+
+
+```
+
+## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+```yaml
+#=============================#
+# Data Cut Dates---------------
+#=============================#
+
+<<<<<<< HEAD
+main_data_cut: "2024-06-01"
+=======
+
+
+
+
+
+
+```
+
+## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+```yaml
+#=============================#
+# Data Cut Dates---------------
+#=============================#
+
+<<<<<<< HEAD
+main_data_cut: "2024-06-01"
+=======
+main_data_cut: "2024-01-01"
+>>>>>>> master
+
+
+
+
+```
+
+## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+```yaml
+#=============================#
+# Data Cut Dates---------------
+#=============================#
+
+<<<<<<< HEAD
+main_data_cut: "2024-06-01"
+=======
+main_data_cut: "2024-01-01"
+>>>>>>> master
+vendor_1_data_cut: "2023-12-13"
+vendor_2_data_cut: "2024-01-05"
+vendor_3_data_cut: "2023-12-15"
+
+```
+
 
 ## Oh {.section-header background-image="images/3.png" background-size="contain" background-color="#1a1a1a"}
 

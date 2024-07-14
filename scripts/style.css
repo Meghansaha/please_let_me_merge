@@ -90,6 +90,68 @@ li:nth-child(n) > a {
 li:nth-child(n) {
   margin-left: 150px;
 }
+
+
+.reveal code {
+  font-size: 2.7em !important;
+}
+
+#cb1 {
+  margin-top: 0%;
+}
+
+#simple-merge-conflict-example > div > p:nth-child(1) > img{
+  margin-left: -10%;
+  float: left;
+  padding-right: 2%;
+  width: 50%;
+}
+
+#simple-merge-conflict-example > div > p:nth-child(2) > img{
+  width: 50%;
+  padding-left: 2%;
+}
+
+#simple-merge-conflict-example > div{
+  margin-left: -25%;
+  width: 150%;
+}
+
+#simple-merge-conflict-example-1 > div > p:nth-child(1) > img{
+  margin-left: -10%;
+  float: left;
+  padding-right: 2%;
+  width: 50%;
+}
+
+#simple-merge-conflict-example-1 > div > p:nth-child(2) > img{
+  width: 50%;
+  padding-left: 2%;
+}
+
+#simple-merge-conflict-example-1 > div{
+  margin-left: -25%;
+  width: 150%;
+}
+
+#simple-merge-conflict-example-2 > div > p:nth-child(1) > img{
+  margin-left: -10%;
+  float: left;
+  padding-right: 2%;
+  width: 50%;
+}
+
+#simple-merge-conflict-example-2 > div > p:nth-child(2) > img{
+  width: 50%;
+  padding-left: 2%;
+}
+
+#simple-merge-conflict-example-2 > div{
+  margin-left: -25%;
+  width: 150%;
+}
+
+
 /*
 li {
     font-size: 1.2em;

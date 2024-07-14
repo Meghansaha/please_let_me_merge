@@ -23,7 +23,7 @@ title-slide-attributes:
   data-background-size: "contain"
   data-background-position: "center"
   data-background-color: "#1a1a1a"
-  data-notes: "As I've been growing into my role as a Data Scientist, **I've said..**"
+  data-notes: "As I've grown into my role as a Data Scientist, **I've said..**"
 transition: fade
 ---
 
@@ -51,7 +51,7 @@ Understanding Git merges and conflicts felt impossible at first, but it started 
 ## Git is like Driving {.section-header background-image="images/git_driving.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: notes
-Driving.. So let me explain that.<br> Last spring, I took a long road trip that I've done by myself and with my husband many times.<br> However, this time was different because it was the first time doing the drive with my teething baby and my well-meaning but slightly overbearing mother in tow. <br> For me, this scenario was similar to my experiences \***using git collaboratively...**
+Driving.. So let me give an example<br> Last spring, I took a long road trip that I've done by myself and with my husband many times.<br> However, this time was different because it was the first time doing the drive with my teething baby and my well-meaning but slightly overbearing mother in tow. <br> For me, this scenario was similar to my experiences \***using git collaboratively...**
 :::
 
 ## Long Road Trips Require Planning {.section-header background-image="images/prep_1.png" background-size="contain" background-color="#1a1a1a"}
@@ -81,7 +81,7 @@ Getting my precious cargo from point A to point B **on this road trip...**
 ## I Work well on Road Trips with my Husband {.section-header background-image="images/support_1.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: notes
-My supportive husband that I work well with when parenting at home
+My supportive husband that I worked well with when parenting on this trip
 :::
 
 ## My Team at the PCCTC and I work well outside of Git {.section-header background-image="images/support_2.png" background-size="contain" background-color="#1a1a1a"}
@@ -134,23 +134,64 @@ So before we talk about merges, conflicts, and collaboration let's talk about so
 :::
 
 :::{.notes}
--Github is synonymous with Git, But they are not interchangeable<br>
--Point this out (I've made this mistake)<br>
-- GH personal workflow comes later<br>
--Proof of -> Alot of reliable ways to interact with git
-- Which are (click)
+- Github is synonymous with Git, But they are not interchangeable<br>
+- Point this out (I've made this mistake)<br>
+- GH personal workflow comes later...but<br>
+- SAY definitions<br>
+- the fact that alot of people make this mistake is proof that<br>
+- Alot of reliable ways to interact with git<br>
+- Which for R Users are (click)<br>
+- Command line interface/Terminal<br>
+- I want you to all know that...
+
 :::
 
 ## Do Whatever You want {.section-header background-image="images/dwyw.png" background-size="contain" background-color="#1a1a1a"}
 
 :::{.notes}
+- DWYW<br>
 - Github isn't the only thing
 <br>
-- DS card being revoked isn't a thing
+- DS card being revoked for Not using the terminal
 <br>
-- I use all 3
+- I use all 3 because there are some things that can't be done say in rstudio or github desktop
+<br>
+- But just do you
 
 So now that that's out the way, let's talk about the git merge.
+:::
+
+## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+
+::: columns
+::: {.column width="50%"}
+
+<br><br>
+"Join two or more development histories *(Branches)* together"
+
+<br><br>
+
+<small>[Git Merge Docs](https://git-scm.com/docs/git-merge) *("Git - git-merge Documentation")*</small>
+
+:::
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+:::{.notes}
+- development history == "A Branch"
+<br>
+- Merges come in different flavors
+<br>
+- Usually via pushes and pulls (those are not the only ways)
+<br>
+- Different types that are more common
+<br>
+
 :::
 
 ## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -179,15 +220,11 @@ So now that that's out the way, let's talk about the git merge.
 
 
 :::{.notes}
-- development history == "A Branch"
+
 <br>
-- Merges come in lots of flavors
+- One of the most common
 <br>
-- Most common merge types
-<br>
-- via pulls and pushes
-<br>
-- This is the most common**...**
+- Pushing new work from our local to repo
 :::
 
 ## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -212,7 +249,10 @@ So now that that's out the way, let's talk about the git merge.
 :::
 
 :::{.notes}
-- Pull to update local**...**
+<br>
+- another common one
+<br>
+- Pulling new work from repo to local
 :::
 
 ## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -239,13 +279,20 @@ So now that that's out the way, let's talk about the git merge.
 
 
 :::{.notes}
-- actual merge
-
-- essential b/c how we use Git's functionality of version control
-
-- allows safe modifications or additions to work
-
-- So if a merge is **simple in theory...**
+- One i haven't used that much yet
+<br>
+- merging of two local files w/o repo interaction
+<br>
+What's important:<br>
+- No matter the flavor
+<br>
+- merge essential -> Git's functionality of version control when collaborating
+<br>
+- and it allows safe modifications or additions to work
+<br>
+- Honestly, That's all a merge is...<br>
+-At face value this seems simple<br>
+<br>So if a merge is **simple in theory...**
 :::
 
 ## Why is a Git Merge Scary? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -298,25 +345,41 @@ It's Not...
 
 :::
 
+:::{.notes}
+If scared of merges, might I suggest.. **scared of conflicts?**
+:::
 ## People are afraid of git merge conflicts {.section-header background-image="images/conflict.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: {.notes}
-Ok, so let's talk about conflicts then.
-Let's understand them
+- I believe to start conquering fears
+<br>
+- Learn about what you're dealing with
+<br>
+- So let's take a moment to understand them 
 :::
+
 ## What is a Git Merge Conflict? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
-::: content
+<br><br>
 
-<br>
+::: columns
 
-“Merge conflicts occur when competing changes are made to the same line of a file, **or** when one person edits a file and another person deletes the same file.”
+::: {.column width="50%"}
 
-<br>
+“Competing changes are made to the same line of a file"
+
+:::
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+<br><br>
 
 <small>- [GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line) *("Resolving a merge conflict using the command line")*</small>
 
-:::
 
 ::: {.notes}
 - Two types of conflicts
@@ -324,6 +387,99 @@ Let's understand them
 - structural 
 :::
 
+## What is a Git Merge Conflict? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+<br><br>
+
+::: columns
+
+::: {.column width="50%"}
+
+“Competing changes are made to the same line of a file"
+
+:::
+
+::: {.column width="50%"}
+"When someone edits a file and someone else deletes the same file.”
+:::
+
+:::
+
+<br>
+
+<small>- [GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line) *("Resolving a merge conflict using the command line")*</small>
+
+
+::: {.notes}
+- Two types of conflicts
+- content
+- structural 
+:::
+
+## What is a Git Merge Conflict? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+<br><br>
+
+::: columns
+
+::: {.column width="50%"}
+
+<center>
+<span style="color:#063e9e;"><u>Content</u></span>
+<br><br>
+“<span style="color:#063e9e;">Competing changes</span> are made to the same <span style="color:#063e9e;">line of a file.</span>"
+</center>
+
+:::
+
+::: {.column width="50%"}
+
+
+:::
+
+:::
+
+:::{.notes}
+- Two types of conflicts<br>
+- content: conflict in Actual content (lines of code)
+:::
+
+
+## What is a Git Merge Conflict? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+<br><br>
+
+::: columns
+
+::: {.column width="50%"}
+
+<center>
+<span style="color:#063e9e;"><u>Content</u></span>
+<br><br>
+“<span style="color:#063e9e;">Competing changes</span> are made to the same <span style="color:#063e9e;">line of a file.</span>"
+</center>
+
+:::
+
+::: {.column width="50%"}
+<center>
+<span style="color:#801423;"><u>Structure</u></span>
+<br><br>
+"When someone <span style="color:#801423;">edits a file</span> and someone else <span style="color:#801423;">deletes the same file</span>.”
+</center>
+
+:::
+
+:::
+
+::: {.notes}
+
+- structure: conflicts w/ Modification/Deletion of folder itself<br>
+- doesn't seem to scary at first glance<br>
+- Personally, when broken down like this, I don't think it's too bad<br>
+- But, there has to be a reason we're all so afraid of merge conflicts<br>
+- Let's actually look at some examples of some conflicts to see if these things are **really scary or not...**
+:::
 
 ## Oh {.section-header background-image="images/3.png" background-size="contain" background-color="#1a1a1a"}
 

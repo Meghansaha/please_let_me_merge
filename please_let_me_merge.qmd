@@ -482,6 +482,18 @@ If scared of merges, might I suggest.. **scared of conflicts?**
 - Let's actually look at some examples of some conflicts to see if these things are **really scary or not...**
 :::
 
+## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_1.png" background-size="contain" background-color="#1a1a1a"}
+
+## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_2.png" background-size="contain" background-color="#1a1a1a"}
+
+## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_3.png" background-size="contain" background-color="#1a1a1a"}
+
+## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_4.png" background-size="contain" background-color="#1a1a1a"}
+
+## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_5.png" background-size="contain" background-color="#1a1a1a"}
+
+## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_6.png" background-size="contain" background-color="#1a1a1a"}
+
 ## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content

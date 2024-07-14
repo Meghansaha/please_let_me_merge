@@ -16,7 +16,6 @@ format:
     code-copy: true
     code-overflow: scroll
     code-block-bg: true
-    transition: fade
     code-block-height: 1000px
 css: "scripts/style.css"
 title-slide-attributes: 
@@ -622,4 +621,10 @@ vendor_3_data_cut: "2023-12-15"
 
 
 ## I Got This {.section-header background-image="images/5.png" background-size="contain" background-color="#1a1a1a"}
+
+## {.section-header background-image="images/1_end.png" background-size="contain" background-color="#1a1a1a" transition="slide" transition-speed="slow"}
+## {.section-header background-image="images/2_end.png" background-size="contain" background-color="#1a1a1a" transition="fade-in fade-out"}
+## {.section-header background-image="images/3_end.png" background-size="contain" background-color="#1a1a1a" transition="fade-in fade-out"}
+## {.section-header background-image="images/4_end.png" background-size="contain" background-color="#1a1a1a" transition="fade-in fade-out"}
+## {.section-header background-image="images/5_end.png" background-size="contain" background-color="#1a1a1a" transition="fade-in fade-out"}
 

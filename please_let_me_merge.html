@@ -994,21 +994,99 @@
 </section>
 <section id="simple-merge-conflict-example" class="slide level2 section-header" data-background-image="images/conflict_vis_1.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
+<aside class="notes">
+<p>I work at a CRO (Clinical Research Organization) does work for Prostate Cancer <br> Recently had a situation where someone was advised to ask me for help resolving a conflict. <br> So what had happened was: <br> each study has it’s own repo</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="simple-merge-conflict-example-1" class="slide level2 section-header" data-background-image="images/conflict_vis_2.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
+<aside class="notes">
+<p>One for report <br> One for a plot</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="simple-merge-conflict-example-2" class="slide level2 section-header" data-background-image="images/conflict_vis_3.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
+<aside class="notes">
+<p>In our org, each study has a configuration file. The one here held dates for data cuts <br> So even though different deliverables <br> Same config file used</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="simple-merge-conflict-example-3" class="slide level2 section-header" data-background-image="images/conflict_vis_4.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
+<aside class="notes">
+<p>After some time <br> coworker 1 is finished <br> And changed the config file to make their report run</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="simple-merge-conflict-example-4" class="slide level2 section-header" data-background-image="images/conflict_vis_5.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
+<aside class="notes">
+<p>Pushed up and merged <br> Now master’s config file is coworker 1’s version <br> Meanwhile poor coworker #2 is going through iteration hell</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="simple-merge-conflict-example-5" class="slide level2 section-header" data-background-image="images/conflict_vis_6.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
+<aside class="notes">
+<p>Coworker 2 is finally finished <br> So much time passed, config file is different <br> Now they have a merge conflict <br> So, ok. we have the scenario, let’s see what these conflicted config files look like</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="simple-merge-conflict-example-6" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
@@ -1044,6 +1122,19 @@
 <span id="cb1-10"><a href=""></a><span class="fu">vendor_1_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2023-12-13"</span></span>
 <span id="cb1-11"><a href=""></a><span class="fu">vendor_2_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2024-01-05"</span></span>
 <span id="cb1-12"><a href=""></a><span class="fu">vendor_3_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2023-12-15"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<aside class="notes">
+<p>The actual conflict <br> If this is given you bad feels, it’s ok <br> every Git Merge conflict consists of 3 components <br> we can pull out here</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="simple-merge-conflict-example-10" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
@@ -1059,6 +1150,19 @@
 <span id="cb2-10"><a href=""></a></span>
 <span id="cb2-11"><a href=""></a></span>
 <span id="cb2-12"><a href=""></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<aside class="notes">
+<p>Usually the HEAD (which is the branch you are actively on and trying to merge into something else) <br> then a conflict marker that has “less-than” signs (start of conflict) <br> This example: Coworker # 2s branch</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="simple-merge-conflict-example-11" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
@@ -1074,6 +1178,21 @@
 <span id="cb3-10"><a href=""></a></span>
 <span id="cb3-11"><a href=""></a></span>
 <span id="cb3-12"><a href=""></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<aside class="notes">
+<ul>
+<li>conflict divider which separates Your version of code..</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="simple-merge-conflict-example-12" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
@@ -1089,6 +1208,22 @@
 <span id="cb4-10"><a href=""></a></span>
 <span id="cb4-11"><a href=""></a></span>
 <span id="cb4-12"><a href=""></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<aside class="notes">
+<ul>
+<li>From the version you are trying to merge into <br></li>
+<li>This case, master/Coworker # 1’s modifications <br> conflict ends - last conflict marker (greater-than) signs</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="simple-merge-conflict-example-13" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
@@ -1104,6 +1239,21 @@
 <span id="cb5-10"><a href=""></a><span class="fu">vendor_1_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2023-12-13"</span></span>
 <span id="cb5-11"><a href=""></a><span class="fu">vendor_2_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2024-01-05"</span></span>
 <span id="cb5-12"><a href=""></a><span class="fu">vendor_3_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2023-12-15"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<aside class="notes">
+<ul>
+<li>Everything after that is code that is not conflicted, so left alone <br> So now that we know: <br>- what happened <br>- and what the symbols and everything means <br>- How do we resolve the conflict? <br>- Well, when coworker # 2 came to me and asked me that <br> I responded : “Which date do you want?” <br> -their response was - <strong>next slide…</strong></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="oh" class="slide level2 section-header" data-background-image="images/3.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Oh</h2>

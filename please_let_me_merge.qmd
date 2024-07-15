@@ -599,6 +599,15 @@ vendor_3_data_cut: "2023-12-15"
 
 ```
 
+::: {.notes}
+The actual conflict
+<br>
+If this is given you bad feels, it's ok
+<br>
+every Git Merge conflict consists of 3 components
+<br> we can pull out here
+:::
+
 ## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ```yaml
@@ -616,6 +625,14 @@ main_data_cut: "2024-06-01"
 
 
 ```
+
+::: {.notes}
+Usually the HEAD (which is the branch you are actively on and trying to merge into something else)
+<br>
+then a conflict marker that has "less-than" signs (start of conflict)
+<br>
+This example: Coworker # 2s branch
+:::
 
 ## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -634,6 +651,11 @@ main_data_cut: "2024-06-01"
 
 
 ```
+
+::: {.notes}
+- conflict divider which separates Your version of code..
+:::
+
 
 ## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -652,6 +674,14 @@ main_data_cut: "2024-01-01"
 
 
 ```
+
+::: {.notes}
+- From the version you are trying to merge into
+<br>
+- This case, master/Coworker # 1's modifications
+<br>
+conflict ends - last conflict marker (greater-than) signs
+:::
 
 ## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -670,7 +700,17 @@ vendor_2_data_cut: "2024-01-05"
 vendor_3_data_cut: "2023-12-15"
 
 ```
-
+::: {.notes}
+- Everything after that is code that is not conflicted, so left alone
+<br>
+So now that we know:
+<br>- what happened
+<br>- and what the symbols and everything means
+<br>- How do we resolve the conflict?
+<br>- Well, when coworker # 2 came to me and asked me that
+<br> I responded : "Which date do you want?"
+<br> -their response was - **next slide...**
+:::
 
 ## Oh {.section-header background-image="images/3.png" background-size="contain" background-color="#1a1a1a"}
 

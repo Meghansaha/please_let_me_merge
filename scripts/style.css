@@ -28,6 +28,7 @@ body > div.reveal.focused.has-horizontal-slides.has-dark-background.ready.fade >
 }
 
 
+
 body {
   font-family: 'GothicHighway', sans-serif;
 }
@@ -160,4 +161,13 @@ li:nth-child(n) {
     transition: transform .8s cubic-bezier(.26,.86,.60,.985);
     transform-origin: 0 0;
     transform: scaleX(0);
+}
+
+#cb6 {
+  font-size: .2em !important;
+  width: 50%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:auto;
+  margin-bottom:auto;
 }

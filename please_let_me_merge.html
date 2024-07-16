@@ -8,7 +8,7 @@
 <link href="please_let_me_merge_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="please_let_me_merge_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="please_let_me_merge_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.24">
+  <meta name="generator" content="quarto-1.4.528">
 
   <title>Please Let Me Merge Before I Start Crying</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -434,7 +434,7 @@
 <h2>Git’s Second Learning Curve</h2>
 <aside class="notes">
 <p>..the additional mountain to climb when learning how to handle merges and conflicts so you can use it collaboratively. <br></p>
-<p>So for those of you who are still trying to decide if this talk is for you, just know that while I hope that most people can take away something from this, this talk is geared towards people who may feel a little stuck…</p>
+<p>So this talk today is geared towards those of you who may feel that you’re</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -450,7 +450,7 @@
 <section id="gits-second-learning-curve-1" class="slide level2 section-header" data-background-image="images/middle_curve.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Git’s Second Learning Curve</h2>
 <aside class="notes">
-<p>Right here in the middle. I’m making the assumption that you’ve figured out the basics of Git, like getting to a point where you can push to and pull from a repo. I also assume that you have general knowledge of what merging in git is, but might be a little hesitant like I once was to even deal with git merges or conflicts. <br> Understanding Git merges and conflicts felt impossible at first, but it started to make sense when I realized that using Git collaboratively is alot like…</p>
+<p>Right here in the middle.<br> Maybe, you’ve figured out the basics of Git and have general knowledge of what merging in git is<br> but might be a little hesitant like I once was to even deal with git merges or conflicts. <br> Understanding Git merges and conflicts felt impossible at first, but it started to make sense when I realized that using Git collaboratively is alot like…</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -706,8 +706,8 @@
 <ul>
 <li>development history == “A Branch” <br></li>
 <li>Merges come in different flavors <br></li>
-<li>Usually via pushes and pulls (those are not the only ways) <br></li>
-<li>Different types that are more common <br></li>
+<li>Usually via pushes and pulls <br></li>
+<li>some types more common <br></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -784,10 +784,9 @@
 </div>
 <aside class="notes">
 <ul>
-<li>One i haven’t used that much yet <br></li>
 <li>merging of two local files w/o repo interaction <br> What’s important:<br></li>
-<li>No matter the flavor <br></li>
-<li>merge essential -&gt; Git’s functionality of version control when collaborating <br></li>
+<li>No matter the merge <br></li>
+<li>essential -&gt; Git’s functionality of version control when collaborating <br></li>
 <li>and it allows safe modifications or additions to work <br></li>
 <li>Honestly, That’s all a merge is…<br> -At face value this seems simple<br> <br>So if a merge is <strong>simple in theory…</strong></li>
 </ul>
@@ -1329,13 +1328,13 @@
 </section>
 <section id="section-4" class="slide level2 section-header" data-background-image="images/5_end.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2></h2>
-<div class="quarto-auto-generated-content">
+
+</section>
+    <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
-</div>
-</section>
-    </div>
+</div></div>
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
@@ -1546,80 +1545,42 @@
       });
     </script>
     
-
     <script>
-
       // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-
       // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-
       // slide changes (different for each slide format).
-
       (function () {
-
         // dispatch for htmlwidgets
-
         function fireSlideEnter() {
-
           const event = window.document.createEvent("Event");
-
           event.initEvent("slideenter", true, true);
-
           window.document.dispatchEvent(event);
-
         }
-
-    
 
         function fireSlideChanged(previousSlide, currentSlide) {
-
           fireSlideEnter();
 
-    
-
           // dispatch for shiny
-
           if (window.jQuery) {
-
             if (previousSlide) {
-
               window.jQuery(previousSlide).trigger("hidden");
-
             }
-
             if (currentSlide) {
-
               window.jQuery(currentSlide).trigger("shown");
-
             }
-
           }
-
         }
-
-    
 
         // hookup for slidy
-
         if (window.w3c_slidy) {
-
           window.w3c_slidy.add_observer(function (slide_num) {
-
             // slide_num starts at position 1
-
             fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-
           });
-
         }
 
-    
-
       })();
-
     </script>
-
-    
 
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -1697,24 +1658,6 @@
         // clear code selection
         e.clearSelection();
       });
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-        }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
-            }
-          }
-        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -1751,11 +1694,7 @@
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
+          return note.innerHTML;
         });
       }
       const findCites = (el) => {

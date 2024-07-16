@@ -46,13 +46,15 @@ You have the initial challenge of learning to just use Git, **but then you have 
 ::: notes
 ..the additional mountain to climb when learning how to handle merges and conflicts so you can use it collaboratively. <br>
 
-So for those of you who are still trying to decide if this talk is for you, just know that while I hope that most people can take away something from this, this talk is geared towards people who may feel a little stuck...
+So this talk today is geared towards those of you who may feel that you're
 :::
 
 ## Git's Second Learning Curve {.section-header background-image="images/middle_curve.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: notes
-Right here in the middle. I'm making the assumption that you've figured out the basics of Git, like getting to a point where you can push to and pull from a repo. I also assume that you have general knowledge of what merging in git is, but might be a little hesitant like I once was to even deal with git merges or conflicts.
+Right here in the middle.<br>
+Maybe, you've figured out the basics of Git and have general knowledge of what merging in git is<br>
+but might be a little hesitant like I once was to even deal with git merges or conflicts.
 <br>
 Understanding Git merges and conflicts felt impossible at first, but it started to make sense when I realized that using Git collaboratively is alot like…
 :::
@@ -196,9 +198,9 @@ So now that that's out the way, let's talk about the git merge.
 <br>
 - Merges come in different flavors
 <br>
-- Usually via pushes and pulls (those are not the only ways)
+- Usually via pushes and pulls
 <br>
-- Different types that are more common
+- some types more common
 <br>
 
 :::
@@ -288,14 +290,13 @@ So now that that's out the way, let's talk about the git merge.
 
 
 :::{.notes}
-- One i haven't used that much yet
-<br>
+
 - merging of two local files w/o repo interaction
 <br>
 What's important:<br>
-- No matter the flavor
+- No matter the merge
 <br>
-- merge essential -> Git's functionality of version control when collaborating
+- essential -> Git's functionality of version control when collaborating
 <br>
 - and it allows safe modifications or additions to work
 <br>

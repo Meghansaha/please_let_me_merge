@@ -434,7 +434,7 @@
 <h2>Git’s Second Learning Curve</h2>
 <aside class="notes">
 <p>..the additional mountain to climb when learning how to handle merges and conflicts so you can use it collaboratively. <br></p>
-<p>So for those of you who are still trying to decide if this talk is for you, just know that while I hope that most people can take away something from this, this talk is geared towards people who may feel a little stuck…</p>
+<p>Today this talk will focus on things that may be useful to those of you who are right…</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -450,7 +450,7 @@
 <section id="gits-second-learning-curve-1" class="slide level2 section-header" data-background-image="images/middle_curve.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Git’s Second Learning Curve</h2>
 <aside class="notes">
-<p>Right here in the middle. I’m making the assumption that you’ve figured out the basics of Git, like getting to a point where you can push to and pull from a repo. I also assume that you have general knowledge of what merging in git is, but might be a little hesitant like I once was to even deal with git merges or conflicts. <br> Understanding Git merges and conflicts felt impossible at first, but it started to make sense when I realized that using Git collaboratively is alot like…</p>
+<p>..here in the middle of this git learning process. So, I’m assuming you’ve got Git set up correctly on your system, have pushed and pulled things to and from a repo, and have basic knowledge of Git merging. I hope I can plant the seed to help you overcome the second learning curve if you’re feeling stuck here. <br> B/c At one point, I felt stuck too and thought that understanding Git merges and conflicts was impossible <br> but it started to make sense when I realized that using Git collaboratively is a lot like driving.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -975,10 +975,9 @@
 <aside class="notes">
 <ul>
 <li>structure: conflicts w/ Modification/Deletion of folder itself<br></li>
-<li>doesn’t seem to scary at first glance<br></li>
-<li>Personally, when broken down like this, I don’t think it’s too bad<br></li>
+<li>Not too bad (within file/or to the file name/org)<br></li>
 <li>But, there has to be a reason we’re all so afraid of merge conflicts<br></li>
-<li>Let’s actually look at simple scenario first to see if these things are <strong>really scary or not…</strong></li>
+<li>Let’s actually look at an overly simple example of a scenario that happened at my job to see if <strong>really scary or not…</strong></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -995,7 +994,10 @@
 <section id="simple-merge-conflict-example" class="slide level2 section-header" data-background-image="images/conflict_vis_1.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <aside class="notes">
-<p>I work at a CRO (Clinical Research Organization) does work for Prostate Cancer <br> Recently had a situation where someone was advised to ask me for help resolving a conflict. <br> So what had happened was: <br> each study has it’s own repo</p>
+<ul>
+<li>both working in repository on different deliverables</li>
+<li>config file for options</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1011,7 +1013,10 @@
 <section id="simple-merge-conflict-example-1" class="slide level2 section-header" data-background-image="images/conflict_vis_2.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <aside class="notes">
-<p>One for report <br> One for a plot</p>
+<ul>
+<li>coworker #1 had an easy go</li>
+<li>changed the config file when done</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1027,7 +1032,9 @@
 <section id="simple-merge-conflict-example-2" class="slide level2 section-header" data-background-image="images/conflict_vis_3.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <aside class="notes">
-<p>In our org, each study has a configuration file. The one here held dates for data cuts <br> So even though different deliverables <br> Same config file used</p>
+<ul>
+<li>No issue and merged</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1043,7 +1050,7 @@
 <section id="simple-merge-conflict-example-3" class="slide level2 section-header" data-background-image="images/conflict_vis_4.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <aside class="notes">
-<p>After some time <br> coworker 1 is finished <br> And changed the config file to make their report run</p>
+<p>-iteration hell :(</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1059,7 +1066,7 @@
 <section id="simple-merge-conflict-example-4" class="slide level2 section-header" data-background-image="images/conflict_vis_5.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <aside class="notes">
-<p>Pushed up and merged <br> Now master’s config file is coworker 1’s version <br> Meanwhile poor coworker #2 is going through iteration hell</p>
+<p>Coworker 2 is finally finished <br> So much time passed, config file is different <br> Now they have a merge conflict <br> let’s look at the conflicted files</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1072,43 +1079,27 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="simple-merge-conflict-example-5" class="slide level2 section-header" data-background-image="images/conflict_vis_6.png" data-background-size="contain" data-background-color="#1a1a1a">
-<h2>Simple Merge Conflict Example</h2>
-<aside class="notes">
-<p>Coworker 2 is finally finished <br> So much time passed, config file is different <br> Now they have a merge conflict <br> So, ok. we have the scenario, let’s see what these conflicted config files look like</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="simple-merge-conflict-example-6" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<section id="simple-merge-conflict-example-5" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <div class="content">
 <p><img data-src="images/simple_ex_1.png"></p>
 </div>
 </section>
-<section id="simple-merge-conflict-example-7" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<section id="simple-merge-conflict-example-6" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <div class="content">
 <p><img data-src="images/simple_ex_1.png"></p>
 <p><img data-src="images/simple_ex_2.png"></p>
 </div>
 </section>
-<section id="simple-merge-conflict-example-8" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<section id="simple-merge-conflict-example-7" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <div class="content">
 <p><img data-src="images/simple_ex_1_highlight.png"></p>
 <p><img data-src="images/simple_ex_2_highlight.png"></p>
 </div>
 </section>
-<section id="simple-merge-conflict-example-9" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<section id="simple-merge-conflict-example-8" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href=""></a><span class="co">#=============================#</span></span>
 <span id="cb1-2"><a href=""></a><span class="co"># Data Cut Dates---------------</span></span>
@@ -1136,7 +1127,7 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="simple-merge-conflict-example-10" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<section id="simple-merge-conflict-example-9" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href=""></a><span class="co">#=============================#</span></span>
 <span id="cb2-2"><a href=""></a><span class="co"># Data Cut Dates---------------</span></span>
@@ -1164,7 +1155,7 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="simple-merge-conflict-example-11" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<section id="simple-merge-conflict-example-10" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href=""></a><span class="co">#=============================#</span></span>
 <span id="cb3-2"><a href=""></a><span class="co"># Data Cut Dates---------------</span></span>
@@ -1194,7 +1185,7 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="simple-merge-conflict-example-12" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<section id="simple-merge-conflict-example-11" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <div class="sourceCode" id="cb4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href=""></a><span class="co">#=============================#</span></span>
 <span id="cb4-2"><a href=""></a><span class="co"># Data Cut Dates---------------</span></span>
@@ -1225,7 +1216,7 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="simple-merge-conflict-example-13" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<section id="simple-merge-conflict-example-12" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <div class="sourceCode" id="cb5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href=""></a><span class="co">#=============================#</span></span>
 <span id="cb5-2"><a href=""></a><span class="co"># Data Cut Dates---------------</span></span>

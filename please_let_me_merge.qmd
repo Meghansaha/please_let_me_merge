@@ -46,15 +46,18 @@ You have the initial challenge of learning to just use Git, **but then you have 
 ::: notes
 ..the additional mountain to climb when learning how to handle merges and conflicts so you can use it collaboratively. <br>
 
-So for those of you who are still trying to decide if this talk is for you, just know that while I hope that most people can take away something from this, this talk is geared towards people who may feel a little stuck...
+Today this talk will focus on things that may be useful to those of you who are right...
 :::
 
 ## Git's Second Learning Curve {.section-header background-image="images/middle_curve.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: notes
-Right here in the middle. I'm making the assumption that you've figured out the basics of Git, like getting to a point where you can push to and pull from a repo. I also assume that you have general knowledge of what merging in git is, but might be a little hesitant like I once was to even deal with git merges or conflicts.
+..here in the middle of this git learning process. So, I’m assuming you’ve got Git set up correctly on your system, have pushed and pulled things to and from a repo, and have basic knowledge of Git merging. I hope I can plant the seed to help you overcome the second learning curve if you’re feeling stuck here.
 <br>
-Understanding Git merges and conflicts felt impossible at first, but it started to make sense when I realized that using Git collaboratively is alot like…
+B/c At one point, I felt stuck too and thought that understanding Git merges and conflicts was impossible
+<br>
+but it started to make sense when I realized that using Git collaboratively is a lot like driving.
+
 :::
 
 ## Git is like Driving {.section-header background-image="images/git_driving.png" background-size="contain" background-color="#1a1a1a"}
@@ -484,62 +487,40 @@ If scared of merges, might I suggest.. **scared of conflicts?**
 ::: {.notes}
 
 - structure: conflicts w/ Modification/Deletion of folder itself<br>
-- doesn't seem to scary at first glance<br>
-- Personally, when broken down like this, I don't think it's too bad<br>
+- Not too bad (within file/or to the file name/org)<br>
 - But, there has to be a reason we're all so afraid of merge conflicts<br>
-- Let's actually look at simple scenario first to see if these things are **really scary or not...**
+- Let's actually look at an overly simple example of a scenario that happened at my job to see if  **really scary or not...**
 :::
 
 ## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_1.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: {.notes}
-I work at a CRO (Clinical Research Organization) does work for Prostate Cancer
-<br>
-Recently had a situation where someone was advised to ask me for help resolving a conflict.
-<br>
-So what had happened was:
-<br>
-each study has it's own repo
+- both working in repository on different deliverables
+- config file for options
 :::
 
 ## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_2.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: {.notes}
-One for report
-<br>
-One for a plot
+- coworker #1 had an easy go
+- changed the config file when done
 :::
 ## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_3.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: {.notes}
-In our org, each study has a configuration file. The one here held dates for data cuts
-<br>
-So even though different deliverables
-<br>
-Same config file used
+- No issue and merged
 :::
 
 ## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_4.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: {.notes}
-After some time
-<br>
-coworker 1 is finished
-<br>
-And changed the config file to make their report run
+-iteration hell :(
 :::
 
 ## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_5.png" background-size="contain" background-color="#1a1a1a"}
 
-::: {.notes}
-Pushed up and merged
-<br>
-Now master's config file is coworker 1's version
-<br>
-Meanwhile poor coworker #2 is going through iteration hell
-:::
 
-## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_6.png" background-size="contain" background-color="#1a1a1a"}
+
 
 ::: {.notes}
 Coworker 2 is finally finished
@@ -548,7 +529,7 @@ So much time passed, config file is different
 <br>
 Now they have a merge conflict
 <br>
-So, ok. we have the scenario, let's see what these conflicted config files look like
+let's look at the conflicted files
 :::
 
 ## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}

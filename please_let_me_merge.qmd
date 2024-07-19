@@ -569,7 +569,6 @@ So, ok. we have the scenario, let's see what this conflict looks like in the cod
 
 :::
 
-
 ## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ```yaml
@@ -695,7 +694,7 @@ vendor_3_data_cut: "2023-12-15"
 So now that we know:
 <br>- what happened
 <br>- and what the symbols and everything means
-<br>- How do we resolve the conflict?
+<br>- How do we resolve this conflict?
 <br>- Well, when coworker # 2 came to me and asked me that
 <br> I responded : "Which date do you want?"
 <br> -their response was - **next slide...**
@@ -703,6 +702,31 @@ So now that we know:
 
 ## Oh {.section-header background-image="images/3.png" background-size="contain" background-color="#1a1a1a"}
 
+::: {.notes}
+- cw2 didnt realize they just had to decide which date 
+- saw conflict -> spooked
+:::
+
+## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+::: columns
+::: {.column width="50%"}
+
+<br><br><br>
+<span id="callout">
+1. Don't Panic
+</span>
+
+:::
+
+::: {.column width="50%"}
+
+
+<center>
+![](images/dont_panic.png){width=100%}
+</center>
+
+:::
+:::
 
 ## Go into the void {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 

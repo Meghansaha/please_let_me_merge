@@ -538,11 +538,7 @@ Pushed up and merged
 Now master's config file is coworker 1's version
 <br>
 Meanwhile poor coworker #2 is going through iteration hell
-:::
 
-## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_6.png" background-size="contain" background-color="#1a1a1a"}
-
-::: {.notes}
 Coworker 2 is finally finished
 <br>
 So much time passed, config file is different

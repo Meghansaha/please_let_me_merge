@@ -646,8 +646,8 @@
 </div>
 <aside class="notes">
 <ul>
-<li>Github is synonymous with Git, But they are not interchangeable<br></li>
-<li>Point this out (I’ve made this mistake)<br></li>
+<li>Github is synonymous with Git</li>
+<li>not interchangeable<br></li>
 <li>GH personal workflow comes later…but<br></li>
 <li>SAY definitions<br></li>
 <li>the fact that alot of people make this mistake is proof that<br></li>
@@ -675,8 +675,7 @@
 <li>DWYW<br></li>
 <li>Github isn’t the only thing <br></li>
 <li>DS card being revoked for Not using the terminal <br></li>
-<li>I use all 3 because there are some things that can’t be done say in rstudio or github desktop <br></li>
-<li>But just do you</li>
+<li>But just do what makes sense for your sitch</li>
 </ul>
 <p>So now that that’s out the way, let’s talk about the git merge.</p>
 <style type="text/css">
@@ -852,6 +851,7 @@
 <h2>People are afraid of git merge conflicts</h2>
 <aside class="notes">
 <ul>
+<li>that’s ok. judgment-free zone <br></li>
 <li>I believe to start conquering fears <br></li>
 <li>Learn about what you’re dealing with <br></li>
 <li>So let’s take a moment to understand them</li>
@@ -882,9 +882,7 @@
 <p><small>- <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line">GitHub Docs</a> <em>(“Resolving a merge conflict using the command line”)</em></small></p>
 <aside class="notes">
 <ul>
-<li>Two types of conflicts</li>
-<li>content</li>
-<li>structural</li>
+<li>Occurs in..</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -911,11 +909,7 @@
 <p><br></p>
 <p><small>- <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line">GitHub Docs</a> <em>(“Resolving a merge conflict using the command line”)</em></small></p>
 <aside class="notes">
-<ul>
-<li>Two types of conflicts</li>
-<li>content</li>
-<li>structural</li>
-</ul>
+<p>-To further contextualize - Only 2</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -942,8 +936,7 @@
 </div>
 <aside class="notes">
 <ul>
-<li>Two types of conflicts<br></li>
-<li>content: conflict in Actual content (lines of code)</li>
+<li>conflict in Actual content (lines of code)</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -973,11 +966,11 @@
 </div>
 <aside class="notes">
 <ul>
-<li>structure: conflicts w/ Modification/Deletion of folder itself<br></li>
-<li>doesn’t seem to scary at first glance<br></li>
-<li>Personally, when broken down like this, I don’t think it’s too bad<br></li>
-<li>But, there has to be a reason we’re all so afraid of merge conflicts<br></li>
-<li>Let’s actually look at simple scenario first to see if these things are <strong>really scary or not…</strong></li>
+<li><p>conflicts w/ Modification/Deletion of folder itself<br></p></li>
+<li><p>doesn’t seem to scary at first glance<br></p></li>
+<li><p>But, there has to be a reason we’re all so afraid of merge conflicts<br></p></li>
+<li><p>Let’s actually look at simple scenario that was similar to something that happened at my job to see if these things are <strong>really scary or not…</strong></p></li>
+<li><p>one day someone asked me to help resolve a conflict</p></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -994,7 +987,7 @@
 <section id="simple-merge-conflict-example" class="slide level2 section-header" data-background-image="images/conflict_vis_1.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <aside class="notes">
-<p>I work at a CRO (Clinical Research Organization) does work for Prostate Cancer <br> Recently had a situation where someone was advised to ask me for help resolving a conflict. <br> So what had happened was: <br> each study has it’s own repo</p>
+<p>So what had happened was: <br> two coworkers created local branches off master <br> all repos have a simple text config file with data cut dates in them <br> when started -&gt; same vs of config file</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1010,7 +1003,11 @@
 <section id="simple-merge-conflict-example-1" class="slide level2 section-header" data-background-image="images/conflict_vis_2.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <aside class="notes">
-<p>One for report <br> One for a plot</p>
+<ul>
+<li>coworker 1 is about done <br></li>
+<li>diff. deliverable -&gt; save new vs.&nbsp;config file <br></li>
+<li>while cw 2 is still working with the orig vs.</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1026,7 +1023,10 @@
 <section id="simple-merge-conflict-example-2" class="slide level2 section-header" data-background-image="images/conflict_vis_3.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <aside class="notes">
-<p>In our org, each study has a configuration file. The one here held dates for data cuts <br> So even though different deliverables <br> Same config file used</p>
+<ul>
+<li>eventually cw 1 done <br></li>
+<li>pushes/merge np</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1042,7 +1042,10 @@
 <section id="simple-merge-conflict-example-3" class="slide level2 section-header" data-background-image="images/conflict_vis_4.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <aside class="notes">
-<p>After some time <br> coworker 1 is finished <br> And changed the config file to make their report run</p>
+<ul>
+<li>poor cw 2 is stuck in iteration hell <br></li>
+<li>takes a while, when done, changes config file</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1058,8 +1061,7 @@
 <section id="simple-merge-conflict-example-4" class="slide level2 section-header" data-background-image="images/conflict_vis_5.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <aside class="notes">
-<p>Pushed up and merged <br> Now master’s config file is coworker 1’s version <br> Meanwhile poor coworker #2 is going through iteration hell</p>
-<p>Coworker 2 is finally finished <br> So much time passed, config file is different <br> Now they have a merge conflict <br> So, ok. we have the scenario, let’s see what these conflicted config files look like</p>
+<p>when Cw2 finished so much time passed, <br> config file is different <br> Now they have a merge conflict <br> So, ok. we have the scenario, let’s see what this conflict looks like in the code</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;

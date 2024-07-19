@@ -101,6 +101,19 @@ li:nth-child(n) {
   margin-top: 0%;
 }
 
+#simple-merge-conflict-example-5 > div > p:nth-child(1) > img{
+  margin-left: -10%;
+  float: left;
+  padding-right: 2%;
+  width: 50%;
+}
+
+#simple-merge-conflict-example-5 > div{
+  margin-left: -25%;
+  width: 150%;
+}
+
+
 #simple-merge-conflict-example-6 > div > p:nth-child(1) > img{
   margin-left: -10%;
   float: left;
@@ -131,23 +144,6 @@ li:nth-child(n) {
 }
 
 #simple-merge-conflict-example-7 > div{
-  margin-left: -25%;
-  width: 150%;
-}
-
-#simple-merge-conflict-example-8 > div > p:nth-child(1) > img{
-  margin-left: -10%;
-  float: left;
-  padding-right: 2%;
-  width: 50%;
-}
-
-#simple-merge-conflict-example-8 > div > p:nth-child(2) > img{
-  width: 50%;
-  padding-left: 2%;
-}
-
-#simple-merge-conflict-example-8 > div{
   margin-left: -25%;
   width: 150%;
 }

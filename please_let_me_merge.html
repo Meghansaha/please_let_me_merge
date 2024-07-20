@@ -1298,7 +1298,7 @@
 <div class="content">
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><br><br> git merge –abort</p>
+<p><br><br> <code>git merge --abort</code></p>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/rstudio_terminal.png" style="width:120.0%;height:100.0%"></p>
 </div>
@@ -1337,7 +1337,7 @@
 <li>Figure out what is causing the conflict and where</li>
 </ul>
 </div><div class="column" style="width:50%;">
-
+<p><img data-src="images/conflict_message.png" style="width:100.0%"></p>
 </div>
 </div>
 </div>
@@ -1350,7 +1350,7 @@
 <div class="column" style="width:50%;">
 <ul>
 <li>Figure out what is causing the conflict and where</li>
-<li>You can use the terminal (git status)</li>
+<li>You can use the terminal <code>git status</code></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/git_status.png" style="width:100.0%"></p>
@@ -1409,55 +1409,181 @@
 </div>
 </div>
 </section>
-<section id="go-into-the-void" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
-<h2>Go into the void</h2>
+<section id="resolving-git-merge-conflicts-10" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Resolving Git Merge Conflicts</h2>
+<div class="content">
+<p><span id="midcallout"> 2. Assess the Damage </span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Figure out what is causing the conflict and where</li>
+<li>You can use the terminal (git status)</li>
+<li>You can use the RStudio GUI</li>
+<li>You can use a Third Party</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/ghd_conflict_message.png" style="width:100.0%"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="resolving-git-merge-conflicts-11" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Resolving Git Merge Conflicts</h2>
+<div class="content">
+<p><span id="midcallout"> 2. Assess the Damage </span></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Figure out what is causing the conflict and where</li>
+<li>You can use the terminal (git status)</li>
+<li>You can use the RStudio GUI</li>
+<li>You can use a Third Party</li>
+<li>You can use a Developer Platform (sometimes)</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/lucky_resolve.png" style="width:100.0%"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="resolving-git-merge-conflicts-12" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Resolving Git Merge Conflicts</h2>
+<div class="content">
+<p><span id="midcallout"> 2. Assess the Damage </span></p>
+<p><br> <img data-src="images/web_resolve.png" style="width:100.0%"></p>
+</div>
+</section>
+<section id="resolving-git-merge-conflicts-13" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Resolving Git Merge Conflicts</h2>
+<div class="content">
+<p><span id="midcallout"> 2. Assess the Damage </span></p>
+<p><br> <img data-src="images/unlucky_resolve.png" style="width:90.0%"></p>
+</div>
+</section>
+<section id="resolving-git-merge-conflicts-14" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Resolving Git Merge Conflicts</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><br><br><br> <span id="callout"> 3. Choose Your Own Adventure </span></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/reckless.gif" style="width:100.0%"></p>
+</div>
+</div>
+</section>
+<section id="resolving-git-merge-conflicts-15" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Resolving Git Merge Conflicts</h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href=""></a><span class="co">#=============================#</span></span>
+<span id="cb6-2"><a href=""></a><span class="co"># Data Cut Dates---------------</span></span>
+<span id="cb6-3"><a href=""></a><span class="co">#=============================#</span></span>
+<span id="cb6-4"><a href=""></a></span>
+<span id="cb6-5"><a href=""></a><span class="at">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span></span>
+<span id="cb6-6"><a href=""></a><span class="fu">main_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2024-06-01"</span></span>
+<span id="cb6-7"><a href=""></a><span class="at">=======</span></span>
+<span id="cb6-8"><a href=""></a><span class="fu">main_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2024-01-01"</span></span>
+<span id="cb6-9"><a href=""></a><span class="at">&gt;&gt;&gt;&gt;&gt;&gt;&gt; master</span></span>
+<span id="cb6-10"><a href=""></a><span class="fu">vendor_1_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2023-12-13"</span></span>
+<span id="cb6-11"><a href=""></a><span class="fu">vendor_2_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2024-01-05"</span></span>
+<span id="cb6-12"><a href=""></a><span class="fu">vendor_3_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2023-12-15"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="resolving-git-merge-conflicts-16" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Resolving Git Merge Conflicts</h2>
+<div class="content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><br></p>
+<ul>
+<li>You are in control!</li>
+<li>You can choose your code</li>
+<li>Or “their” code…</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/choice_1.png" style="width:80.0%"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="resolving-git-merge-conflicts-17" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Resolving Git Merge Conflicts</h2>
+<div class="content">
+<p><img data-src="images/code_snip1.gif" style="width:90.0%"></p>
+</div>
+</section>
+<section id="resolving-git-merge-conflicts-18" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Resolving Git Merge Conflicts</h2>
+<div class="content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><br></p>
+<ul>
+<li>You are in control!</li>
+<li>You can choose your code</li>
+<li>Or “their” code…</li>
+<li>Or something entirely different</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/choice_2.png" style="width:80.0%"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="anything-goes" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Anything Goes</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣤⣤⣤⣄⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-2"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠤⠖⣚⣩⣭⣥⣶⣶⣶⣶⣶⣶⣶⣬⣭⣙⣛⠲⢦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-3"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⢰⣮⣧⡀⠀⠀⠀⠀⣀⠴⢚⣩⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⡿⢿⣛⢻⣿⣿⣿⣿⣿⣷⣮⣝⡳⢦⣄⠀⠀⠀⠀⠀</span>
-<span id="cb6-4"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⣿⣿⣿⣿⣦⣀⡴⢚⣵⣾⣿⣿⣿⣿⣿⢿⣟⣿⡽⣛⣭⡶⠿⢿⣿⣹⣿⣿⡿⣿⣿⣿⣿⣿⣿⣷⣜⡻⢦⡀⠀⠀</span>
-<span id="cb6-5"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣯⣿⣿⣿⣿⡿⢫⣶⣿⣿⣿⣿⡿⣿⣽⣾⣿⡿⣽⡾⠛⠉⠀⠀⣼⣟⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⣿⣿⡿⠮⠿⠷⠀</span>
-<span id="cb6-6"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⣹⣿⣿⢟⣼⣿⣿⣿⣿⢿⣷⣿⣿⣟⣿⡿⣿⣿⣦⣄⠀⠀⢠⣿⣽⣿⣿⣿⣿⣿⣿⠟⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-7"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡾⣛⢻⣾⣿⣿⡿⣿⣾⣿⣿⣽⣾⣿⣟⣿⣿⣻⣿⣿⣷⣀⣾⢿⣿⣿⡿⣿⣿⣿⣿⣳⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-8"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣇⣿⣿⣟⣿⣿⣯⣷⣿⡿⣯⣷⣿⣿⣻⣿⣷⣿⣿⣿⣿⣿⣿⡿⣿⣿⣷⣿⣿⣿⣷⣝⢦⡀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-9"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⠟⣿⣹⣿⢿⣻⣷⣿⣿⣽⣿⡿⣿⡿⢛⣩⣤⣦⣭⡻⣷⣿⣿⣻⣿⢿⣷⡿⣿⣾⡿⣿⣿⣷⡝⢦⡀⠀⠀⠀⠀</span>
-<span id="cb6-10"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⠀⣿⣿⣻⣿⣿⢿⣷⣿⣻⣷⡿⣣⣾⣿⠟⠛⠻⣿⣿⣿⣿⣽⣿⢿⣿⣻⣿⡿⣷⣿⣿⢿⣿⣿⣦⠳⡄⠀⠀⠀</span>
-<span id="cb6-11"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⠀⠸⣿⣿⣿⣾⣿⣿⣽⣿⢯⣿⠟⠋⠀⠀⠀⠀⠘⣿⣿⣾⣿⣻⣿⣿⣟⣿⣿⢿⣯⣿⣿⢿⣿⣿⣧⠹⡄⠀⠀</span>
-<span id="cb6-12"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⢹⣿⢿⣿⣿⣾⢟⣽⠟⠁⢀⡶⡀⠀⠀⠀⢰⣿⣿⣷⣿⢿⣟⣿⣿⣿⣿⣿⣿⣯⣿⣿⡿⣿⣿⣇⢳⡀⠀</span>
-<span id="cb6-13"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠈⡧⣾⡶⣿⡿⢭⣫⢵⠟⠁⠀⠀⣼⣿⡇⠀⠀⢠⣿⣿⣿⣾⣿⡿⣿⣿⣿⣿⣻⣿⣿⣿⣿⣷⣿⣿⣿⣿⡈⣇⠀</span>
-<span id="cb6-14"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⢀⣠⣀⠀⠀⠀⠀⢀⠞⠁⠈⢱⠀⠀⢳⡈⠻⢾⣷⠉⠒⠠⣀⠀⠀⠀⢿⣿⠀⢀⠴⠿⢿⣿⣯⣷⣿⣿⢿⣷⣿⣿⣷⡽⣿⢿⣿⣿⣿⣽⣿⣿⡇⣿⠀</span>
-<span id="cb6-15"><a href=""></a>⠀⠀⠀⠀⠀⢠⠞⡁⠄⠀⠙⣆⠀⡰⠃⠀⠀⡀⡼⠀⠀⠀⠙⢤⡀⠀⠀⠀⠀⠀⠉⠀⠒⠚⠃⠈⢠⣶⠀⣼⣿⣿⣿⣿⣾⣿⣿⣽⣾⣿⣷⡝⣆⠈⠛⢿⣿⣿⣿⣗⣸⡀</span>
-<span id="cb6-16"><a href=""></a>⠀⠀⠀⡠⠖⠾⡆⡀⠀⠀⠀⢸⠋⠀⠀⠀⣐⡤⠃⠀⠀⠀⠀⠀⠉⠲⢤⣀⠀⠀⠀⠀⠤⠄⠐⠒⣁⣤⣾⣿⣿⣿⣿⣷⣿⢿⣾⡿⣟⣿⣿⣿⠸⡆⠀⠀⠙⢿⣿⣷⢸⡇</span>
-<span id="cb6-17"><a href=""></a>⠀⢀⠞⡀⠁⠐⣷⠰⠀⠀⠀⠀⡄⠀⢀⠵⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠽⢿⡶⣶⣶⣾⣿⡟⢻⣻⣿⠿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⡇⢿⠀⠀⠀⠀⠹⣿⢼⡃</span>
-<span id="cb6-18"><a href=""></a>⠀⢘⣆⠃⠀⠀⠘⣆⠆⠀⠀⠀⣇⠔⣯⡄⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⢋⠀⠀⠀⠙⠶⣽⣿⣿⣧⣆⡴⠋⠓⡬⡛⢿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⢸⡄⠀⠀⠀⠀⠈⠿⠀</span>
-<span id="cb6-19"><a href=""></a>⡔⠁⠘⣄⠀⠀⠀⠘⡌⠄⠀⠀⣸⢠⠰⠧⡀⠀⠀⠀⢀⣠⣖⡫⣵⠣⠁⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣷⣄⠀⠈⠊⢢⡍⠻⢿⣿⣿⣷⣿⣿⣿⣿⢘⡇⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-20"><a href=""></a>⢧⠀⠀⠈⠂⡀⠀⠀⠈⠒⣤⠾⣡⢎⠂⢠⡗⠒⠒⠋⠅⠀⣹⣴⠇⠂⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⡏⠀⢀⢠⠃⠀⠀⠉⢿⣿⣿⣽⣿⣿⢸⡇⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-21"><a href=""></a>⢈⠷⣄⠀⠀⠈⠒⠤⡄⣴⣥⠶⠣⠟⢀⡞⡇⠀⠀⠀⣀⡴⠋⢹⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⡿⠿⣛⡟⠀⠀⣊⡞⠀⠀⠀⠀⠀⠙⣿⣿⣿⣿⢸⡇⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-22"><a href=""></a>⠸⡀⠀⠒⠀⠤⠤⣤⢳⣡⡏⠀⠀⢀⠾⠾⠖⠒⠚⠋⠁⠀⠀⢸⠀⠀⠀⠀⠀⣠⣿⣿⣿⣿⣻⡇⠀⠻⢦⣀⣈⣼⡳⡄⠀⠀⠀⠀⠀⠈⢿⣿⡏⣾⠁⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-23"><a href=""></a>⠀⠉⠒⠦⠤⠤⠤⠞⠛⠶⠾⠒⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣦⣀⣀⣤⣾⣿⣿⣿⢿⡟⣿⠋⢆⠀⠀⠈⠉⠉⢀⡇⠀⠀⠀⠀⠀⠀⠈⢻⣟⡟⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-24"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢻⣿⣿⣿⣿⢿⣯⣿⢺⣤⣿⢦⡀⠀⠀⠰⠦⠉⢹⠦⡄⠀⠀⠀⠀⠀⠀⠀⠻⠁⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-25"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣾⣿⣿⣿⣾⣿⣿⣿⡟⣿⡿⢄⠈⠳⠦⣤⣀⡴⠋⣱⡘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-26"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢯⣿⣿⣿⡍⢻⣿⣽⣿⣹⡇⠈⠠⠀⠀⠀⠉⢡⠊⢀⣹⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-27"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣽⣿⣿⡇⠈⢿⣿⣿⣷⡇⠀⠀⠀⠀⠀⠀⠀⢣⠊⠀⢸⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-28"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣟⣿⣿⣿⠀⠸⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⣸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-29"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣻⡇⠀⢹⣿⣾⣿⡇⠀⠀⠀⠀⠀⠐⠁⠃⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-30"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡿⣿⣿⣿⡀⠈⣿⣿⣿⣿⣤⣀⠀⠀⠀⣀⡠⠤⠚⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-31"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢷⣿⣿⢿⣇⠀⢸⣿⣿⢿⣷⢻⠉⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-32"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣹⣿⣿⣿⡦⠤⢿⣿⣿⣿⣧⢣⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-33"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⢡⣜⣏⣿⣿⣽⣿⣦⡽⣿⣿⢿⣿⣎⢧⡌⠉⠑⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-34"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⡇⠀⠈⠉⠛⠛⠛⠉⡝⠁⣰⣹⣿⣿⣿⣿⣾⣿⡗⠀⠠⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-35"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣹⠒⠤⣀⠀⠀⠀⡼⡆⡀⠙⠻⠿⠿⠿⠿⠟⠋⠀⠄⡼⠧⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-36"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⣀⠴⢇⠀⠤⠐⠛⠂⠀⠑⡵⣤⢀⡀⠀⠀⠀⠀⠀⢀⣔⡉⠀⡀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-37"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠔⣪⣑⣈⠀⠀⠈⠫⡒⠤⠤⠤⠤⣴⣶⡇⠀⠠⠵⠂⠀⠀⠀⠀⠈⠀⢐⣠⣞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-38"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣵⣾⡿⣟⣿⣻⣷⣦⣄⠀⠑⠢⡀⠀⠘⣿⣿⣦⣄⣀⣠⣤⣤⣤⠴⠒⠉⢁⣀⣈⡙⢿⡳⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-39"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣾⣿⣻⢾⣽⣟⡷⣟⣾⡽⣯⣧⡀⠀⠘⣄⢂⢻⣿⣟⣿⣻⢯⣟⠟⠁⠉⠉⠉⠀⠀⠀⠀⠀⠉⠳⡙⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-40"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⡿⣽⣞⣯⣿⣳⣯⢿⣻⣽⣻⣽⣻⡇⠀⢠⣇⣎⢼⣿⣿⣳⣿⣻⡟⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⣾⢿⣿⣦⣹⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-41"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⡿⣯⣿⣽⢾⣻⡾⣽⢯⣿⣯⡷⠿⠷⣛⣷⣠⣃⣤⣴⣾⢯⡻⢷⣯⣿⠀⠀⠀⠀⠀⠀⢠⣾⣟⣯⣷⣟⡿⣾⡽⣿⣷⡄⠀⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-42"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢧⡛⠦⢭⣉⣉⣉⡩⠭⠭⠤⠖⠒⠛⣉⣉⣭⡾⠿⠛⠛⠛⢦⣙⠧⣍⣿⢀⠀⠀⠀⠀⢀⣿⣟⣾⣻⢾⣽⣻⢷⣿⣳⣯⣿⣆⠀⠀⠀⠀⠀⠀</span>
-<span id="cb6-43"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠓⠲⠤⠤⠤⠴⠒⠒⠒⠛⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠉⠳⢮⡙⠢⣈⠂⠄⠀⢸⣿⣞⣯⢿⣯⡷⣿⣻⣾⣽⣳⣯⣿⡄⠀⠀⠀⠀⠀</span>
-<span id="cb6-44"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠳⢤⣉⠒⠄⣿⠛⠾⢿⣻⣾⣽⢷⣟⡾⣷⣻⢷⣻⣷⠀⠀⠀⠀⠀</span>
-<span id="cb6-45"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⠢⢤⣉⠓⠲⠤⣉⡙⠛⠚⠛⠛⢛⣫⡵⣋⡇⠀⠀⠀⠀</span>
-<span id="cb6-46"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠑⠒⠤⠤⢭⣉⣉⣙⣩⡥⠶⠋⠀⠀⠀⠀⠀</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣤⣤⣤⣄⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-2"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠤⠖⣚⣩⣭⣥⣶⣶⣶⣶⣶⣶⣶⣬⣭⣙⣛⠲⢦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-3"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⢰⣮⣧⡀⠀⠀⠀⠀⣀⠴⢚⣩⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⡿⢿⣛⢻⣿⣿⣿⣿⣿⣷⣮⣝⡳⢦⣄⠀⠀⠀⠀⠀</span>
+<span id="cb7-4"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⣿⣿⣿⣿⣦⣀⡴⢚⣵⣾⣿⣿⣿⣿⣿⢿⣟⣿⡽⣛⣭⡶⠿⢿⣿⣹⣿⣿⡿⣿⣿⣿⣿⣿⣿⣷⣜⡻⢦⡀⠀⠀</span>
+<span id="cb7-5"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣯⣿⣿⣿⣿⡿⢫⣶⣿⣿⣿⣿⡿⣿⣽⣾⣿⡿⣽⡾⠛⠉⠀⠀⣼⣟⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⣿⣿⡿⠮⠿⠷⠀</span>
+<span id="cb7-6"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⣹⣿⣿⢟⣼⣿⣿⣿⣿⢿⣷⣿⣿⣟⣿⡿⣿⣿⣦⣄⠀⠀⢠⣿⣽⣿⣿⣿⣿⣿⣿⠟⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-7"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡾⣛⢻⣾⣿⣿⡿⣿⣾⣿⣿⣽⣾⣿⣟⣿⣿⣻⣿⣿⣷⣀⣾⢿⣿⣿⡿⣿⣿⣿⣿⣳⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-8"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣇⣿⣿⣟⣿⣿⣯⣷⣿⡿⣯⣷⣿⣿⣻⣿⣷⣿⣿⣿⣿⣿⣿⡿⣿⣿⣷⣿⣿⣿⣷⣝⢦⡀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-9"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⠟⣿⣹⣿⢿⣻⣷⣿⣿⣽⣿⡿⣿⡿⢛⣩⣤⣦⣭⡻⣷⣿⣿⣻⣿⢿⣷⡿⣿⣾⡿⣿⣿⣷⡝⢦⡀⠀⠀⠀⠀</span>
+<span id="cb7-10"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⠀⣿⣿⣻⣿⣿⢿⣷⣿⣻⣷⡿⣣⣾⣿⠟⠛⠻⣿⣿⣿⣿⣽⣿⢿⣿⣻⣿⡿⣷⣿⣿⢿⣿⣿⣦⠳⡄⠀⠀⠀</span>
+<span id="cb7-11"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⠀⠸⣿⣿⣿⣾⣿⣿⣽⣿⢯⣿⠟⠋⠀⠀⠀⠀⠘⣿⣿⣾⣿⣻⣿⣿⣟⣿⣿⢿⣯⣿⣿⢿⣿⣿⣧⠹⡄⠀⠀</span>
+<span id="cb7-12"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⢹⣿⢿⣿⣿⣾⢟⣽⠟⠁⢀⡶⡀⠀⠀⠀⢰⣿⣿⣷⣿⢿⣟⣿⣿⣿⣿⣿⣿⣯⣿⣿⡿⣿⣿⣇⢳⡀⠀</span>
+<span id="cb7-13"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠈⡧⣾⡶⣿⡿⢭⣫⢵⠟⠁⠀⠀⣼⣿⡇⠀⠀⢠⣿⣿⣿⣾⣿⡿⣿⣿⣿⣿⣻⣿⣿⣿⣿⣷⣿⣿⣿⣿⡈⣇⠀</span>
+<span id="cb7-14"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⢀⣠⣀⠀⠀⠀⠀⢀⠞⠁⠈⢱⠀⠀⢳⡈⠻⢾⣷⠉⠒⠠⣀⠀⠀⠀⢿⣿⠀⢀⠴⠿⢿⣿⣯⣷⣿⣿⢿⣷⣿⣿⣷⡽⣿⢿⣿⣿⣿⣽⣿⣿⡇⣿⠀</span>
+<span id="cb7-15"><a href=""></a>⠀⠀⠀⠀⠀⢠⠞⡁⠄⠀⠙⣆⠀⡰⠃⠀⠀⡀⡼⠀⠀⠀⠙⢤⡀⠀⠀⠀⠀⠀⠉⠀⠒⠚⠃⠈⢠⣶⠀⣼⣿⣿⣿⣿⣾⣿⣿⣽⣾⣿⣷⡝⣆⠈⠛⢿⣿⣿⣿⣗⣸⡀</span>
+<span id="cb7-16"><a href=""></a>⠀⠀⠀⡠⠖⠾⡆⡀⠀⠀⠀⢸⠋⠀⠀⠀⣐⡤⠃⠀⠀⠀⠀⠀⠉⠲⢤⣀⠀⠀⠀⠀⠤⠄⠐⠒⣁⣤⣾⣿⣿⣿⣿⣷⣿⢿⣾⡿⣟⣿⣿⣿⠸⡆⠀⠀⠙⢿⣿⣷⢸⡇</span>
+<span id="cb7-17"><a href=""></a>⠀⢀⠞⡀⠁⠐⣷⠰⠀⠀⠀⠀⡄⠀⢀⠵⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠽⢿⡶⣶⣶⣾⣿⡟⢻⣻⣿⠿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⡇⢿⠀⠀⠀⠀⠹⣿⢼⡃</span>
+<span id="cb7-18"><a href=""></a>⠀⢘⣆⠃⠀⠀⠘⣆⠆⠀⠀⠀⣇⠔⣯⡄⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⢋⠀⠀⠀⠙⠶⣽⣿⣿⣧⣆⡴⠋⠓⡬⡛⢿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⢸⡄⠀⠀⠀⠀⠈⠿⠀</span>
+<span id="cb7-19"><a href=""></a>⡔⠁⠘⣄⠀⠀⠀⠘⡌⠄⠀⠀⣸⢠⠰⠧⡀⠀⠀⠀⢀⣠⣖⡫⣵⠣⠁⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣷⣄⠀⠈⠊⢢⡍⠻⢿⣿⣿⣷⣿⣿⣿⣿⢘⡇⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-20"><a href=""></a>⢧⠀⠀⠈⠂⡀⠀⠀⠈⠒⣤⠾⣡⢎⠂⢠⡗⠒⠒⠋⠅⠀⣹⣴⠇⠂⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⡏⠀⢀⢠⠃⠀⠀⠉⢿⣿⣿⣽⣿⣿⢸⡇⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-21"><a href=""></a>⢈⠷⣄⠀⠀⠈⠒⠤⡄⣴⣥⠶⠣⠟⢀⡞⡇⠀⠀⠀⣀⡴⠋⢹⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⡿⠿⣛⡟⠀⠀⣊⡞⠀⠀⠀⠀⠀⠙⣿⣿⣿⣿⢸⡇⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-22"><a href=""></a>⠸⡀⠀⠒⠀⠤⠤⣤⢳⣡⡏⠀⠀⢀⠾⠾⠖⠒⠚⠋⠁⠀⠀⢸⠀⠀⠀⠀⠀⣠⣿⣿⣿⣿⣻⡇⠀⠻⢦⣀⣈⣼⡳⡄⠀⠀⠀⠀⠀⠈⢿⣿⡏⣾⠁⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-23"><a href=""></a>⠀⠉⠒⠦⠤⠤⠤⠞⠛⠶⠾⠒⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣦⣀⣀⣤⣾⣿⣿⣿⢿⡟⣿⠋⢆⠀⠀⠈⠉⠉⢀⡇⠀⠀⠀⠀⠀⠀⠈⢻⣟⡟⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-24"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢻⣿⣿⣿⣿⢿⣯⣿⢺⣤⣿⢦⡀⠀⠀⠰⠦⠉⢹⠦⡄⠀⠀⠀⠀⠀⠀⠀⠻⠁⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-25"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣾⣿⣿⣿⣾⣿⣿⣿⡟⣿⡿⢄⠈⠳⠦⣤⣀⡴⠋⣱⡘⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-26"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢯⣿⣿⣿⡍⢻⣿⣽⣿⣹⡇⠈⠠⠀⠀⠀⠉⢡⠊⢀⣹⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-27"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣽⣿⣿⡇⠈⢿⣿⣿⣷⡇⠀⠀⠀⠀⠀⠀⠀⢣⠊⠀⢸⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-28"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣟⣿⣿⣿⠀⠸⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⣸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-29"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣻⡇⠀⢹⣿⣾⣿⡇⠀⠀⠀⠀⠀⠐⠁⠃⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-30"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡿⣿⣿⣿⡀⠈⣿⣿⣿⣿⣤⣀⠀⠀⠀⣀⡠⠤⠚⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-31"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢷⣿⣿⢿⣇⠀⢸⣿⣿⢿⣷⢻⠉⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-32"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣹⣿⣿⣿⡦⠤⢿⣿⣿⣿⣧⢣⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-33"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⢡⣜⣏⣿⣿⣽⣿⣦⡽⣿⣿⢿⣿⣎⢧⡌⠉⠑⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-34"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⡇⠀⠈⠉⠛⠛⠛⠉⡝⠁⣰⣹⣿⣿⣿⣿⣾⣿⡗⠀⠠⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-35"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣹⠒⠤⣀⠀⠀⠀⡼⡆⡀⠙⠻⠿⠿⠿⠿⠟⠋⠀⠄⡼⠧⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-36"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⣀⠴⢇⠀⠤⠐⠛⠂⠀⠑⡵⣤⢀⡀⠀⠀⠀⠀⠀⢀⣔⡉⠀⡀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-37"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠔⣪⣑⣈⠀⠀⠈⠫⡒⠤⠤⠤⠤⣴⣶⡇⠀⠠⠵⠂⠀⠀⠀⠀⠈⠀⢐⣠⣞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-38"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣵⣾⡿⣟⣿⣻⣷⣦⣄⠀⠑⠢⡀⠀⠘⣿⣿⣦⣄⣀⣠⣤⣤⣤⠴⠒⠉⢁⣀⣈⡙⢿⡳⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-39"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣾⣿⣻⢾⣽⣟⡷⣟⣾⡽⣯⣧⡀⠀⠘⣄⢂⢻⣿⣟⣿⣻⢯⣟⠟⠁⠉⠉⠉⠀⠀⠀⠀⠀⠉⠳⡙⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-40"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⡿⣽⣞⣯⣿⣳⣯⢿⣻⣽⣻⣽⣻⡇⠀⢠⣇⣎⢼⣿⣿⣳⣿⣻⡟⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⣾⢿⣿⣦⣹⠀⠀⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-41"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⡿⣯⣿⣽⢾⣻⡾⣽⢯⣿⣯⡷⠿⠷⣛⣷⣠⣃⣤⣴⣾⢯⡻⢷⣯⣿⠀⠀⠀⠀⠀⠀⢠⣾⣟⣯⣷⣟⡿⣾⡽⣿⣷⡄⠀⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-42"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢧⡛⠦⢭⣉⣉⣉⡩⠭⠭⠤⠖⠒⠛⣉⣉⣭⡾⠿⠛⠛⠛⢦⣙⠧⣍⣿⢀⠀⠀⠀⠀⢀⣿⣟⣾⣻⢾⣽⣻⢷⣿⣳⣯⣿⣆⠀⠀⠀⠀⠀⠀</span>
+<span id="cb7-43"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠓⠲⠤⠤⠤⠴⠒⠒⠒⠛⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠉⠳⢮⡙⠢⣈⠂⠄⠀⢸⣿⣞⣯⢿⣯⡷⣿⣻⣾⣽⣳⣯⣿⡄⠀⠀⠀⠀⠀</span>
+<span id="cb7-44"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠳⢤⣉⠒⠄⣿⠛⠾⢿⣻⣾⣽⢷⣟⡾⣷⣻⢷⣻⣷⠀⠀⠀⠀⠀</span>
+<span id="cb7-45"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⠢⢤⣉⠓⠲⠤⣉⡙⠛⠚⠛⠛⢛⣫⡵⣋⡇⠀⠀⠀⠀</span>
+<span id="cb7-46"><a href=""></a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠑⠒⠤⠤⢭⣉⣉⣙⣩⡥⠶⠋⠀⠀⠀⠀⠀</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="resolving-git-merge-conflicts-19" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Resolving Git Merge Conflicts</h2>
+<div class="fragment strike" data-fragment-index="1">
+<p>Don’t Be Scared</p>
+</div>
+<div class="fragment" data-fragment-index="1">
+<p>Be Careful…</p>
 </div>
 </section>
 <section id="maybe-this-wont-be-so-bad" class="slide level2 section-header" data-background-image="images/4.png" data-background-size="contain" data-background-color="#1a1a1a">

@@ -792,12 +792,16 @@ Have a Third Party handle it...
 ::: {.column width="50%"}
 
 ![](images/abort_ghd.png){width=120% height=100%}
+
 :::
 :::
 :::
 
+
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
 ::: columns
+
 ::: {.column width="50%"}
 
 <br><br><br>
@@ -810,13 +814,120 @@ Have a Third Party handle it...
 ::: {.column width="50%"}
 
 
-<center>
 ![](images/what.gif){width=100%}
-</center>
+
+:::
+
+:::
+
+
+## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span id="midcallout">
+2. Assess the Damage
+</span>
+
+::: columns
+
+::: {.column width="50%"}
+  - Figure out what is causing the conflict and where
+:::
+
+::: {.column width="50%"}
 
 :::
 :::
+:::
 
+## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+
+<span id="midcallout">
+2. Assess the Damage
+</span>
+
+::: columns
+
+::: {.column width="50%"}
+  - Figure out what is causing the conflict and where
+  - You can use the terminal (git status)
+:::
+
+::: {.column width="50%"}
+![](images/git_status.png){width=100%}
+:::
+:::
+:::
+
+## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+
+<span id="midcallout">
+2. Assess the Damage
+</span>
+
+::: columns
+
+::: {.column width="50%"}
+  - Figure out what is causing the conflict and where
+  - You can use the terminal (git status)
+  - You can use the RStudio GUI
+:::
+
+::: {.column width="50%"}
+![](images/git_status_gui.png){width=90%}
+:::
+:::
+:::
+
+
+## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+
+<span id="midcallout">
+2. Assess the Damage
+</span>
+
+::: columns
+
+::: {.column width="50%"}
+  - Figure out what is causing the conflict and where
+  - You can use the terminal (git status)
+  - You can use the RStudio GUI
+:::
+
+::: {.column width="50%"}
+![](images/git_icons1.png){width=50%}
+:::
+:::
+:::
+
+
+## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+
+<span id="midcallout">
+2. Assess the Damage
+</span>
+
+::: columns
+
+::: {.column width="50%"}
+  - Figure out what is causing the conflict and where
+  - You can use the terminal (git status)
+  - You can use the RStudio GUI
+:::
+
+::: {.column width="50%"}
+![](images/git_icons2.png){width=50%}
+:::
+:::
+:::
 
 ## Go into the void {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 

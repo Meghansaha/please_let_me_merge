@@ -728,6 +728,30 @@ So now that we know:
 :::
 :::
 
+## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span id="midcallout">
+1. Don't Panic
+</span>
+
+::: columns
+
+::: {.column width="50%"}
+:::{.incremental}
+  - It'll be OK
+  - Usually, conflicts aren't a big deal
+  - You are (hopefully) the expert
+  - Walk away if you need to
+:::
+:::
+
+::: {.column width="50%"}
+![](images/euc.jpg)
+:::
+:::
+:::
+
 ## Go into the void {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ```{r, eval = FALSE, echo = TRUE}

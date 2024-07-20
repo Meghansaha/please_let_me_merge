@@ -165,6 +165,8 @@ So before we talk about merges, conflicts, and collaboration let's talk about so
 <br>
 - DS card being revoked for Not using the terminal
 <br>
+- more comfy -> terminal makes sense
+<br>
 - But just do what makes sense for your sitch
 
 So now that that's out the way, let's talk about the git merge.
@@ -742,15 +744,79 @@ So now that we know:
   - It'll be OK
   - Usually, conflicts aren't a big deal
   - You are (hopefully) the expert
-  - Walk away if you need to
+  - Walk away if you need to...
 :::
 :::
 
 ::: {.column width="50%"}
-![](images/euc.jpg)
+![](images/euc.jpg){width=100%}
 :::
 :::
 :::
+
+## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+
+::: columns
+
+
+::: {.column width="50%"}
+
+<br><br>
+git merge --abort
+
+:::
+
+::: {.column width="50%"}
+
+![](images/rstudio_terminal.png){width=120% height=100%}
+:::
+:::
+:::
+
+## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+
+::: columns
+
+
+::: {.column width="50%"}
+
+<br>
+Have a Third Party handle it...
+
+:::
+
+::: {.column width="50%"}
+
+![](images/abort_ghd.png){width=120% height=100%}
+:::
+:::
+:::
+
+## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+::: columns
+::: {.column width="50%"}
+
+<br><br><br>
+<span id="callout">
+2. Assess the Damage
+</span>
+
+:::
+
+::: {.column width="50%"}
+
+
+<center>
+![](images/what.gif){width=100%}
+</center>
+
+:::
+:::
+
 
 ## Go into the void {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 

@@ -172,5 +172,16 @@ li:nth-child(n) {
   font-size: 100pt;
 }
 
+#midcallout {
+  font-size: 60pt;
+  text-decoration: underline;
+  margin-left: -10%;
+  position: relative;
+}
 
+#resolving-git-merge-conflicts-1 > div > div > ul > li:nth-child(n){
+  font-size: 50pt;
+  margin-left: 30%;
+  width:100%;
+}
 

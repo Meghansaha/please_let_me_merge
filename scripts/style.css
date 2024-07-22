@@ -653,6 +653,24 @@ li:nth-child(n) {
   margin-top: 5%;
   width:100%;
   color: darkred !important;
-  
 }
 
+#conflicts-are-not-git-problems-2 > div > div:nth-child(n) > ul{
+  margin-left: 20%;
+}
+
+#git-conflict-mitigation > div > p > span{
+  margin-left: -10%;
+}
+
+#git-conflict-mitigation-1 > div > p > span{
+    margin-left: -10%;
+}
+
+#git-conflict-mitigation-2 > div > p > span{
+    margin-left: -10%;
+}
+
+#git-conflict-mitigation-3 > div > p > span{
+    margin-left: -10%;
+}

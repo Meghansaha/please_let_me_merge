@@ -741,7 +741,6 @@ So now that we know:
 
 ::: {.column width="50%"}
 :::{.incremental}
-  - It'll be OK
   - Usually, conflicts aren't a big deal
   - You are (hopefully) the expert
   - Walk away if you need to...
@@ -754,6 +753,12 @@ So now that we know:
 :::
 :::
 
+:::{.notes}
+it's OK<br>
+- think back ... had to ask which date<br>
+- cw2 was expert and knew the answer...
+- 2 ways to "tuck and roll"
+:::
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
@@ -773,6 +778,14 @@ So now that we know:
 ![](images/rstudio_terminal.png){width=120% height=100%}
 :::
 :::
+:::
+
+:::{.notes}
+- if you have a conflict - you can't do anything else<br>
+- in rstudio tab or outside of it<br>
+- type it directly<br>
+- time machine<br>
+- saved work - safe
 :::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -797,6 +810,10 @@ Have a Third Party handle it...
 :::
 :::
 
+:::{.notes}
+- i.e: switch to ghd, to project repo -> pop-up and click<br>
+- when ready tackle, **2nd thing to do is..**
+:::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -820,7 +837,10 @@ Have a Third Party handle it...
 
 :::
 
-
+:::{.notes}
+- takes practice, but instinct after not panicking is to take a look<br>
+- like i said, most aren't bad - could be simple.
+:::
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
@@ -838,6 +858,12 @@ Have a Third Party handle it...
 ![](images/conflict_message.png){width=100%}
 :::
 :::
+:::
+
+:::{.notes}
+- If using terminal or rstudio<br>
+- git already tells you<br>
+- **more info...**
 :::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -859,6 +885,10 @@ Have a Third Party handle it...
 ![](images/git_status.png){width=100%}
 :::
 :::
+:::
+
+:::{.notes}
+the terminal
 :::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -883,6 +913,10 @@ Have a Third Party handle it...
 :::
 :::
 
+:::{.notes}
+- Rstudio git pane - status icons<br>
+- **each icon means...**
+:::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -906,6 +940,9 @@ Have a Third Party handle it...
 :::
 :::
 
+:::{.notes}
+- One you want to **look for is...**
+:::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -929,6 +966,10 @@ Have a Third Party handle it...
 :::
 :::
 
+:::{.notes}
+quickly tells you
+:::
+
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
@@ -950,6 +991,11 @@ Have a Third Party handle it...
 ![](images/ghd_conflict_message.png){width=100%}
 :::
 :::
+:::
+
+:::{.notes}
+- Want even more interaction - use a third party<br>
+- if you're lucky... **you can even use**
 :::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -976,6 +1022,11 @@ Have a Third Party handle it...
 :::
 :::
 
+:::{.notes}
+- Trying to merge on platform via PR<br>
+- instead of seeing "merge", may see this<br>
+- conflict is simple enough to resolve on platform
+:::
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
@@ -987,6 +1038,11 @@ Have a Third Party handle it...
 <br>
 ![](images/web_resolve.png){width=100%}
 
+:::
+
+:::{.notes}
+- sends you here<br>
+- all conflicted files here
 :::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1002,6 +1058,11 @@ Have a Third Party handle it...
 
 :::
 
+:::{.notes}
+- If not lucky, it's greyed out<br>
+- gotta resolve it elsewhere
+- this sucks, but this example of why you shouldn't be scared...
+:::
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: columns
@@ -1023,6 +1084,10 @@ Have a Third Party handle it...
 :::
 :::
 
+:::{.notes}
+what do I mean? let's think back to ex...
+:::
+
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ```yaml
@@ -1040,7 +1105,12 @@ vendor_2_data_cut: "2024-01-05"
 vendor_3_data_cut: "2023-12-15"
 
 ```
+:::{.notes}
+- When I asked cw 2 which date<br>
+- important concept didn't realize<br>
+- git wasn't smart enough
 
+:::
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
@@ -1065,12 +1135,29 @@ vendor_3_data_cut: "2023-12-15"
 :::
 :::
 
+:::{.notes}
+- Have a theory<br>
+- we think git is so smart/complex<br>
+- it's amazing, but more credit than due<br>
+- smart enough to throw a conflict but not  to resolve<br>
+- human steps in == CONTROL<br>
+- Something I had a hard time wrapping my head around<br>
+- what git was expecting of me ... let's look at ex of what git expects you to do...<br>
+:::
+
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
 ![](images/code_snip1.gif){width=90%}
 :::
 
+:::{.notes}
+- manually edit the file, this case pick the right date
+- ~narrate what's happening here~
+- idk why, but i never realized this is all git wanted
+- fears or more rejection
+- did not realize how primitive the situation here is because...
+:::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -1096,6 +1183,15 @@ vendor_3_data_cut: "2023-12-15"
 :::
 :::
 :::
+
+:::{.notes}
+- You can literally fling yourself into the void
+- You can make something completely new
+- doesn't have to be one or the other
+- you can leave the conflict markers in (code wont work)
+- you can **even throw in...**
+:::
+
 
 ## Anything Goes {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -1148,6 +1244,11 @@ vendor_3_data_cut: "2023-12-15"
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠑⠒⠤⠤⢭⣉⣉⣙⣩⡥⠶⠋⠀⠀⠀⠀⠀
 ```
 
+:::{.notes}
+- ASCII art for a little razzle dazzle if ya want<br>
+- When you have to resolve a conflict ANYTHING GOES
+:::
+
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 :::{.fragment .strike fragment-index=1}
@@ -1158,9 +1259,125 @@ Don't Be Scared
 Be Careful...
 :::
 
+:::{.notes}
+- Some of you thinking.. we used an overly easy ex<br>
+- *20 mins ain't alot of time.*<br>
+- believe me..doesn't matter how complicated, process is the same<br>
+- What makes the process hard or not -> little to do with Git<br>
+- But everything to do with how you prep and plan your work<br>
+- When you finally realize that, and plan accordingly, **you'll start to say things like..**
+:::
 
 ## Maybe This Won't Be So Bad {.section-header background-image="images/4.png" background-size="contain" background-color="#1a1a1a"}
 
+:::{.notes}
+Now what do I mean? Let's talk about it<br>
+one of the hardest pills to **swallow was realizing...**
+:::
+
+## Conflicts are Not Git Problems {.section-header background-image="images/the_truth1.png" background-size="contain" background-color="#1a1a1a"}
+
+:::{.notes}
+- spent time being scared
+:::
+
+## Conflicts are Not Git Problems {.section-header background-image="images/the_truth2.png" background-size="contain" background-color="#1a1a1a"}
+
+:::{.notes}
+- really needed to be scared of myself
+:::
+
+## Conflicts are Not Git Problems {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+Merge conflicts are not Git problems
+
+
+:::{.fragment}
+They are...
+:::
+
+:::{.incremental}
+- Knowledge Gap Problems
+- Communication Problems
+- Workflow/Process Problems
+- Documentation Problems
+:::
+:::
+
+:::{.notes}
+- You can probably never completely avoid conflicts working w/ others<br>
+- But you can lessen the frequency and severity of them
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="midcallout">
+Knowledge Gap Problems
+</span>
+
+- Learn what you need to, how you need to: (Readers)
+  - [Git Reference Manual](https://git-scm.com/docs)
+  - [Git Pro Book](https://git-scm.com/book/en/v2)
+  - [Happy Git with R](https://happygitwithr.com/)
+
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="midcallout">
+Knowledge Gap Problems
+</span>
+
+- Learn what you need to, how you need to: (Doers)
+  - [saperlipopette Package](https://maelle.github.io/saperlipopette/index.html)
+  - [Oh S%@t Git](https://ohshitgit.com/) | [Oh Danggit Git](https://dangitgit.com/en)
+  - [Learn Git Branching Site](https://learngitbranching.js.org/)
+  - [Oh My Git Game](https://ohmygit.org/)
+
+:::
+
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="midcallout">
+Knowledge Gap Problems
+</span>
+
+- Learn what you need to, how you need to: (Skimmers)
+  - [RStudio/Git/GitHub Cheat Sheet](https://rstudio.github.io/cheatsheets/git-github.pdf)
+  - [GitHub Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+  - [Practical Git](https://practicalgit.com/)
+
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="midcallout">
+Knowledge Gap Problems
+</span>
+
+- Use tools to make it easier
+  - [GitHub Desktop](https://desktop.github.com/download/)
+  - [GitKraken](https://www.gitkraken.com/)
+  - [Sourcetree](https://www.sourcetreeapp.com/)
+    
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="midcallout">
+Communication Problems
+</span>
+- Collaborating with others requires good communication
+- Write more stuff here
+    
+:::
 
 ## I Got This {.section-header background-image="images/5.png" background-size="contain" background-color="#1a1a1a"}
 

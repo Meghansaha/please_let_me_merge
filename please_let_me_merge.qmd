@@ -841,30 +841,6 @@ Have a Third Party handle it...
 - takes practice, but instinct after not panicking is to take a look<br>
 - like i said, most aren't bad - could be simple.
 :::
-## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-<span id="midcallout">
-2. Assess the Damage
-</span>
-
-::: columns
-
-::: {.column width="50%"}
-  - Figure out what is causing the conflict and where
-:::
-
-::: {.column width="50%"}
-![](images/conflict_message.png){width=100%}
-:::
-:::
-:::
-
-:::{.notes}
-- If using terminal or rstudio<br>
-- git already tells you<br>
-- **more info...**
-:::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -877,8 +853,7 @@ Have a Third Party handle it...
 ::: columns
 
 ::: {.column width="50%"}
-  - Figure out what is causing the conflict and where
-  - You can use the terminal `git status`
+  - You can use the terminal via `git status`
 :::
 
 ::: {.column width="50%"}
@@ -888,7 +863,8 @@ Have a Third Party handle it...
 :::
 
 :::{.notes}
-the terminal
+git will usually tell you in the terminal what the problem is<br>
+but `git status` works too
 :::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -902,8 +878,7 @@ the terminal
 ::: columns
 
 ::: {.column width="50%"}
-  - Figure out what is causing the conflict and where
-  - You can use the terminal (git status)
+  - You can use the terminal via `git status`
   - You can use the RStudio GUI
 :::
 
@@ -929,8 +904,7 @@ the terminal
 ::: columns
 
 ::: {.column width="50%"}
-  - Figure out what is causing the conflict and where
-  - You can use the terminal (git status)
+  - You can use the terminal via `git status`
   - You can use the RStudio GUI
 :::
 
@@ -955,8 +929,7 @@ the terminal
 ::: columns
 
 ::: {.column width="50%"}
-  - Figure out what is causing the conflict and where
-  - You can use the terminal (git status)
+  - You can use the terminal via `git status`
   - You can use the RStudio GUI
 :::
 
@@ -981,8 +954,7 @@ quickly tells you
 ::: columns
 
 ::: {.column width="50%"}
-  - Figure out what is causing the conflict and where
-  - You can use the terminal (git status)
+  - You can use the terminal via `git status`
   - You can use the RStudio GUI
   - You can use a Third Party
 :::
@@ -1009,8 +981,7 @@ quickly tells you
 ::: columns
 
 ::: {.column width="50%"}
-  - Figure out what is causing the conflict and where
-  - You can use the terminal (git status)
+  - You can use the terminal via `git status`
   - You can use the RStudio GUI
   - You can use a Third Party
   - You can use a Developer Platform (sometimes)
@@ -1027,42 +998,8 @@ quickly tells you
 - instead of seeing "merge", may see this<br>
 - conflict is simple enough to resolve on platform
 :::
-## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
-::: content
 
-<span id="midcallout">
-2. Assess the Damage
-</span>
-
-<br>
-![](images/web_resolve.png){width=100%}
-
-:::
-
-:::{.notes}
-- sends you here<br>
-- all conflicted files here
-:::
-
-## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-
-<span id="midcallout">
-2. Assess the Damage
-</span>
-
-<br>
-![](images/unlucky_resolve.png){width=90%}
-
-:::
-
-:::{.notes}
-- If not lucky, it's greyed out<br>
-- gotta resolve it elsewhere
-- this sucks, but this example of why you shouldn't be scared...
-:::
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: columns
@@ -1148,7 +1085,7 @@ vendor_3_data_cut: "2023-12-15"
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
-![](images/code_snip1.gif){width=90%}
+![](images/code_snip1.gif){width=100%}
 :::
 
 :::{.notes}
@@ -1163,28 +1100,12 @@ vendor_3_data_cut: "2023-12-15"
 
 ::: content
 
-::: columns
+![](images/choice_2.png){width=48%}
 
-
-::: {.column width="50%"}
-
-<br>
-
-- You are in control!
-- You can choose your code
-- Or "their" code...
-- Or something entirely different
-
-:::
-
-::: {.column width="50%"}
-
-![](images/choice_2.png){width=80%}
-:::
-:::
 :::
 
 :::{.notes}
+- Don't linger here
 - You can literally fling yourself into the void
 - You can make something completely new
 - doesn't have to be one or the other
@@ -1245,6 +1166,7 @@ vendor_3_data_cut: "2023-12-15"
 ```
 
 :::{.notes}
+- the code that broke crowdstrike last month<br>
 - ASCII art for a little razzle dazzle if ya want<br>
 - When you have to resolve a conflict ANYTHING GOES
 :::
@@ -1290,19 +1212,29 @@ one of the hardest pills to **swallow was realizing...**
 ## Conflicts are Not Git Problems {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
-Merge conflicts are not Git problems
 
+Merge conflicts are not Git problems
 
 :::{.fragment}
 They are...
 :::
 
-:::{.incremental}
-- Knowledge Gap Problems
-- Communication Problems
-- Workflow/Process Problems
-- Documentation Problems
+<center>
+
+:::{.fragment}
+Knowledge Gap Problems<br>
 :::
+
+:::{.fragment}
+Communication Problems<br>
+:::
+
+:::{.fragment}
+Workflow/Process Problems
+:::
+
+</center>
+
 :::
 
 :::{.notes}
@@ -1374,7 +1306,21 @@ Knowledge Gap Problems
 <span class="midcallout">
 Communication Problems
 </span>
-- Collaborating with others requires good communication
+
+- Collaborating with others requires good communication<br>
+- 'Communication' can mean alot of things<br>
+- Write more things here
+    
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="midcallout">
+Workflow/Process Problems
+</span>
+
+- You not doing stuff right<br>
 - Write more stuff here
     
 :::

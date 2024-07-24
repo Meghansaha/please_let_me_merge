@@ -214,8 +214,8 @@ li:nth-child(n) {
 }
   
 #resolving-git-merge-conflicts-2 > div > div > div:nth-child(2) > p > img{
-    margin-left: -1%;
-    margin-top: 0%;
+    margin-left: -20%;
+    margin-top: 5%;
     border-style: solid;
     border-width: 10px;
     border-color: rgb(4, 135, 129);
@@ -226,7 +226,7 @@ li:nth-child(n) {
 }
 
 #resolving-git-merge-conflicts-2 > div{
-    margin-left: 0%;
+    margin-left: 1%;
 }
 
 #resolving-git-merge-conflicts-2 > div > div > div:nth-child(1) > p{
@@ -237,8 +237,14 @@ li:nth-child(n) {
   width:120%;
 }
 
+#resolving-git-merge-conflicts-2 > div > div > div:nth-child(1) > p > code{
+  font-size: .7em !important;
+  color: rgb(4, 135, 129) !important;
+  font-weight: bold;
+}
+
 #resolving-git-merge-conflicts-3 > div{
-    margin-left: 0%;
+    margin-left: -5%;
 }
 
 #resolving-git-merge-conflicts-3 > div > div > div:nth-child(1) > p{
@@ -298,6 +304,11 @@ li:nth-child(n) {
   width:120%;
 }
 
+#resolving-git-merge-conflicts-5 > div > div > div:nth-child(1) > ul > li > code{
+    font-size: 50pt !important;
+    color: rgb(4, 135, 129);
+}
+
 #resolving-git-merge-conflicts-5 > div > div > div:nth-child(2) > p > img{
     margin-left: -1%;
     margin-top: 0%;
@@ -319,9 +330,19 @@ li:nth-child(n) {
   margin-left: -20%;
 }
 
+#resolving-git-merge-conflicts-6 > div > div > div:nth-child(1) > ul > li > code{
+    font-size: 50pt !important;
+    color: rgb(4, 135, 129);
+}
 
 #resolving-git-merge-conflicts-6 > div{
   width:120%;
+}
+
+#resolving-git-merge-conflicts-6 > div > div > div:nth-child(1) > ul > li:nth-child(2) > code{
+  font-size: .7em !important;
+  color: rgb(4, 135, 129) !important;
+  font-weight: bold;
 }
 
 #resolving-git-merge-conflicts-6 > div > div > div:nth-child(2) > p > img{
@@ -345,13 +366,17 @@ li:nth-child(n) {
   margin-left: -20%;
 }
 
+#resolving-git-merge-conflicts-7 > div > div > div:nth-child(1) > ul > li > code{
+    font-size: 50pt !important;
+    color: rgb(4, 135, 129);
+}
 
 #resolving-git-merge-conflicts-7 > div{
   width:120%;
 }
 
 #resolving-git-merge-conflicts-7 > div > div > div:nth-child(2) > p > img{
-    margin-left: 5%;
+    margin-left: 10%;
     margin-top: -20%;
     border-style: solid;
     border-width: 10px;
@@ -371,6 +396,10 @@ li:nth-child(n) {
   margin-left: -20%;
 }
 
+#resolving-git-merge-conflicts-8 > div > div > div:nth-child(1) > ul > li > code{
+    font-size: 50pt !important;
+    color: rgb(4, 135, 129);
+}
 
 #resolving-git-merge-conflicts-8 > div{
   width:120%;
@@ -397,13 +426,17 @@ li:nth-child(n) {
   margin-left: -20%;
 }
 
+#resolving-git-merge-conflicts-9 > div > div > div:nth-child(1) > ul > li > code{
+    font-size: 50pt !important;
+    color: rgb(4, 135, 129);
+}
 
 #resolving-git-merge-conflicts-9 > div{
   width:120%;
 }
 
 #resolving-git-merge-conflicts-9 > div > div > div:nth-child(2) > p > img{
-    margin-left: 10%;
+    margin-left: -10%;
     margin-top: -20%;
     border-style: solid;
     border-width: 10px;
@@ -412,18 +445,6 @@ li:nth-child(n) {
     border-top-right-radius: 15px 225px;
     border-bottom-right-radius: 225px 15px;
     border-bottom-left-radius:15px 255px;
-}
-
-#resolving-git-merge-conflicts-2 > div > div > div:nth-child(1) > p > code{
-  font-size: .7em !important;
-  color: rgb(4, 135, 129) !important;
-  font-weight: bold;
-}
-
-#resolving-git-merge-conflicts-6 > div > div > div:nth-child(1) > ul > li:nth-child(2) > code{
-  font-size: .7em !important;
-  color: rgb(4, 135, 129) !important;
-  font-weight: bold;
 }
 
 #resolving-git-merge-conflicts-10 > div{
@@ -435,38 +456,17 @@ li:nth-child(n) {
   margin-left: -20%;
 }
 
+#resolving-git-merge-conflicts-10 > div > div > div:nth-child(1) > ul > li > code{
+    font-size: 50pt !important;
+    color: rgb(4, 135, 129);
+}
 
 #resolving-git-merge-conflicts-10 > div{
   width:120%;
 }
 
 #resolving-git-merge-conflicts-10 > div > div > div:nth-child(2) > p > img{
-    margin-left: 0%;
-    margin-top: -20%;
-    border-style: solid;
-    border-width: 10px;
-    border-color: rgb(4, 135, 129);
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
-    border-bottom-right-radius: 225px 15px;
-    border-bottom-left-radius:15px 255px;
-}
-
-#resolving-git-merge-conflicts-11 > div{
-    margin-left: 0%;
-}
-
-#resolving-git-merge-conflicts-11 > div > div > div:nth-child(1) > ul > li{
-  font-size: 50pt;
-  margin-left: -20%;
-}
-
-#resolving-git-merge-conflicts-11 > div{
-  width:120%;
-}
-
-#resolving-git-merge-conflicts-11 > div > div > div:nth-child(2) > p > img{
-    margin-left: 0%;
+    margin-left: -10%;
     margin-top: 0%;
     border-style: solid;
     border-width: 10px;
@@ -477,23 +477,21 @@ li:nth-child(n) {
     border-bottom-left-radius:15px 255px;
 }
 
-#resolving-git-merge-conflicts-12 > div{
+#resolving-git-merge-conflicts-11 > div{
     margin-left: 0%;
 }
 
-#resolving-git-merge-conflicts-12 > div > div > div:nth-child(1) > ul > li{
-  font-size: 50pt;
-  margin-left: -20%;
+#resolving-git-merge-conflicts-11 > div > div > div:nth-child(1) > p{
+  font-size: 80pt;
 }
 
-
-#resolving-git-merge-conflicts-12 > div{
+#resolving-git-merge-conflicts-11 > div{
   width:120%;
 }
 
-#resolving-git-merge-conflicts-12 > div > p:nth-child(2) > img{
-    margin-left: -15%;
-    margin-top: -5%;
+#resolving-git-merge-conflicts-11 > div > div:nth-child(2) > p > img{
+    margin-left: -1%;
+    margin-top: 20%;
     border-style: solid;
     border-width: 10px;
     border-color: rgb(4, 135, 129);
@@ -503,11 +501,33 @@ li:nth-child(n) {
     border-bottom-left-radius:15px 255px;
 }
 
+#resolving-git-merge-conflicts-12 > div{
+    margin-left: 10%;
+}
+
+
+#resolving-git-merge-conflicts-12 > div{
+  width:120%;
+}
+
+#cb6 > pre > code{
+    margin-top: 0%;
+    font-size: 40pt !important;
+    width: 80%;
+    overflow-x: hidden;
+}
+
+#cb6{
+  width: 80% !important;
+}
+
+
 #resolving-git-merge-conflicts-13 > div{
     margin-left: 0%;
 }
 
-#resolving-git-merge-conflicts-13 > div > div > div:nth-child(1) > ul > li{
+
+#resolving-git-merge-conflicts-13 > div > div > div:nth-child(1) > ul > li:nth-child(n){
   font-size: 50pt;
   margin-left: -20%;
 }
@@ -517,7 +537,7 @@ li:nth-child(n) {
   width:120%;
 }
 
-#resolving-git-merge-conflicts-13 > div > p:nth-child(2) > img{
+#resolving-git-merge-conflicts-13 > div > div > div:nth-child(2) > p > img{
     margin-left: -15%;
     margin-top: -8%;
     border-style: solid;
@@ -541,9 +561,9 @@ li:nth-child(n) {
   width:120%;
 }
 
-#resolving-git-merge-conflicts-14 > div > div:nth-child(2) > p > img{
-    margin-left: -1%;
-    margin-top: 0%;
+#resolving-git-merge-conflicts-14 > div > p > img{
+    margin-left: -15%;
+    margin-top: -2%;
     border-style: solid;
     border-width: 10px;
     border-color: rgb(4, 135, 129);
@@ -553,22 +573,9 @@ li:nth-child(n) {
     border-bottom-left-radius:15px 255px;
 }
 
-#cb6 > pre > code{
-    margin-top: 0%;
-    font-size: 40pt !important;
-    width: 100%;
-    overflow-x: hidden;
-}
-
-#cb6{
-    margin-top: 0%;
-    width: 70%;
-    overflow-x: hidden;
-}
-
-#resolving-git-merge-conflicts-16 > div > div > div:nth-child(2) > p > img{
-    margin-left: 25%;
-    margin-top: -5%;
+#resolving-git-merge-conflicts-15 > div > p > img{
+    margin-left: 27%;
+    margin-top: -2%;
     border-style: solid;
     border-width: 10px;
     border-color: rgb(4, 135, 129);
@@ -576,45 +583,6 @@ li:nth-child(n) {
     border-top-right-radius: 15px 225px;
     border-bottom-right-radius: 225px 15px;
     border-bottom-left-radius:15px 255px;
-}
-
-#resolving-git-merge-conflicts-16 > div > div > div:nth-child(1) > ul > li:nth-child(n){
-    font-size: 60pt !important;
-}
-
-#resolving-git-merge-conflicts-17 > div > p > img{
-    border-style: solid;
-    border-width: 10px;
-    margin-left:5%;
-    margin-top:-2%;
-    border-color: rgb(4, 135, 129);
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
-    border-bottom-right-radius: 225px 15px;
-    border-bottom-left-radius:15px 255px;
-}
-
-#resolving-git-merge-conflicts-18 > div > div > div:nth-child(2) > p > img{
-    margin-left: 25%;
-    margin-top: -5%;
-    border-style: solid;
-    border-width: 10px;
-    border-color: rgb(4, 135, 129);
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
-    border-bottom-right-radius: 225px 15px;
-    border-bottom-left-radius:15px 255px;
-}
-
-#resolving-git-merge-conflicts-18 > div > div > div:nth-child(1) > ul > li:nth-child(n){
-    font-size: 60pt !important;
-}
-
-#resolving-git-merge-conflicts-18 > div > div > div:nth-child(1) > ul > li:nth-child(4){
-    font-size: 60pt !important;
-    font-style:italic;
-    color: rgb(4, 135, 129) !important;
-    font-weight: bold;
 }
 
 #cb7 > pre > code{
@@ -629,8 +597,7 @@ li:nth-child(n) {
   margin-left:20%;
 }
 
-
-#resolving-git-merge-conflicts-19 > div:nth-child(3) > p{
+#resolving-git-merge-conflicts-16 > div:nth-child(3) > p{
     font-size: 150pt !important;
   margin-top: 0%;
   width:100%;
@@ -640,7 +607,7 @@ li:nth-child(n) {
   color: rgb(4, 135, 129) !important;
 }
 
-#resolving-git-merge-conflicts-19 > div.fragment.strike > p{
+#resolving-git-merge-conflicts-16 > div.fragment.strike > p{
     font-size: 150pt !important;
   margin-top: 5%;
   color: #000000 !important;
@@ -648,7 +615,7 @@ li:nth-child(n) {
   margin-left:10%;
 }
 
-#resolving-git-merge-conflicts-19 > div.fragment.strike.visible.current-fragment{
+#resolving-git-merge-conflicts-16 > div.fragment.strike.visible.current-fragment{
   font-size: 150pt !important;
   margin-top: 5%;
   width:100%;
@@ -663,6 +630,10 @@ li:nth-child(n) {
   margin-left: -10%;
 }
 
+#git-conflict-mitigation > div{
+  margin-left: -10%;
+}
+
 #git-conflict-mitigation-1 > div > p > span{
     margin-left: -10%;
 }
@@ -672,5 +643,13 @@ li:nth-child(n) {
 }
 
 #git-conflict-mitigation-3 > div > p > span{
+    margin-left: -10%;
+}
+
+#git-conflict-mitigation-4 > div > p > span{
+    margin-left: -10%;
+}
+
+#git-conflict-mitigation-5 > div > p > span{
     margin-left: -10%;
 }

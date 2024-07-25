@@ -46,7 +46,7 @@ You have the initial challenge of just installing, let alone, learning to use Gi
 ::: notes
 ..the additional mountain to climb when learning how to handle merges and conflicts so you can use it collaboratively. <br>
 
-So this talk today is geared towards those of you who may feel that you're
+This talk today is geared towards those of you who may feel that you're
 :::
 
 ## Git's Second Learning Curve {.section-header background-image="images/middle_curve.png" background-size="contain" background-color="#1a1a1a"}
@@ -54,6 +54,7 @@ So this talk today is geared towards those of you who may feel that you're
 ::: notes
 Right here in the middle.<br>
 Maybe, you've figured out the basics of Git and have general knowledge of what merging in git is<br>
+Maybe have even done a few merges already<br>
 but might be a little hesitant like I once was to even deal with git merges or conflicts.
 <br>
 Understanding Git merges and conflicts felt impossible at first, but it started to make sense when I realized that using Git collaboratively is alot like…
@@ -138,7 +139,7 @@ So before we talk about merges, conflicts, and collaboration let's talk about so
 :::{.fragment}
 -   Three ways (R Users) can interact with Git
     -   A CLI Terminal
-    -   The RStudio GUI
+    -   The RStudio GUI | Positron w/ Extensions
     -   A Third Party Client (e.g. [GitHub Desktop](https://desktop.github.com/download/))
     
 :::
@@ -149,8 +150,8 @@ So before we talk about merges, conflicts, and collaboration let's talk about so
 - not interchangeable<br>
 - GH personal workflow comes later...but<br>
 - SAY definitions<br>
-- the fact that alot of people make this mistake is proof that<br>
-- Alot of reliable ways to interact with git<br>
+- the fact that alot of people mix these words up is proof that<br>
+- reliable ways to interact with git<br>
 - Which for R Users are (click)<br>
 - Command line interface/Terminal<br>
 - I want you to all know that...
@@ -160,16 +161,15 @@ So before we talk about merges, conflicts, and collaboration let's talk about so
 ## Do Whatever You want {.section-header background-image="images/dwyw.png" background-size="contain" background-color="#1a1a1a"}
 
 :::{.notes}
-- DWYW<br>
-- Github isn't the only thing
+- Github isn't the only platform
 <br>
-- DS card being revoked for Not using the terminal
+- DS card revoked - for Not using the terminal
 <br>
-- more comfy -> terminal makes sense
+- more comfortable you become w/ git, youll realize terminal makes sense sometimes
 <br>
-- But just do what makes sense for your sitch
-
-So now that that's out the way, let's talk about the git merge.
+- But just do what makes sense for your skilld & sitch
+<br>
+Let's talk about the git merge.
 :::
 
 ## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -291,18 +291,17 @@ So now that that's out the way, let's talk about the git merge.
 
 :::{.notes}
 
-- merging of two local files w/o repo interaction
+- merging of two local branches w/o repo interaction
 <br>
 What's important:<br>
 - No matter the merge
 <br>
 - essential -> Git's functionality of version control when collaborating
 <br>
-- and it allows safe modifications or additions to work
+- important b/c ->safe modifications to work
 <br>
-- Honestly, That's all a merge is...<br>
--At face value this seems simple<br>
-<br>So if a merge is **simple in theory...**
+- That's all it is... seems simple...<br>
+- So if a merge is **simple in theory...**
 :::
 
 ## Why is a Git Merge Scary? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -361,7 +360,7 @@ If scared of merges, might I suggest.. **scared of conflicts?**
 ## People are afraid of git merge conflicts {.section-header background-image="images/conflict.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: {.notes}
-- that's ok. judgment-free zone
+- if so? that's ok. judgment-free zone
 <br>
 - I believe to start conquering fears
 <br>
@@ -507,10 +506,8 @@ when started -> same vs of config file
 
 ::: {.notes}
 - coworker 1 is about done
-<br>
-- diff. deliverable -> save new vs. config file
-<br>
-- while cw 2 is still working with the orig vs.
+<br>changed config file to go w work
+- meanwhile cw 2 is doing theirs w/ the orig vs.
 :::
 ## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_3.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -534,31 +531,11 @@ when started -> same vs of config file
 ::: {.notes}
 when Cw2 finished so much time passed, 
 <br>
-config file is different
+THEIR version of the config file is different
 <br>
 Now they have a merge conflict 
 <br>
 So, ok. we have the scenario, let's see what this conflict looks like in the code
-:::
-
-## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-
-
-![](images/simple_ex_1.png)
-
-
-:::
-
-## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-
-![](images/simple_ex_1.png)
-
-![](images/simple_ex_2.png)
-
 :::
 
 ## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -572,7 +549,10 @@ So, ok. we have the scenario, let's see what this conflict looks like in the cod
 :::
 
 :::{.notes}
-- This is a content conflict on line 5<br>
+- Both versions<br>
+- Master - CW1<br>
+- HEAD - CW2<br>
+- Content conflict - line 5 - > diff dates<br>
 - so, when cw #2 attempted to merge, the resulting **conflict looked like...**
 :::
 
@@ -699,11 +679,10 @@ vendor_3_data_cut: "2023-12-15"
 - Everything after that is code that is not conflicted, so left alone
 <br>
 So now that we know:
-<br>- what happened
-<br>- what the conflict looks like
+<br>- what happened and what the conflict looked like
 <br> - how to resolve?
 <br>- Well, when coworker # 2 came to me and asked me that
-<br> I asked them ; "well, Which date do you want?"
+<br> I asked them...
 <br> -their response was - **next slide...**
 :::
 
@@ -712,6 +691,7 @@ So now that we know:
 ::: {.notes}
 - cw2 didnt realize they just had to decide which date 
 - saw conflict -> spooked
+- and broke the 1st step of dealing w/ conflicts which is:
 :::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -733,6 +713,11 @@ So now that we know:
 </center>
 
 :::
+:::
+
+:::{.notes}
+Easier said than done<br>
+biggest reason to **not panic is...**
 :::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -761,9 +746,11 @@ So now that we know:
 :::
 
 :::{.notes}
-it's OK<br>
-- think back ... had to ask which date<br>
-- cw2 was expert and knew the answer...
+- have to remember -> you are XPT
+- in that ex.. I had to ask which date<br>
+- cw2 was expert and knew the answer...<br>
+- Now, some ppl may panic b/c -> realize they can't do anything w/ git when conflict<br>
+- so if not ready or calm you can (click)...<br>
 - 2 ways to "tuck and roll"
 :::
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -788,7 +775,7 @@ it's OK<br>
 :::
 
 :::{.notes}
-- if you have a conflict - you can't do anything else<br>
+- Rstudio -> no pretty icons for aborting merge<br>
 - in rstudio tab or outside of it<br>
 - type it directly<br>
 - time machine<br>
@@ -819,7 +806,7 @@ Have a Third Party handle it...
 
 :::{.notes}
 - i.e: switch to ghd, to project repo -> pop-up and click<br>
-- when ready tackle, **2nd thing to do is..**
+- when ready to tackle, **2nd thing to do is..**
 :::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1095,10 +1082,10 @@ vendor_3_data_cut: "2023-12-15"
 :::
 
 :::{.notes}
-- Git expects you to manually edit the file<br>
+- manually edit the file<br>
 - ~narrate what's happening here~<br>
-- idk why, but i never realized this is all git wanted<br>
-- did not realize how primitive the situation here is because...
+- never realized this is what git wanted<br>
+- the situation here is primitive...
 :::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}

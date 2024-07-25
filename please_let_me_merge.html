@@ -434,7 +434,7 @@
 <h2>Git’s Second Learning Curve</h2>
 <aside class="notes">
 <p>..the additional mountain to climb when learning how to handle merges and conflicts so you can use it collaboratively. <br></p>
-<p>So this talk today is geared towards those of you who may feel that you’re</p>
+<p>This talk today is geared towards those of you who may feel that you’re</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -450,7 +450,7 @@
 <section id="gits-second-learning-curve-1" class="slide level2 section-header" data-background-image="images/middle_curve.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Git’s Second Learning Curve</h2>
 <aside class="notes">
-<p>Right here in the middle.<br> Maybe, you’ve figured out the basics of Git and have general knowledge of what merging in git is<br> but might be a little hesitant like I once was to even deal with git merges or conflicts. <br> Understanding Git merges and conflicts felt impossible at first, but it started to make sense when I realized that using Git collaboratively is alot like…</p>
+<p>Right here in the middle.<br> Maybe, you’ve figured out the basics of Git and have general knowledge of what merging in git is<br> Maybe have even done a few merges already<br> but might be a little hesitant like I once was to even deal with git merges or conflicts. <br> Understanding Git merges and conflicts felt impossible at first, but it started to make sense when I realized that using Git collaboratively is alot like…</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -638,7 +638,7 @@
 <li>Three ways (R Users) can interact with Git
 <ul>
 <li>A CLI Terminal</li>
-<li>The RStudio GUI</li>
+<li>The RStudio GUI | Positron w/ Extensions</li>
 <li>A Third Party Client (e.g.&nbsp;<a href="https://desktop.github.com/download/">GitHub Desktop</a>)</li>
 </ul></li>
 </ul>
@@ -650,8 +650,8 @@
 <li>not interchangeable<br></li>
 <li>GH personal workflow comes later…but<br></li>
 <li>SAY definitions<br></li>
-<li>the fact that alot of people make this mistake is proof that<br></li>
-<li>Alot of reliable ways to interact with git<br></li>
+<li>the fact that alot of people mix these words up is proof that<br></li>
+<li>reliable ways to interact with git<br></li>
 <li>Which for R Users are (click)<br></li>
 <li>Command line interface/Terminal<br></li>
 <li>I want you to all know that…</li>
@@ -672,13 +672,11 @@
 <h2>Do Whatever You want</h2>
 <aside class="notes">
 <ul>
-<li>DWYW<br></li>
-<li>Github isn’t the only thing <br></li>
-<li>DS card being revoked for Not using the terminal <br></li>
-<li>more comfy -&gt; terminal makes sense <br></li>
-<li>But just do what makes sense for your sitch</li>
+<li>Github isn’t the only platform <br></li>
+<li>DS card revoked - for Not using the terminal <br></li>
+<li>more comfortable you become w/ git, youll realize terminal makes sense sometimes <br></li>
+<li>But just do what makes sense for your skilld &amp; sitch <br> Let’s talk about the git merge.</li>
 </ul>
-<p>So now that that’s out the way, let’s talk about the git merge.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -784,11 +782,12 @@
 </div>
 <aside class="notes">
 <ul>
-<li>merging of two local files w/o repo interaction <br> What’s important:<br></li>
+<li>merging of two local branches w/o repo interaction <br> What’s important:<br></li>
 <li>No matter the merge <br></li>
 <li>essential -&gt; Git’s functionality of version control when collaborating <br></li>
-<li>and it allows safe modifications or additions to work <br></li>
-<li>Honestly, That’s all a merge is…<br> -At face value this seems simple<br> <br>So if a merge is <strong>simple in theory…</strong></li>
+<li>important b/c -&gt;safe modifications to work <br></li>
+<li>That’s all it is… seems simple…<br></li>
+<li>So if a merge is <strong>simple in theory…</strong></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -852,7 +851,7 @@
 <h2>People are afraid of git merge conflicts</h2>
 <aside class="notes">
 <ul>
-<li>that’s ok. judgment-free zone <br></li>
+<li>if so? that’s ok. judgment-free zone <br></li>
 <li>I believe to start conquering fears <br></li>
 <li>Learn about what you’re dealing with <br></li>
 <li>So let’s take a moment to understand them</li>
@@ -1005,9 +1004,8 @@
 <h2>Simple Merge Conflict Example</h2>
 <aside class="notes">
 <ul>
-<li>coworker 1 is about done <br></li>
-<li>diff. deliverable -&gt; save new vs.&nbsp;config file <br></li>
-<li>while cw 2 is still working with the orig vs.</li>
+<li>coworker 1 is about done <br>changed config file to go w work</li>
+<li>meanwhile cw 2 is doing theirs w/ the orig vs.</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1062,7 +1060,7 @@
 <section id="simple-merge-conflict-example-4" class="slide level2 section-header" data-background-image="images/conflict_vis_5.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <aside class="notes">
-<p>when Cw2 finished so much time passed, <br> config file is different <br> Now they have a merge conflict <br> So, ok. we have the scenario, let’s see what this conflict looks like in the code</p>
+<p>when Cw2 finished so much time passed, <br> THEIR version of the config file is different <br> Now they have a merge conflict <br> So, ok. we have the scenario, let’s see what this conflict looks like in the code</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1078,25 +1076,15 @@
 <section id="simple-merge-conflict-example-5" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <div class="content">
-<p><img data-src="images/simple_ex_1.png"></p>
-</div>
-</section>
-<section id="simple-merge-conflict-example-6" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
-<h2>Simple Merge Conflict Example</h2>
-<div class="content">
-<p><img data-src="images/simple_ex_1.png"></p>
-<p><img data-src="images/simple_ex_2.png"></p>
-</div>
-</section>
-<section id="simple-merge-conflict-example-7" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
-<h2>Simple Merge Conflict Example</h2>
-<div class="content">
 <p><img data-src="images/simple_ex_1_highlight.png"></p>
 <p><img data-src="images/simple_ex_2_highlight.png"></p>
 </div>
 <aside class="notes">
 <ul>
-<li>This is a content conflict on line 5<br></li>
+<li>Both versions<br></li>
+<li>Master - CW1<br></li>
+<li>HEAD - CW2<br></li>
+<li>Content conflict - line 5 - &gt; diff dates<br></li>
 <li>so, when cw #2 attempted to merge, the resulting <strong>conflict looked like…</strong></li>
 </ul>
 <style type="text/css">
@@ -1111,7 +1099,7 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="simple-merge-conflict-example-8" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<section id="simple-merge-conflict-example-6" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href=""></a><span class="co">#=============================#</span></span>
 <span id="cb1-2"><a href=""></a><span class="co"># Data Cut Dates---------------</span></span>
@@ -1139,7 +1127,7 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="simple-merge-conflict-example-9" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<section id="simple-merge-conflict-example-7" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href=""></a><span class="co">#=============================#</span></span>
 <span id="cb2-2"><a href=""></a><span class="co"># Data Cut Dates---------------</span></span>
@@ -1167,7 +1155,7 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="simple-merge-conflict-example-10" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<section id="simple-merge-conflict-example-8" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href=""></a><span class="co">#=============================#</span></span>
 <span id="cb3-2"><a href=""></a><span class="co"># Data Cut Dates---------------</span></span>
@@ -1197,7 +1185,7 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="simple-merge-conflict-example-11" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<section id="simple-merge-conflict-example-9" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <div class="sourceCode" id="cb4"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href=""></a><span class="co">#=============================#</span></span>
 <span id="cb4-2"><a href=""></a><span class="co"># Data Cut Dates---------------</span></span>
@@ -1228,7 +1216,7 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="simple-merge-conflict-example-12" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<section id="simple-merge-conflict-example-10" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
 <div class="sourceCode" id="cb5"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href=""></a><span class="co">#=============================#</span></span>
 <span id="cb5-2"><a href=""></a><span class="co"># Data Cut Dates---------------</span></span>
@@ -1244,7 +1232,7 @@
 <span id="cb5-12"><a href=""></a><span class="fu">vendor_3_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2023-12-15"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <aside class="notes">
 <ul>
-<li>Everything after that is code that is not conflicted, so left alone <br> So now that we know: <br>- what happened <br>- what the conflict looks like <br> - how to resolve? <br>- Well, when coworker # 2 came to me and asked me that <br> I asked them ; “well, Which date do you want?” <br> -their response was - <strong>next slide…</strong></li>
+<li>Everything after that is code that is not conflicted, so left alone <br> So now that we know: <br>- what happened and what the conflict looked like <br> - how to resolve? <br>- Well, when coworker # 2 came to me and asked me that <br> I asked them… <br> -their response was - <strong>next slide…</strong></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1264,6 +1252,7 @@
 <ul>
 <li>cw2 didnt realize they just had to decide which date</li>
 <li>saw conflict -&gt; spooked</li>
+<li>and broke the 1st step of dealing w/ conflicts which is:</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1288,6 +1277,19 @@
 </center>
 </div>
 </div>
+<aside class="notes">
+<p>Easier said than done<br> biggest reason to <strong>not panic is…</strong></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="resolving-git-merge-conflicts-1" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Resolving Git Merge Conflicts</h2>
@@ -1310,7 +1312,14 @@
 </div>
 </div>
 <aside class="notes">
-<p>it’s OK<br> - think back … had to ask which date<br> - cw2 was expert and knew the answer… - 2 ways to “tuck and roll”</p>
+<ul>
+<li>have to remember -&gt; you are XPT</li>
+<li>in that ex.. I had to ask which date<br></li>
+<li>cw2 was expert and knew the answer…<br></li>
+<li>Now, some ppl may panic b/c -&gt; realize they can’t do anything w/ git when conflict<br></li>
+<li>so if not ready or calm you can (click)…<br></li>
+<li>2 ways to “tuck and roll”</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1336,7 +1345,7 @@
 </div>
 <aside class="notes">
 <ul>
-<li>if you have a conflict - you can’t do anything else<br></li>
+<li>Rstudio -&gt; no pretty icons for aborting merge<br></li>
 <li>in rstudio tab or outside of it<br></li>
 <li>type it directly<br></li>
 <li>time machine<br></li>
@@ -1368,7 +1377,7 @@
 <aside class="notes">
 <ul>
 <li>i.e: switch to ghd, to project repo -&gt; pop-up and click<br></li>
-<li>when ready tackle, <strong>2nd thing to do is..</strong></li>
+<li>when ready to tackle, <strong>2nd thing to do is..</strong></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1695,10 +1704,10 @@
 </div>
 <aside class="notes">
 <ul>
-<li>Git expects you to manually edit the file<br></li>
+<li>manually edit the file<br></li>
 <li>~narrate what’s happening here~<br></li>
-<li>idk why, but i never realized this is all git wanted<br></li>
-<li>did not realize how primitive the situation here is because…</li>
+<li>never realized this is what git wanted<br></li>
+<li>the situation here is primitive…</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {

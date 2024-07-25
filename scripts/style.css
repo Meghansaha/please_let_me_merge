@@ -208,6 +208,12 @@ li:nth-child(n) {
   position: relative;
 }
 
+#resolving-git-merge-conflicts-1 > div > div > div:nth-child(1) > ul > li{
+    font-size: 50pt;
+  margin-left: -20%;
+  width:100%;
+}
+
 #resolving-git-merge-conflicts-2 > div > div > div:nth-child(1) > p > code{
     font-size: 90pt;
     color: rgb(4, 135, 129) !important;

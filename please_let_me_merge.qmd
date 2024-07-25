@@ -38,7 +38,7 @@ transition: fade
 ## Git's First Learning Curve {.section-header background-image="images/first_curve.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: notes
-You have the initial challenge of learning to just use Git, **but then you have the..**
+You have the initial challenge of just installing, let alone, learning to use Git, **but then you have the..**
 :::
 
 ## Git's Second Learning Curve {.section-header background-image="images/second_curve.png" background-size="contain" background-color="#1a1a1a"}
@@ -62,7 +62,7 @@ Understanding Git merges and conflicts felt impossible at first, but it started 
 ## Git is like Driving {.section-header background-image="images/git_driving.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: notes
-Driving.. So let me give an example<br> Last spring, I took a long road trip that I've done by myself and with my husband many times.<br> However, this time was different because it was the first time doing the drive with my teething baby and my well-meaning but slightly overbearing mother in tow. <br> For me, this scenario was similar to my experiences \***using git collaboratively...**
+Driving.. So let me give an example<br> Last spring, I took a long road trip that I've done many times.<br> However, this time was different because it was the first time I was doing the drive with my teething baby and my well-meaning but slightly overbearing mother in tow. <br> For me, this scenario was similar to my experiences \***using git collaboratively...**
 :::
 
 ## Long Road Trips Require Planning {.section-header background-image="images/prep_1.png" background-size="contain" background-color="#1a1a1a"}
@@ -571,6 +571,11 @@ So, ok. we have the scenario, let's see what this conflict looks like in the cod
 
 :::
 
+:::{.notes}
+- This is a content conflict on line 5<br>
+- so, when cw #2 attempted to merge, the resulting **conflict looked like...**
+:::
+
 ## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ```yaml
@@ -695,10 +700,10 @@ vendor_3_data_cut: "2023-12-15"
 <br>
 So now that we know:
 <br>- what happened
-<br>- and what the symbols and everything means
-<br>- How do we resolve this conflict?
+<br>- what the conflict looks like
+<br> - how to resolve?
 <br>- Well, when coworker # 2 came to me and asked me that
-<br> I responded : "Which date do you want?"
+<br> I asked them ; "well, Which date do you want?"
 <br> -their response was - **next slide...**
 :::
 
@@ -740,8 +745,10 @@ So now that we know:
 ::: columns
 
 ::: {.column width="50%"}
-:::{.incremental}
+
   - Usually, conflicts aren't a big deal
+  
+:::{.incremental}
   - You are (hopefully) the expert
   - Walk away if you need to...
 :::
@@ -1073,13 +1080,12 @@ vendor_3_data_cut: "2023-12-15"
 :::
 
 :::{.notes}
-- Have a theory<br>
-- we think git is so smart/complex<br>
-- it's amazing, but more credit than due<br>
-- smart enough to throw a conflict but not  to resolve<br>
-- human steps in == CONTROL<br>
-- Something I had a hard time wrapping my head around<br>
-- what git was expecting of me ... let's look at ex of what git expects you to do...<br>
+- I felt conflict markers made it obvi
+- That git wanted me to pick one or the other...
+- but Something I had a hard time wrapping my head around<br>
+- what git was expecting of me ...<br>
+- Like, literally How??<br>
+- let's look at ex of what git expects you to do..
 :::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1089,10 +1095,9 @@ vendor_3_data_cut: "2023-12-15"
 :::
 
 :::{.notes}
-- manually edit the file, this case pick the right date
-- ~narrate what's happening here~
-- idk why, but i never realized this is all git wanted
-- fears or more rejection
+- Git expects you to manually edit the file<br>
+- ~narrate what's happening here~<br>
+- idk why, but i never realized this is all git wanted<br>
 - did not realize how primitive the situation here is because...
 :::
 
@@ -1105,7 +1110,7 @@ vendor_3_data_cut: "2023-12-15"
 :::
 
 :::{.notes}
-- Don't linger here
+- ~~~Don't linger here~~~
 - You can literally fling yourself into the void
 - You can make something completely new
 - doesn't have to be one or the other
@@ -1184,6 +1189,7 @@ Be Careful...
 :::{.notes}
 - Some of you thinking.. we used an overly easy ex<br>
 - *20 mins ain't alot of time.*<br>
+- Yall come up here and do a more complicated conflict -.- <br>
 - believe me..doesn't matter how complicated, process is the same<br>
 - What makes the process hard or not -> little to do with Git<br>
 - But everything to do with how you prep and plan your work<br>
@@ -1230,7 +1236,7 @@ Communication Problems<br>
 :::
 
 :::{.fragment}
-Workflow/Process Problems
+Workflow Problems
 :::
 
 </center>
@@ -1238,6 +1244,7 @@ Workflow/Process Problems
 :::
 
 :::{.notes}
+- Cycle thru the frags (the below notes come after - work/proc)
 - You can probably never completely avoid conflicts working w/ others<br>
 - But you can lessen the frequency and severity of them
 :::
@@ -1317,7 +1324,7 @@ Communication Problems
 
 ::: content
 <span class="midcallout">
-Workflow/Process Problems
+Workflow Problems
 </span>
 
 - You not doing stuff right<br>

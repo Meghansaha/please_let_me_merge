@@ -417,7 +417,7 @@
 <section id="gits-first-learning-curve" class="slide level2 section-header" data-background-image="images/first_curve.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Git’s First Learning Curve</h2>
 <aside class="notes">
-<p>You have the initial challenge of learning to just use Git, <strong>but then you have the..</strong></p>
+<p>You have the initial challenge of just installing, let alone, learning to use Git, <strong>but then you have the..</strong></p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -466,7 +466,7 @@
 <section id="git-is-like-driving" class="slide level2 section-header" data-background-image="images/git_driving.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Git is like Driving</h2>
 <aside class="notes">
-<p>Driving.. So let me give an example<br> Last spring, I took a long road trip that I’ve done by myself and with my husband many times.<br> However, this time was different because it was the first time doing the drive with my teething baby and my well-meaning but slightly overbearing mother in tow. <br> For me, this scenario was similar to my experiences *<strong>using git collaboratively…</strong></p>
+<p>Driving.. So let me give an example<br> Last spring, I took a long road trip that I’ve done many times.<br> However, this time was different because it was the first time I was doing the drive with my teething baby and my well-meaning but slightly overbearing mother in tow. <br> For me, this scenario was similar to my experiences *<strong>using git collaboratively…</strong></p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1094,6 +1094,22 @@
 <p><img data-src="images/simple_ex_1_highlight.png"></p>
 <p><img data-src="images/simple_ex_2_highlight.png"></p>
 </div>
+<aside class="notes">
+<ul>
+<li>This is a content conflict on line 5<br></li>
+<li>so, when cw #2 attempted to merge, the resulting <strong>conflict looked like…</strong></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="simple-merge-conflict-example-8" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Simple Merge Conflict Example</h2>
@@ -1228,7 +1244,7 @@
 <span id="cb5-12"><a href=""></a><span class="fu">vendor_3_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2023-12-15"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <aside class="notes">
 <ul>
-<li>Everything after that is code that is not conflicted, so left alone <br> So now that we know: <br>- what happened <br>- and what the symbols and everything means <br>- How do we resolve this conflict? <br>- Well, when coworker # 2 came to me and asked me that <br> I responded : “Which date do you want?” <br> -their response was - <strong>next slide…</strong></li>
+<li>Everything after that is code that is not conflicted, so left alone <br> So now that we know: <br>- what happened <br>- what the conflict looks like <br> - how to resolve? <br>- Well, when coworker # 2 came to me and asked me that <br> I asked them ; “well, Which date do you want?” <br> -their response was - <strong>next slide…</strong></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1279,9 +1295,11 @@
 <p><span id="midcallout"> 1. Don’t Panic </span></p>
 <div class="columns">
 <div class="column" style="width:50%;">
+<ul>
+<li>Usually, conflicts aren’t a big deal</li>
+</ul>
 <div>
 <ul>
-<li class="fragment">Usually, conflicts aren’t a big deal</li>
 <li class="fragment">You are (hopefully) the expert</li>
 <li class="fragment">Walk away if you need to…</li>
 </ul>
@@ -1651,13 +1669,12 @@
 </div>
 <aside class="notes">
 <ul>
-<li>Have a theory<br></li>
-<li>we think git is so smart/complex<br></li>
-<li>it’s amazing, but more credit than due<br></li>
-<li>smart enough to throw a conflict but not to resolve<br></li>
-<li>human steps in == CONTROL<br></li>
-<li>Something I had a hard time wrapping my head around<br></li>
-<li>what git was expecting of me … let’s look at ex of what git expects you to do…<br></li>
+<li>I felt conflict markers made it obvi</li>
+<li>That git wanted me to pick one or the other…</li>
+<li>but Something I had a hard time wrapping my head around<br></li>
+<li>what git was expecting of me …<br></li>
+<li>Like, literally How??<br></li>
+<li>let’s look at ex of what git expects you to do..</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1678,10 +1695,9 @@
 </div>
 <aside class="notes">
 <ul>
-<li>manually edit the file, this case pick the right date</li>
-<li>~narrate what’s happening here~</li>
-<li>idk why, but i never realized this is all git wanted</li>
-<li>fears or more rejection</li>
+<li>Git expects you to manually edit the file<br></li>
+<li>~narrate what’s happening here~<br></li>
+<li>idk why, but i never realized this is all git wanted<br></li>
 <li>did not realize how primitive the situation here is because…</li>
 </ul>
 <style type="text/css">
@@ -1703,7 +1719,7 @@
 </div>
 <aside class="notes">
 <ul>
-<li>Don’t linger here</li>
+<li>~<del>Don’t linger here</del>~</li>
 <li>You can literally fling yourself into the void</li>
 <li>You can make something completely new</li>
 <li>doesn’t have to be one or the other</li>
@@ -1802,6 +1818,7 @@
 <ul>
 <li>Some of you thinking.. we used an overly easy ex<br></li>
 <li><em>20 mins ain’t alot of time.</em><br></li>
+<li>Yall come up here and do a more complicated conflict -.- <br></li>
 <li>believe me..doesn’t matter how complicated, process is the same<br></li>
 <li>What makes the process hard or not -&gt; little to do with Git<br></li>
 <li>But everything to do with how you prep and plan your work<br></li>
@@ -1886,12 +1903,13 @@
 <p>Communication Problems<br></p>
 </div>
 <div class="fragment">
-<p>Workflow/Process Problems</p>
+<p>Workflow Problems</p>
 </div>
 </center>
 </div>
 <aside class="notes">
 <ul>
+<li>Cycle thru the frags (the below notes come after - work/proc)</li>
 <li>You can probably never completely avoid conflicts working w/ others<br></li>
 <li>But you can lessen the frequency and severity of them</li>
 </ul>
@@ -1978,7 +1996,7 @@
 <section id="git-conflict-mitigation-5" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Git Conflict Mitigation</h2>
 <div class="content">
-<p><span class="midcallout"> Workflow/Process Problems </span></p>
+<p><span class="midcallout"> Workflow Problems </span></p>
 <ul>
 <li>You not doing stuff right<br></li>
 <li>Write more stuff here</li>

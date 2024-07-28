@@ -484,7 +484,7 @@ If scared of merges, might I suggest.. **scared of conflicts?**
 - conflicts w/ Modification/Deletion of folder itself<br>
 - doesn't seem to scary at first glance<br>
 
-- But, there has to be a reason we're all so afraid of merge conflicts<br>
+- But, there has to be a reason people are afraid of merge conflicts<br>
 - Let's actually look at simple scenario that was similar to something that happened at my job to see if these things are **really scary or not...**
 
 - one day someone asked me to help resolve a conflict
@@ -550,8 +550,6 @@ So, ok. we have the scenario, let's see what this conflict looks like in the cod
 
 :::{.notes}
 - Both versions<br>
-- Master - CW1<br>
-- HEAD - CW2<br>
 - Content conflict - line 5 - > diff dates<br>
 - so, when cw #2 attempted to merge, the resulting **conflict looked like...**
 :::
@@ -577,10 +575,9 @@ vendor_3_data_cut: "2023-12-15"
 ::: {.notes}
 The actual conflict
 <br>
-If this is given you bad feels, it's ok
+If this is giving you anxiety, it's ok, just know
 <br>
-every Git Merge conflict consists of 3 components
-<br> we can pull out here
+every conflict --> 3 components
 :::
 
 ## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -602,11 +599,10 @@ main_data_cut: "2024-06-01"
 ```
 
 ::: {.notes}
-Usually the HEAD (which is the branch you are actively on and trying to merge into something else)
-<br>
-then a conflict marker that has "less-than" signs (start of conflict)
-<br>
-This example: Coworker # 2s branch
+Usually name of commit or branch YOU are on and trying to merge<br>
+HEAD is wherever you are in commit history<br>
+then a conflict marker that has "less-than" signs (start of conflict)<br>
+Then code: Coworker # 2s branch
 :::
 
 ## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -691,7 +687,7 @@ So now that we know:
 ::: {.notes}
 - cw2 didnt realize they just had to decide which date 
 - saw conflict -> spooked
-- and broke the 1st step of dealing w/ conflicts which is:
+- and broke the 1st rule of dealing w/ conflicts which is:
 :::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1039,7 +1035,8 @@ vendor_3_data_cut: "2023-12-15"
 :::{.notes}
 - When I asked cw 2 which date<br>
 - important concept didn't realize<br>
-- git wasn't smart enough
+- git was smart enough -> conflict
+- but not smart enough to know how to resolve
 
 :::
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1067,11 +1064,12 @@ vendor_3_data_cut: "2023-12-15"
 :::
 
 :::{.notes}
-- I felt conflict markers made it obvi
+- Thinking back to my xps ...I felt conflict markers made it obvi
 - That git wanted me to pick one or the other...
 - but Something I had a hard time wrapping my head around<br>
 - what git was expecting of me ...<br>
 - Like, literally How??<br>
+- manually edit the file<br>
 - let's look at ex of what git expects you to do..
 :::
 
@@ -1082,10 +1080,11 @@ vendor_3_data_cut: "2023-12-15"
 :::
 
 :::{.notes}
-- manually edit the file<br>
 - ~narrate what's happening here~<br>
 - never realized this is what git wanted<br>
 - the situation here is primitive...
+- because git is relying on you to tell it what needs to move forward..
+
 :::
 
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1097,7 +1096,7 @@ vendor_3_data_cut: "2023-12-15"
 :::
 
 :::{.notes}
-- ~~~Don't linger here~~~
+- ~Don't linger here~
 - You can literally fling yourself into the void
 - You can make something completely new
 - doesn't have to be one or the other
@@ -1215,15 +1214,15 @@ They are...
 <center>
 
 :::{.fragment}
-Knowledge Gap Problems<br>
-:::
-
-:::{.fragment}
 Communication Problems<br>
 :::
 
 :::{.fragment}
-Workflow Problems
+Workflow Problems<br>
+:::
+
+:::{.fragment}
+Knowledge Gap Problems
 :::
 
 </center>
@@ -1236,6 +1235,175 @@ Workflow Problems
 - But you can lessen the frequency and severity of them
 :::
 
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+
+::: columns
+::: {.column width="50%"}
+<span class="callout">
+Communication
+</span>
+:::
+
+::: {.column width="50%"}
+![](images/communication.gif){width=100%}
+:::
+:::
+:::
+
+:::{.notes}
+- Collabing requires good communication
+- Just like we (hopefully) comm w/ others while driving (signaling)
+- 'Good Communication' can look like a lot of things<br>
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="midcallout">
+Communication
+</span>
+
+- Talking with others before doing any work
+   - <span class="highlight">Who</span> is doing what
+   - <span class="highlight">What</span> is being done
+   - <span class="highlight">When</span> is it being done
+   - <span class="highlight">Where</span> is it being done
+   - <span class="highlight">Why</span> is it being done
+
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="midcallout">
+Communication
+</span>
+
+- Following a universally accepted naming/styling convention for your codebase
+   - Intentional and consistent names for objects and consistent formatting
+       - ["Column Names as Contracts"](https://www.emilyriederer.com/post/column-name-contracts/) - Emily Riederer
+       - ["Tidyverse Style Guide"](https://style.tidyverse.org/index.html)
+       - ["Google Style Guides"](https://google.github.io/styleguide/)
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="midcallout">
+Communication
+</span>
+
+- Use packages to help with styling and styling validation
+    - [`styler`](https://styler.r-lib.org/) package
+    - [`linter`](https://lintr.r-lib.org/index.html) Package
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="midcallout">
+Communication
+</span>
+
+- Leverage Developer Platforms
+    - ["Creating GitHub Pull Request Templates"](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
+
+![](images/gh_template.png)
+    
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="midcallout">
+Communication
+</span>
+
+- Leverage Developer Platforms
+    - ["Creating GitHub Pull Request Templates"](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
+    - ["Managing labels"](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
+
+
+![](images/gh_labels.png)
+    
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="midcallout">
+Communication
+</span>
+
+- Leverage Developer Platforms
+    - ["Creating GitHub Pull Request Templates"](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
+    - ["Managing labels"](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
+    - ["About GitHub Issues"](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
+
+
+![](images/gh_issues.png)
+    
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="midcallout">
+Communication
+</span>
+
+- Leverage Developer Platforms
+    - ["Creating GitHub Pull Request Templates"](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
+    - ["Managing labels"](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
+    - ["About GitHub Issues"](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
+    - ["Use Comments in Pull Requests"](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request)
+
+
+
+![](images/gh_pr_2.png){width=50%}
+    
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="midcallout">
+Communication
+</span>
+
+- Leverage Developer Platforms
+    - ["Creating GitHub Pull Request Templates"](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
+    - ["Managing labels"](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
+    - ["About GitHub Issues"](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
+    - ["Use Comments in Pull Requests"](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request)
+
+
+
+![](images/gh_pr_1.png)
+    
+:::
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="midcallout">
+Workflow Problems
+</span>
+
+- Use tools to make it easier
+  - [GitHub Desktop](https://desktop.github.com/download/)
+  - [GitKraken](https://www.gitkraken.com/)
+  - [Sourcetree](https://www.sourcetreeapp.com/)
+    
+:::
+    
+:::{.notes}
+- maybe you need to learn more about git 
+- Use rstudio w/o terminal - limited in git fxs 
+
+:::
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
@@ -1280,44 +1448,6 @@ Knowledge Gap Problems
 
 :::
 
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-<span class="midcallout">
-Knowledge Gap Problems
-</span>
-
-- Use tools to make it easier
-  - [GitHub Desktop](https://desktop.github.com/download/)
-  - [GitKraken](https://www.gitkraken.com/)
-  - [Sourcetree](https://www.sourcetreeapp.com/)
-    
-:::
-
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-<span class="midcallout">
-Communication Problems
-</span>
-
-- Collaborating with others requires good communication<br>
-- 'Communication' can mean alot of things<br>
-- Write more things here
-    
-:::
-
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-<span class="midcallout">
-Workflow Problems
-</span>
-
-- You not doing stuff right<br>
-- Write more stuff here
-    
-:::
 
 ## I Got This {.section-header background-image="images/5.png" background-size="contain" background-color="#1a1a1a"}
 

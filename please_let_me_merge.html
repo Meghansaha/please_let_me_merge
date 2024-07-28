@@ -968,7 +968,7 @@
 <ul>
 <li><p>conflicts w/ Modification/Deletion of folder itself<br></p></li>
 <li><p>doesn’t seem to scary at first glance<br></p></li>
-<li><p>But, there has to be a reason we’re all so afraid of merge conflicts<br></p></li>
+<li><p>But, there has to be a reason people are afraid of merge conflicts<br></p></li>
 <li><p>Let’s actually look at simple scenario that was similar to something that happened at my job to see if these things are <strong>really scary or not…</strong></p></li>
 <li><p>one day someone asked me to help resolve a conflict</p></li>
 </ul>
@@ -1082,8 +1082,6 @@
 <aside class="notes">
 <ul>
 <li>Both versions<br></li>
-<li>Master - CW1<br></li>
-<li>HEAD - CW2<br></li>
 <li>Content conflict - line 5 - &gt; diff dates<br></li>
 <li>so, when cw #2 attempted to merge, the resulting <strong>conflict looked like…</strong></li>
 </ul>
@@ -1114,7 +1112,7 @@
 <span id="cb1-11"><a href=""></a><span class="fu">vendor_2_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2024-01-05"</span></span>
 <span id="cb1-12"><a href=""></a><span class="fu">vendor_3_data_cut</span><span class="kw">:</span><span class="at"> </span><span class="st">"2023-12-15"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <aside class="notes">
-<p>The actual conflict <br> If this is given you bad feels, it’s ok <br> every Git Merge conflict consists of 3 components <br> we can pull out here</p>
+<p>The actual conflict <br> If this is giving you anxiety, it’s ok, just know <br> every conflict –&gt; 3 components</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1142,7 +1140,7 @@
 <span id="cb2-11"><a href=""></a></span>
 <span id="cb2-12"><a href=""></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <aside class="notes">
-<p>Usually the HEAD (which is the branch you are actively on and trying to merge into something else) <br> then a conflict marker that has “less-than” signs (start of conflict) <br> This example: Coworker # 2s branch</p>
+<p>Usually name of commit or branch YOU are on and trying to merge<br> HEAD is wherever you are in commit history<br> then a conflict marker that has “less-than” signs (start of conflict)<br> Then code: Coworker # 2s branch</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -1252,7 +1250,7 @@
 <ul>
 <li>cw2 didnt realize they just had to decide which date</li>
 <li>saw conflict -&gt; spooked</li>
-<li>and broke the 1st step of dealing w/ conflicts which is:</li>
+<li>and broke the 1st rule of dealing w/ conflicts which is:</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1646,7 +1644,8 @@
 <ul>
 <li>When I asked cw 2 which date<br></li>
 <li>important concept didn’t realize<br></li>
-<li>git wasn’t smart enough</li>
+<li>git was smart enough -&gt; conflict</li>
+<li>but not smart enough to know how to resolve</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1678,11 +1677,12 @@
 </div>
 <aside class="notes">
 <ul>
-<li>I felt conflict markers made it obvi</li>
+<li>Thinking back to my xps …I felt conflict markers made it obvi</li>
 <li>That git wanted me to pick one or the other…</li>
 <li>but Something I had a hard time wrapping my head around<br></li>
 <li>what git was expecting of me …<br></li>
 <li>Like, literally How??<br></li>
+<li>manually edit the file<br></li>
 <li>let’s look at ex of what git expects you to do..</li>
 </ul>
 <style type="text/css">
@@ -1704,10 +1704,10 @@
 </div>
 <aside class="notes">
 <ul>
-<li>manually edit the file<br></li>
 <li>~narrate what’s happening here~<br></li>
 <li>never realized this is what git wanted<br></li>
 <li>the situation here is primitive…</li>
+<li>because git is relying on you to tell it what needs to move forward..</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1728,7 +1728,7 @@
 </div>
 <aside class="notes">
 <ul>
-<li>~<del>Don’t linger here</del>~</li>
+<li>~Don’t linger here~</li>
 <li>You can literally fling yourself into the void</li>
 <li>You can make something completely new</li>
 <li>doesn’t have to be one or the other</li>
@@ -1906,13 +1906,13 @@
 </div>
 <center>
 <div class="fragment">
-<p>Knowledge Gap Problems<br></p>
-</div>
-<div class="fragment">
 <p>Communication Problems<br></p>
 </div>
 <div class="fragment">
-<p>Workflow Problems</p>
+<p>Workflow Problems<br></p>
+</div>
+<div class="fragment">
+<p>Knowledge Gap Problems</p>
 </div>
 </center>
 </div>
@@ -1937,6 +1937,185 @@
 <section id="git-conflict-mitigation" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Git Conflict Mitigation</h2>
 <div class="content">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="callout"> Communication </span></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="images/communication.gif" style="width:100.0%"></p>
+</div>
+</div>
+</div>
+<aside class="notes">
+<ul>
+<li>Collabing requires good communication</li>
+<li>Just like we (hopefully) comm w/ others while driving (signaling)</li>
+<li>‘Good Communication’ can look like a lot of things<br></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="git-conflict-mitigation-1" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Git Conflict Mitigation</h2>
+<div class="content">
+<p><span class="midcallout"> Communication </span></p>
+<ul>
+<li>Talking with others before doing any work
+<ul>
+<li><span class="highlight">Who</span> is doing what</li>
+<li><span class="highlight">What</span> is being done</li>
+<li><span class="highlight">When</span> is it being done</li>
+<li><span class="highlight">Where</span> is it being done</li>
+<li><span class="highlight">Why</span> is it being done</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="git-conflict-mitigation-2" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Git Conflict Mitigation</h2>
+<div class="content">
+<p><span class="midcallout"> Communication </span></p>
+<ul>
+<li>Following a universally accepted naming/styling convention for your codebase
+<ul>
+<li>Intentional and consistent names for objects and consistent formatting
+<ul>
+<li><a href="https://www.emilyriederer.com/post/column-name-contracts/">“Column Names as Contracts”</a> - Emily Riederer</li>
+<li><a href="https://style.tidyverse.org/index.html">“Tidyverse Style Guide”</a></li>
+<li><a href="https://google.github.io/styleguide/">“Google Style Guides”</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="git-conflict-mitigation-3" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Git Conflict Mitigation</h2>
+<div class="content">
+<p><span class="midcallout"> Communication </span></p>
+<ul>
+<li>Use packages to help with styling and styling validation
+<ul>
+<li><a href="https://styler.r-lib.org/"><code>styler</code></a> package</li>
+<li><a href="https://lintr.r-lib.org/index.html"><code>linter</code></a> Package</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="git-conflict-mitigation-4" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Git Conflict Mitigation</h2>
+<div class="content">
+<p><span class="midcallout"> Communication </span></p>
+<ul>
+<li>Leverage Developer Platforms
+<ul>
+<li><a href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository">“Creating GitHub Pull Request Templates”</a></li>
+</ul></li>
+</ul>
+<p><img data-src="images/gh_template.png"></p>
+</div>
+</section>
+<section id="git-conflict-mitigation-5" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Git Conflict Mitigation</h2>
+<div class="content">
+<p><span class="midcallout"> Communication </span></p>
+<ul>
+<li>Leverage Developer Platforms
+<ul>
+<li><a href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository">“Creating GitHub Pull Request Templates”</a></li>
+<li><a href="https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels">“Managing labels”</a></li>
+</ul></li>
+</ul>
+<p><img data-src="images/gh_labels.png"></p>
+</div>
+</section>
+<section id="git-conflict-mitigation-6" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Git Conflict Mitigation</h2>
+<div class="content">
+<p><span class="midcallout"> Communication </span></p>
+<ul>
+<li>Leverage Developer Platforms
+<ul>
+<li><a href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository">“Creating GitHub Pull Request Templates”</a></li>
+<li><a href="https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels">“Managing labels”</a></li>
+<li><a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues">“About GitHub Issues”</a></li>
+</ul></li>
+</ul>
+<p><img data-src="images/gh_issues.png"></p>
+</div>
+</section>
+<section id="git-conflict-mitigation-7" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Git Conflict Mitigation</h2>
+<div class="content">
+<p><span class="midcallout"> Communication </span></p>
+<ul>
+<li>Leverage Developer Platforms
+<ul>
+<li><a href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository">“Creating GitHub Pull Request Templates”</a></li>
+<li><a href="https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels">“Managing labels”</a></li>
+<li><a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues">“About GitHub Issues”</a></li>
+<li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request">“Use Comments in Pull Requests”</a></li>
+</ul></li>
+</ul>
+<p><img data-src="images/gh_pr_2.png" style="width:50.0%"></p>
+</div>
+</section>
+<section id="git-conflict-mitigation-8" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Git Conflict Mitigation</h2>
+<div class="content">
+<p><span class="midcallout"> Communication </span></p>
+<ul>
+<li>Leverage Developer Platforms
+<ul>
+<li><a href="https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository">“Creating GitHub Pull Request Templates”</a></li>
+<li><a href="https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels">“Managing labels”</a></li>
+<li><a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues">“About GitHub Issues”</a></li>
+<li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request">“Use Comments in Pull Requests”</a></li>
+</ul></li>
+</ul>
+<p><img data-src="images/gh_pr_1.png"></p>
+</div>
+</section>
+<section id="git-conflict-mitigation-9" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Git Conflict Mitigation</h2>
+<div class="content">
+<p><span class="midcallout"> Workflow Problems </span></p>
+<ul>
+<li>Use tools to make it easier
+<ul>
+<li><a href="https://desktop.github.com/download/">GitHub Desktop</a></li>
+<li><a href="https://www.gitkraken.com/">GitKraken</a></li>
+<li><a href="https://www.sourcetreeapp.com/">Sourcetree</a></li>
+</ul></li>
+</ul>
+</div>
+<aside class="notes">
+<ul>
+<li>maybe you need to learn more about git</li>
+<li>Use rstudio w/o terminal - limited in git fxs</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="git-conflict-mitigation-10" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<h2>Git Conflict Mitigation</h2>
+<div class="content">
 <p><span class="midcallout"> Knowledge Gap Problems </span></p>
 <ul>
 <li>Learn what you need to, how you need to: (Readers)
@@ -1948,7 +2127,7 @@
 </ul>
 </div>
 </section>
-<section id="git-conflict-mitigation-1" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<section id="git-conflict-mitigation-11" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Git Conflict Mitigation</h2>
 <div class="content">
 <p><span class="midcallout"> Knowledge Gap Problems </span></p>
@@ -1963,7 +2142,7 @@
 </ul>
 </div>
 </section>
-<section id="git-conflict-mitigation-2" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
+<section id="git-conflict-mitigation-12" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Git Conflict Mitigation</h2>
 <div class="content">
 <p><span class="midcallout"> Knowledge Gap Problems </span></p>
@@ -1974,41 +2153,6 @@
 <li><a href="https://education.github.com/git-cheat-sheet-education.pdf">GitHub Git Cheat Sheet</a></li>
 <li><a href="https://practicalgit.com/">Practical Git</a></li>
 </ul></li>
-</ul>
-</div>
-</section>
-<section id="git-conflict-mitigation-3" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
-<h2>Git Conflict Mitigation</h2>
-<div class="content">
-<p><span class="midcallout"> Knowledge Gap Problems </span></p>
-<ul>
-<li>Use tools to make it easier
-<ul>
-<li><a href="https://desktop.github.com/download/">GitHub Desktop</a></li>
-<li><a href="https://www.gitkraken.com/">GitKraken</a></li>
-<li><a href="https://www.sourcetreeapp.com/">Sourcetree</a></li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section id="git-conflict-mitigation-4" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
-<h2>Git Conflict Mitigation</h2>
-<div class="content">
-<p><span class="midcallout"> Communication Problems </span></p>
-<ul>
-<li>Collaborating with others requires good communication<br></li>
-<li>‘Communication’ can mean alot of things<br></li>
-<li>Write more things here</li>
-</ul>
-</div>
-</section>
-<section id="git-conflict-mitigation-5" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
-<h2>Git Conflict Mitigation</h2>
-<div class="content">
-<p><span class="midcallout"> Workflow Problems </span></p>
-<ul>
-<li>You not doing stuff right<br></li>
-<li>Write more stuff here</li>
 </ul>
 </div>
 </section>

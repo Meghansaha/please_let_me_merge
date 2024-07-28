@@ -1296,6 +1296,42 @@ Communication
 Communication
 </span>
 
+Annotate your code with headers, comments, and code sections
+
+  - [Code Sections - R Studio User Guide](https://docs.posit.co/ide/user/ide/guide/code/code-sections.html)
+    
+  - Good things to annotate:
+     - High-level description of outputs
+     - Complicated wrangling operations
+     - Contextual information
+     - Justification of programming decisions
+
+
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+```{r echo = TRUE}
+#=============================================#
+# A Section Header-----------------------------
+#=============================================#
+
+# A Comment that explains the section below#
+
+## A Subsection Header-------------------------
+
+# A Comment that explains the section below#
+
+### A Sub-Subsection Header--------------------
+```
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="midcallout">
+Communication
+</span>
+
 - Use packages to help with styling and styling validation
     - [`styler`](https://styler.r-lib.org/) package
     - [`linter`](https://lintr.r-lib.org/index.html) Package
@@ -1385,33 +1421,143 @@ Communication
 ![](images/gh_pr_1.png)
     
 :::
+
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
-<span class="midcallout">
-Workflow Problems
+
+::: columns
+::: {.column width="50%"}
+<span class="callout">
+Workflow
+</span>
+:::
+
+::: {.column width="50%"}
+![](images/workflow.gif){width=100%}
+:::
+:::
+:::
+
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="callout">
+Workflow
 </span>
 
-- Use tools to make it easier
-  - [GitHub Desktop](https://desktop.github.com/download/)
-  - [GitKraken](https://www.gitkraken.com/)
-  - [Sourcetree](https://www.sourcetreeapp.com/)
+Be thoughtful about how to <span class="highlight">start</span>, <span class="highlight">do</span>, and <span class="highlight">end</span> your coding sessions
+
+  - To <span class="highlight">Start</span>:
+    - Emergencies aren't real 🤷🏾
+    - Check staged commits and/or stashes
+    - On existing branches, ALWAYS pull first
+    - Consider using the [`usethis` package](https://usethis.r-lib.org/index.html)'s [Git functions](https://usethis.r-lib.org/reference/index.html#git-and-github)
+  
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="callout">
+Workflow
+</span>
+
+Be thoughtful about how to <span class="highlight">start</span>, <span class="highlight">do</span>, and <span class="highlight">end</span> your coding sessions
+
+  - To <span class="highlight">Start</span>:
+    - Work in line with your team's preferred [Git Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows)
+    - Play Hot Potato if possible
+    - Confirm that branches are ready to be pulled
+    - Use thoughtful branch names when initializing 
+  
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="callout">
+Workflow
+</span>
+
+Be thoughtful about how to <span class="highlight">start</span>, <span class="highlight">do</span>, and <span class="highlight">end</span> your coding sessions
+
+  - To <span class="highlight">Do</span>:
+    - Commit Often, Push Thoughtfully
+    - Keep commits informative, add amendments to keep them clean
+    - Use [git stashes](https://www.atlassian.com/git/tutorials/saving-changes/git-stash) when there's ✌🏾emergencies✌🏾 
+    - Commits can act as stashes, but inform others
+  
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="callout">
+Workflow
+</span>
+
+Be thoughtful about how to <span class="highlight">start</span>, <span class="highlight">do</span>, and <span class="highlight">end</span> your coding sessions
+
+  - To <span class="highlight">Do</span>:
+    - Lean into spatial awareness and reasoning
+    - Use tools to make it easier if you'd like
+      - [GitHub Desktop](https://desktop.github.com/download/)
+      - [GitKraken](https://www.gitkraken.com/)
+      - [Sourcetree](https://www.sourcetreeapp.com/)
     
 :::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="callout">
+Workflow
+</span>
+
+Be thoughtful about how to <span class="highlight">start</span>, <span class="highlight">do</span>, and <span class="highlight">end</span> your coding sessions
+
+  - To <span class="highlight">End</span>:
+    - Leave nothing behind
+    - You are Reviewer #1
+    - Ensure your work is user-friendly
+    - Leave a decent paper trail
     
+:::
+
+
 :::{.notes}
 - maybe you need to learn more about git 
 - Use rstudio w/o terminal - limited in git fxs 
-
 :::
+
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
-<span class="midcallout">
-Knowledge Gap Problems
+
+::: columns
+::: {.column width="50%"}
+<span class="callout">
+Knowledge
+</span>
+:::
+
+::: {.column width="50%"}
+![](images/knowledge.gif){width=100%}
+:::
+:::
+:::
+
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="callout">
+Knowledge
 </span>
 
-- Learn what you need to, how you need to: (Readers)
+- Learn what you need to, how you need to: <span>(Readers)</span>
   - [Git Reference Manual](https://git-scm.com/docs)
   - [Git Pro Book](https://git-scm.com/book/en/v2)
   - [Happy Git with R](https://happygitwithr.com/)
@@ -1421,12 +1567,12 @@ Knowledge Gap Problems
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
-<span class="midcallout">
-Knowledge Gap Problems
+<span class="callout">
+Knowledge
 </span>
 
-- Learn what you need to, how you need to: (Doers)
-  - [saperlipopette Package](https://maelle.github.io/saperlipopette/index.html)
+- Learn what you need to, how you need to: <span>(Doers)</span>
+  - [saperlipopette Package](https://maelle.github.io/saperlipopette/index.html) - Maelle Salmon
   - [Oh S%@t Git](https://ohshitgit.com/) | [Oh Danggit Git](https://dangitgit.com/en)
   - [Learn Git Branching Site](https://learngitbranching.js.org/)
   - [Oh My Git Game](https://ohmygit.org/)
@@ -1437,11 +1583,11 @@ Knowledge Gap Problems
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
-<span class="midcallout">
-Knowledge Gap Problems
+<span class="callout">
+Knowledge
 </span>
 
-- Learn what you need to, how you need to: (Skimmers)
+- Learn what you need to, how you need to: <span>(Skimmers)</span>
   - [RStudio/Git/GitHub Cheat Sheet](https://rstudio.github.io/cheatsheets/git-github.pdf)
   - [GitHub Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
   - [Practical Git](https://practicalgit.com/)

@@ -1532,8 +1532,8 @@ Knowledge
 
 - Learn what you need to, how you need to: <span>(Readers)</span>
   - [Git Reference Manual](https://git-scm.com/docs)
-  - [Git Pro Book](https://git-scm.com/book/en/v2)
-  - [Happy Git with R](https://happygitwithr.com/)
+  - [Git Pro Book](https://git-scm.com/book/en/v2) - Scott Chacon and Ben Straub
+  - [Happy Git with R](https://happygitwithr.com/) - Jenny Bryan
 
 :::
 
@@ -1546,9 +1546,8 @@ Knowledge
 
 - Learn what you need to, how you need to: <span>(Doers)</span>
   - [saperlipopette Package](https://maelle.github.io/saperlipopette/index.html) - Maelle Salmon
-  - [Oh S%@t Git](https://ohshitgit.com/) | [Oh Danggit Git](https://dangitgit.com/en)
-  - [Learn Git Branching Site](https://learngitbranching.js.org/)
-  - [Oh My Git Game](https://ohmygit.org/)
+  - [Learn Git Branching Site](https://learngitbranching.js.org/) - Peter Cottle
+  - [Oh My Git Game](https://ohmygit.org/) - bleeptrack and blinry
 
 :::
 
@@ -1561,33 +1560,34 @@ Knowledge
 </span>
 
 - Learn what you need to, how you need to: <span>(Skimmers)</span>
+  - [Oh S%@t Git](https://ohshitgit.com/) | [Oh Danggit Git](https://dangitgit.com/en) - Katie Sylor-Miller
   - [RStudio/Git/GitHub Cheat Sheet](https://rstudio.github.io/cheatsheets/git-github.pdf)
   - [GitHub Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
-  - [Practical Git](https://practicalgit.com/)
+  - [Practical Git](https://practicalgit.com/) - Foad Lind
 
 :::
 
 :::{.notes}
-you will eventually get to a point where you say...
+you will eventually get to a point where you'll see a merge conflict and say...
 :::
 
 ## I Got This {.section-header background-image="images/5.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: {.notes}
-Just like with parenting, travelling, and most difficult things in life, there's no tried and true method to success that anyone can just follow when it comes to learning how to resolve git merge conflicts. You'll find plenty of resources explaining the basic concept of conflict resolution, but it's a tricky thing to teach because while most real-world conflicts are simple, all of them require some type of contextual knowledge. The only truly reliable method to learning how to to do certain things like driving or resolving git merge conflicts is through preparation, practice, and exposure.
+Just like with parenting, travelling, and most difficult things in life, there's no tried and true method to success that anyone can just follow when it comes to learning how to resolve merge conflicts. You'll find plenty of resources explaining the basic concept of conflict resolution, but it's a tricky thing to teach because while most conflicts are simple, all of them require some type of contextual knowledge. The only reliable method to learning how to resolve merge conflicts is through preparation, practice, and exposure.
 But for those of you that have been afraid of merge conflicts, or are still afraid, I know that this.. (click)
 :::
 
 ## {.section-header background-image="images/1_end.png" background-size="contain" background-color="#1a1a1a" }
 
 ::: {.notes}
-...scene is probably what it feels like right now, but if you take the time to let the...
+...chaotic scene is probably what it feels like when you run into a conflict right now, but if you take the time to let the...
 :::
 
 ## {.section-header background-image="images/2_end.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: {.notes}
-dust settle and regain your bearings, you and your team can start preparing to work more efficiently by improving gaps in your communication, workflow, and knowledge..
+dust settle and regain your bearings, you and your team can start preparing to work more efficiently
 :::
 
 ## {.section-header background-image="images/3_end.png" background-size="contain" background-color="#1a1a1a"}
@@ -1606,11 +1606,11 @@ It will be less scary, until suddenly..
 
 
 ::: {.notes}
-...you'll realize you don’t have to plead with git to let you merge anymore because You have the power to control the journey your work takes to get... 
+...you'll realize you don’t have to plead with git to let you merge anymore because with confidence, caution, and care, You *do* have the power to control the journey your work takes to get to... 
 :::
 
 ## {.section-header background-image="images/beach.png" background-size="contain" background-color="#1a1a1a"}
 
 :::{.notes}
-...to the destination. Thank You.
+...it's destination. Thank You.
 :::

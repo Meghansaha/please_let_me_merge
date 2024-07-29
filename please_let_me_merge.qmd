@@ -505,37 +505,20 @@ when started -> same vs of config file
 ## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_2.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: {.notes}
-- coworker 1 is about done
-<br>changed config file to go w work
-- meanwhile cw 2 is doing theirs w/ the orig vs.
+- coworker 1 finishes<br>
+- changed config file to go w/ work<br>
+- pushes/merge np<br>
+- meanwhile cw 2 in iteration hell w/ the orig vs.
 :::
+
 ## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_3.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: {.notes}
-- eventually cw 1 done
-<br>
-- pushes/merge np
-
-:::
-
-## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_4.png" background-size="contain" background-color="#1a1a1a"}
-
-::: {.notes}
-- poor cw 2 is stuck in iteration hell
-<br>
-- takes a while, when done, changes config file
-:::
-
-## Simple Merge Conflict Example {.section-header background-image="images/conflict_vis_5.png" background-size="contain" background-color="#1a1a1a"}
-
-::: {.notes}
-when Cw2 finished so much time passed, 
-<br>
-THEIR version of the config file is different
-<br>
-Now they have a merge conflict 
-<br>
+when Cw2 finished, had to update config file<br>
+THEIR version of the config file is different<br>
+Now they have a merge conflict <br>
 So, ok. we have the scenario, let's see what this conflict looks like in the code
+
 :::
 
 ## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1185,20 +1168,10 @@ Be Careful...
 ## Maybe This Won't Be So Bad {.section-header background-image="images/4.png" background-size="contain" background-color="#1a1a1a"}
 
 :::{.notes}
-Now what do I mean? Let's talk about it<br>
-one of the hardest pills to **swallow was realizing...**
-:::
-
-## Conflicts are Not Git Problems {.section-header background-image="images/the_truth1.png" background-size="contain" background-color="#1a1a1a"}
-
-:::{.notes}
+- one of the hardest pills to **swallow was realizing...**<br>
 - spent time being scared
-:::
-
-## Conflicts are Not Git Problems {.section-header background-image="images/the_truth2.png" background-size="contain" background-color="#1a1a1a"}
-
-:::{.notes}
-- really needed to be scared of myself
+- need to be scared of ME (flows and process)
+- You may not realize..
 :::
 
 ## Conflicts are Not Git Problems {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1594,12 +1567,50 @@ Knowledge
 
 :::
 
+:::{.notes}
+you will eventually get to a point where you say...
+:::
 
 ## I Got This {.section-header background-image="images/5.png" background-size="contain" background-color="#1a1a1a"}
 
+::: {.notes}
+Just like with parenting, travelling, and most difficult things in life, there's no tried and true method to success that anyone can just follow when it comes to learning how to resolve git merge conflicts. You'll find plenty of resources explaining the basic concept of conflict resolution, but it's a tricky thing to teach because while most real-world conflicts are simple, all of them require some type of contextual knowledge. The only truly reliable method to learning how to to do certain things like driving or resolving git merge conflicts is through preparation, practice, and exposure.
+But for those of you that have been afraid of merge conflicts, or are still afraid, I know that this.. (click)
+:::
+
 ## {.section-header background-image="images/1_end.png" background-size="contain" background-color="#1a1a1a" }
+
+::: {.notes}
+...scene is probably what it feels like right now, but if you take the time to let the...
+:::
+
 ## {.section-header background-image="images/2_end.png" background-size="contain" background-color="#1a1a1a"}
+
+::: {.notes}
+dust settle and regain your bearings, you and your team can start preparing to work more efficiently by improving gaps in your communication, workflow, and knowledge..
+:::
+
 ## {.section-header background-image="images/3_end.png" background-size="contain" background-color="#1a1a1a"}
+
+::: {.notes}
+And eventually, each time you run into a merge conflict...
+:::
+
 ## {.section-header background-image="images/4_end.png" background-size="contain" background-color="#1a1a1a"}
+
+::: {.notes}
+It will be less scary, until suddenly..
+:::
+
 ## {.section-header background-image="images/5_end.png" background-size="contain" background-color="#1a1a1a"}
 
+
+::: {.notes}
+...you'll realize you don’t have to plead with git to let you merge anymore because You have the power to control the journey your work takes to get... 
+:::
+
+## {.section-header background-image="images/beach.png" background-size="contain" background-color="#1a1a1a"}
+
+:::{.notes}
+...to the destination. Thank You.
+:::

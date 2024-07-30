@@ -55,8 +55,7 @@ This talk today is geared towards those of you who may feel that you're
 Right here in the middle.<br>
 Maybe, you've figured out the basics of Git and have general knowledge of what merging in git is<br>
 Maybe have even done a few merges already<br>
-but might be a little hesitant like I once was to even deal with merges conflicts.
-<br>
+but might be a little hesitant like I once was to even deal with merges conflicts.<br>
 Understanding Git merges and conflicts felt impossible at first, but it started to make sense when I realized that using Git collaboratively is alot like…
 :::
 

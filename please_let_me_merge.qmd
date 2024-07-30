@@ -55,7 +55,7 @@ This talk today is geared towards those of you who may feel that you're
 Right here in the middle.<br>
 Maybe, you've figured out the basics of Git and have general knowledge of what merging in git is<br>
 Maybe have even done a few merges already<br>
-but might be a little hesitant like I once was to even deal with git merges or conflicts.
+but might be a little hesitant like I once was to even deal with merges conflicts.
 <br>
 Understanding Git merges and conflicts felt impossible at first, but it started to make sense when I realized that using Git collaboratively is alot like…
 :::
@@ -165,45 +165,13 @@ So before we talk about merges, conflicts, and collaboration let's talk about so
 <br>
 - DS card revoked - for Not using the terminal
 <br>
-- more comfortable you become w/ git, youll realize terminal makes sense sometimes
+- although sometimes, using the terminal makes sense..
 <br>
-- But just do what makes sense for your skilld & sitch
+- But just do what makes sense for your skills & sitch
 <br>
 Let's talk about the git merge.
 :::
 
-## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-
-::: columns
-::: {.column width="50%"}
-
-<br><br>
-"Join two or more development histories *(Branches)* together"
-
-<br><br>
-
-<small>[Git Merge Docs](https://git-scm.com/docs/git-merge) *("Git - git-merge Documentation")*</small>
-
-:::
-
-::: {.column width="50%"}
-
-:::
-
-:::
-
-:::{.notes}
-- development history == "A Branch"
-<br>
-- Merges come in different flavors
-<br>
-- Usually via pushes and pulls
-<br>
-- some types more common
-<br>
-
-:::
 
 ## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -232,10 +200,12 @@ Let's talk about the git merge.
 
 :::{.notes}
 
+- Merges come in different flavors
 <br>
-- One of the most common
+- Usually via pushes and pulls
 <br>
-- Pushing new work from our local to repo
+- Two of the most common are..
+<br>
 :::
 
 ## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -260,48 +230,10 @@ Let's talk about the git merge.
 :::
 
 :::{.notes}
-<br>
-- another common one
-<br>
-- Pulling new work from repo to local
-:::
-
-## What is a Git Merge? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: columns
-::: {.column width="50%"}
-
-<br><br>
-"Join two or more development histories *(Branches)* together"
-
-<br><br>
-
-<small>[Git Merge Docs](https://git-scm.com/docs/git-merge) *("Git - git-merge Documentation")*</small>
-
-:::
-
-::: {.column width="50%"}
-
-![](images/git_merge3.png)
-:::
-
-:::
-
-
-
-:::{.notes}
-
-- merging of two local branches w/o repo interaction
-<br>
-What's important:<br>
-- No matter the merge
-<br>
-- essential -> Git's functionality of version control when collaborating
-<br>
-- important b/c ->safe modifications to work
-<br>
-- That's all it is... seems simple...<br>
-- So if a merge is **simple in theory...**
+- And the reverse<br>
+merges allow for safe modifications to work when working w/ others<br>
+- That's all a merge is... seems simple...<br>
+- why scary?
 :::
 
 ## Why is a Git Merge Scary? {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -532,7 +464,7 @@ So, ok. we have the scenario, let's see what this conflict looks like in the cod
 :::
 
 :::{.notes}
-- Both versions<br>
+- Both versions<br> (Repository and CoWorker # 2s)
 - Content conflict - line 5 - > diff dates<br>
 - so, when cw #2 attempted to merge, the resulting **conflict looked like...**
 :::
@@ -558,9 +490,9 @@ vendor_3_data_cut: "2023-12-15"
 ::: {.notes}
 The actual conflict
 <br>
-If this is giving you anxiety, it's ok, just know
+If this is giving you anxiety, it's ok
 <br>
-every conflict --> 3 components
+may help -> every conflict --> 3 components
 :::
 
 ## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -582,10 +514,9 @@ main_data_cut: "2024-06-01"
 ```
 
 ::: {.notes}
-Usually name of commit or branch YOU are on and trying to merge<br>
-HEAD is wherever you are in commit history<br>
-then a conflict marker that has "less-than" signs (start of conflict)<br>
-Then code: Coworker # 2s branch
+Top of conflict is usually the branch/commit YOU are on and trying to merge<br>
+Youll see conflict marker-  "less-than" signs (start of conflict)<br>
+Then conflicted code on your branch
 :::
 
 ## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -607,7 +538,7 @@ main_data_cut: "2024-06-01"
 ```
 
 ::: {.notes}
-- conflict divider which separates Your version of code..
+- conflict divider (equal) which separates Your version of code..
 :::
 
 
@@ -632,9 +563,9 @@ main_data_cut: "2024-01-01"
 ::: {.notes}
 - From the version you are trying to merge into
 <br>
-- This case, master/Coworker # 1's modifications
+- This case, master repository
 <br>
-conflict ends - last conflict marker (greater-than) signs
+last conflict marker (greater-than) signs -> end
 :::
 
 ## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -655,7 +586,7 @@ vendor_3_data_cut: "2023-12-15"
 
 ```
 ::: {.notes}
-- Everything after that is code that is not conflicted, so left alone
+- Everything after that is code that is not conflicted, same of both vs, so left alone
 <br>
 So now that we know:
 <br>- what happened and what the conflict looked like
@@ -1425,9 +1356,13 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
   - To <span class="highlight">Start</span>:
     - Emergencies aren't real 🤷🏾
     - Check staged commits and/or stashes
-    - On existing branches, ALWAYS pull first
     - Consider using the [`usethis` package](https://usethis.r-lib.org/index.html)'s [Git functions](https://usethis.r-lib.org/reference/index.html#git-and-github)
   
+:::
+
+:::{.notes}
+- Don't be bullied into getting flustered for "emergencies"<br>
+- usethis -> helpful when working with PRs
 :::
 
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1443,7 +1378,7 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
     - Work in line with your team's preferred [Git Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows)
     - Play Hot Potato if possible
     - Confirm that branches are ready to be pulled
-    - Use thoughtful branch names when initializing 
+    - **ALWAYS** pull first before touching **ANYTHING**
   
 :::
 
@@ -1460,7 +1395,6 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
     - Commit Often, Push Thoughtfully
     - Keep commits informative, add amendments to keep them clean
     - Use [git stashes](https://www.atlassian.com/git/tutorials/saving-changes/git-stash) when there's ✌🏾emergencies✌🏾 
-    - Commits can act as stashes, but inform others
   
 :::
 

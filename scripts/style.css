@@ -842,17 +842,12 @@ li:nth-child(n) {
   margin-top: -5%;
 }
 
-#git-conflict-mitigation-12 > div > ul > li > ul > li:nth-child(3) > code{
+#git-conflict-mitigation-12 > div > ul > li > ul > li:nth-child(3) > a:nth-child(1) > code{
   font-size: 50pt !important;
   color: rgb(4, 135, 129);
 }
 
 #git-conflict-mitigation-12 > div > ul > li > ul > li:nth-child(3) > ul > li > code{
-  font-size: 50pt !important;
-  color: rgb(4, 135, 129);
-}
-
-#git-conflict-mitigation-12 > div > ul > li > ul > li:nth-child(4) > a:nth-child(1) > code{
   font-size: 50pt !important;
   color: rgb(4, 135, 129);
 }

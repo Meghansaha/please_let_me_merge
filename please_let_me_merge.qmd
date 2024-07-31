@@ -38,7 +38,7 @@ transition: fade
 ## Git's First Learning Curve {.section-header background-image="images/first_curve.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: notes
-You have the initial challenge of just installing, let alone, learning to use Git, **but then you have the..**
+You have the initial challenge of just learning to use Git, **but then you have the..**
 :::
 
 ## Git's Second Learning Curve {.section-header background-image="images/second_curve.png" background-size="contain" background-color="#1a1a1a"}
@@ -55,7 +55,7 @@ This talk today is geared towards those of you who may feel that you're
 Right here in the middle.<br>
 Maybe, you've figured out the basics of Git and have general knowledge of what merging in git is<br>
 Maybe have even done a few merges already<br>
-but might be a little hesitant like I once was to even deal with merges conflicts.<br>
+but might be a little hesitant like I once was to even deal with merge conflicts.<br>
 Understanding Git merges and conflicts felt impossible at first, but it started to make sense when I realized that using Git collaboratively is alot like…
 :::
 
@@ -68,7 +68,7 @@ Driving.. So let me give an example<br> Last spring, I took a long road trip tha
 ## Long Road Trips Require Planning {.section-header background-image="images/prep_1.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: notes
-..Just like I have the urge to make compulsive packing lists **before my road trips...**
+..Just like I make compulsive packing lists **before my road trips...**
 :::
 
 ## Collaborating With Git Requires Planning {.section-header background-image="images/prep_2.png" background-size="contain" background-color="#1a1a1a"}
@@ -111,7 +111,7 @@ Having my mother in the car, providing maybe a little too much **love and care t
 
 ::: notes
 ...felt like Git wanting to help me with my code, but actually creating more work for justified reasons.<br><br>
-As you can probably guess, I was Stressed on this road trip. I knew how to take care of my baby and drive, but I suddenly felt like I had to learn these things all over again.
+I was Stressed on this road trip. I knew how to take care of my baby and drive, but I suddenly felt like I had to learn these things all over again.
 <br><br>
 And honestly, I felt the same with Git. To understand how to work collaboratively with Git, I realized I needed to have a better understanding of it, because that lack of knowledge **lead me to say things like...**
 :::
@@ -145,15 +145,13 @@ So before we talk about merges, conflicts, and collaboration let's talk about so
 :::
 
 :::{.notes}
-- Github is synonymous with Git
 - not interchangeable<br>
 - GH personal workflow comes later...but<br>
 - SAY definitions<br>
 - the fact that alot of people mix these words up is proof that<br>
 - reliable ways to interact with git<br>
 - Which for R Users are (click)<br>
-- Command line interface/Terminal<br>
-- I want you to all know that...
+- Command line interface
 
 :::
 
@@ -163,8 +161,6 @@ So before we talk about merges, conflicts, and collaboration let's talk about so
 - Github isn't the only platform
 <br>
 - DS card revoked - for Not using the terminal
-<br>
-- although sometimes, using the terminal makes sense..
 <br>
 - But just do what makes sense for your skills & sitch
 <br>
@@ -201,9 +197,9 @@ Let's talk about the git merge.
 
 - Merges come in different flavors
 <br>
-- Usually via pushes and pulls
+- Usually via pushes
 <br>
-- Two of the most common are..
+- when pushing new work up...and
 <br>
 :::
 
@@ -229,9 +225,10 @@ Let's talk about the git merge.
 :::
 
 :::{.notes}
-- And the reverse<br>
-merges allow for safe modifications to work when working w/ others<br>
-- That's all a merge is... seems simple...<br>
+- pulls when pulling new work down<br>
+- Merges -> important
+- merges allow for safe modifications to work when working w/ others<br>
+- That's all a merge is... so seems simple enough...<br>
 - why scary?
 :::
 
@@ -487,11 +484,9 @@ vendor_3_data_cut: "2023-12-15"
 ```
 
 ::: {.notes}
-The actual conflict
-<br>
-If this is giving you anxiety, it's ok
-<br>
-may help -> every conflict --> 3 components
+If this is giving you anxiety, it's ok<br>
+may help w/ anxiety -> every conflict<br>
+3 components - no matter how complex
 :::
 
 ## Simple Merge Conflict Example {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -660,7 +655,7 @@ biggest reason to **not panic is...**
 - cw2 was expert and knew the answer...<br>
 - Now, some ppl may panic b/c -> realize they can't do anything w/ git when conflict<br>
 - so if not ready or calm you can (click)...<br>
-- 2 ways to "tuck and roll"
+- If rstudio use like myself.. 2 ways to "tuck and roll"
 :::
 ## Resolving Git Merge Conflicts {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 

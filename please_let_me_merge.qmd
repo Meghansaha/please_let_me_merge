@@ -146,7 +146,7 @@ So before we talk about merges, conflicts, and collaboration let's talk about so
 
 :::{.notes}
 - not interchangeable<br>
-- GH personal workflow comes later...but<br>
+- Briefly - touch on - GH personal workflow later..<br>
 - SAY definitions<br>
 - the fact that alot of people mix these words up is proof that<br>
 - reliable ways to interact with git<br>
@@ -226,8 +226,8 @@ Let's talk about the git merge.
 
 :::{.notes}
 - pulls when pulling new work down<br>
-- Merges -> important
-- merges allow for safe modifications to work when working w/ others<br>
+- No matter the type, Merges -> important
+- b/c allow for us to safely modify work when collaborating w/ others<br>
 - That's all a merge is... so seems simple enough...<br>
 - why scary?
 :::
@@ -1128,9 +1128,12 @@ Knowledge Gap Problems
 :::
 
 :::{.notes}
-- Cycle thru the frags (the below notes come after - work/proc)
+- Cycle thru the frags (the below notes come after - work/proc)<br>
 - You can probably never completely avoid conflicts working w/ others<br>
-- But you can lessen the frequency and severity of them
+- But you can lessen the frequency and severity of them<br>
+- Not a lot of time left -> can't go in depth<br>
+- hope I can plant the seed -> inspire you to think critically<br>
+- Anything highlighted is a link to a resource and is on my github
 :::
 
 
@@ -1173,6 +1176,12 @@ Communication
 
 :::
 
+:::{.notes}
+- reduces miscommunication
+- allows for a plan about workflow/review process
+:::
+
+
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
@@ -1185,6 +1194,12 @@ Communication
        - ["Column Names as Contracts"](https://www.emilyriederer.com/post/column-name-contracts/) - Emily Riederer
        - ["Tidyverse Style Guide"](https://style.tidyverse.org/index.html)
        - ["Google Style Guides"](https://google.github.io/styleguide/)
+:::
+
+:::{.notes}
+- make sure everyone styling the same <br>
+- sucks having a conflict due to whitespace/formatting
+
 :::
 
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1204,7 +1219,14 @@ Annotate your code with headers, comments, and code sections
      - Contextual information
      - Justification of programming decisions
 
+:::
 
+:::{.notes}
+- obv, not everything but list of some things:<br>
+- annotation isn't something that directly reduces conflict<br>
+- But clear intention in code does<br>
+- ex: when you want one part of code untouched if you are working on something
+- if you need to see an example
 :::
 
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1235,6 +1257,12 @@ Communication
     - [`linter`](https://lintr.r-lib.org/index.html) Package
 :::
 
+:::{.notes}
+- also packages can help with styling<br>
+- styler has functions to automatically style files<br>
+- linter helps to validate that a file is styled properly
+:::
+
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
@@ -1249,6 +1277,11 @@ Communication
     
 :::
 
+:::{.notes}
+- My team uses github extensively<br>
+- PR templates to make it easier to give details about work (auto pop - conversation tab when PR created)<br>
+- can insert checklists to ensure things are done before merging
+:::
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
@@ -1263,6 +1296,12 @@ Communication
 
 ![](images/gh_labels.png)
     
+:::
+
+:::{.notes}
+- My team can tell you how colorful my repositroies are on GH b/c labels<br>
+- create tags for anything<br>
+- perfect for organizing needs, status, and context
 :::
 
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1280,6 +1319,10 @@ Communication
 
 ![](images/gh_issues.png)
     
+:::
+
+:::{.notes}
+- Issues are a parking lot - so everyone aware
 :::
 
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1320,6 +1363,36 @@ Communication
     
 :::
 
+:::{.notes}
+- I treat it as a transcript/manifest what in the PR<br>
+- Any relevant external stuff that happened too
+:::
+
+## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
+
+::: content
+<span class="midcallout">
+Communication
+</span>
+
+- Leverage Developer Platforms
+    - ["Creating GitHub Pull Request Templates"](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
+    - ["Managing labels"](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
+    - ["About GitHub Issues"](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
+    - ["Use Comments in Pull Requests"](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request)
+    - ["Use Branch Rules and Protection"](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule)
+
+
+![](images/gh_rules.png){width=50%}
+    
+:::
+
+:::{.notes}
+- Branch protection rules - communicate that someone attempted to go against intended workflow<br>
+- strong way to ensure work progresses as intended<br>
+- predictability/reliablity can limit conflicts
+:::
+
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
@@ -1355,8 +1428,9 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
 :::
 
 :::{.notes}
-- Don't be bullied into getting flustered for "emergencies"<br>
-- usethis -> helpful when working with PRs
+- First off, Don't be bullied into getting flustered for "emergencies"<br>
+- usethis -> helpful when working with PRs <br>
+- nice features like ensuring you're branching off of master/main and other things
 :::
 
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1376,6 +1450,10 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
   
 :::
 
+:::{.notes}
+- Probably the best way to mitigate a lot of conflicts, pulling before doing anything!
+:::
+
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
@@ -1390,6 +1468,13 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
     - Keep commits informative, add amendments to keep them clean
     - Use [git stashes](https://www.atlassian.com/git/tutorials/saving-changes/git-stash) when there's ✌🏾emergencies✌🏾 
   
+:::
+
+:::{.notes}
+- large projects should be broken down<br>
+- but related tasks youd put in sep commits can just be in one with amendments<br>
+- Itll make for clean history, and ensure there's no stragglers for someone else<br>
+- Stashes are great for unfinished work that doesnt meet your team's workflow standards yet
 :::
 
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1408,6 +1493,13 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
       - [GitKraken](https://www.gitkraken.com/)
       - [Sourcetree](https://www.sourcetreeapp.com/)
     
+:::
+
+:::{.notes}
+- Be spatially aware of where you are in work<br>
+- any PRs dependent on your work<br>
+- you waiting for PRs?<br>
+- will you have to merge multiple branches together before rolling into repository?
 :::
 
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1429,7 +1521,10 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
 
 
 :::{.notes}
-- maybe you need to learn more about git 
+- Big way to avoid conflicts is to leave no trace when done<br>
+- Before sending code to some else, check it yourself and sleep on it if able<br>
+- ensure your work is clear, reproducible, and documented by.. (last two bulls)<br>
+- maybe you need to learn more about git <br>
 - Use rstudio w/o terminal - limited in git fxs 
 :::
 
@@ -1465,6 +1560,10 @@ Knowledge
 
 :::
 
+:::{.notes}
+Learn how you need to, so if you read...
+:::
+
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: content
@@ -1479,6 +1578,12 @@ Knowledge
 
 :::
 
+:::{.notes}
+If you need to actually do things to learn (best way in my xp)<br>
+- package: SAH-PEAR-LEE-POO-PET - (MAI-EllE SAH-MOLN) - practice various git operations on your system<br>
+- LGB - interactive site to learn about branching in git
+- OMG - open source game - learning git
+:::
 
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -1496,13 +1601,18 @@ Knowledge
 :::
 
 :::{.notes}
-you will eventually get to a point where you'll see a merge conflict and say...
+If you ain't got time for all that, there's good sources to skim too<br><br>
+So I know I just threw so much information at you all, but like I said,
+I hope that when you're back home, you'll return to these resources
+and take the time to consider what may work for you and your team.
+<br><br>
+My hope would be that you'd gradually improve your communication, workflows, and overall knowledge with the goal of eventually getting to a point where you see a merge conflict and say...
 :::
 
 ## I Got This {.section-header background-image="images/5.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: {.notes}
-Just like with parenting, travelling, and most difficult things in life, there's no tried and true method to success that anyone can just follow when it comes to learning how to resolve merge conflicts. You'll find plenty of resources explaining the basic concept of conflict resolution, but it's a tricky thing to teach because while most conflicts are simple, all of them require some type of contextual knowledge. The only reliable method to learning how to resolve merge conflicts is through preparation, practice, and exposure.
+Because, just like with parenting, travelling, and most difficult things in life, there's no tried and true method to success that anyone can just follow. This is especially true when learning how to resolve merge conflicts. You'll find plenty of resources explaining the basic concept of merge conflict resolution, but it's a tricky thing to teach because while most conflicts are simple, all of them require some type of contextual knowledge. The only reliable method to learning how to resolve merge conflicts is through preparation, practice, and exposure.<br>
 But for those of you that have been afraid of merge conflicts, or are still afraid, I know that this.. (click)
 :::
 

@@ -1259,12 +1259,13 @@ Communication
     - ["Use Comments in Pull Requests"](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request)
     - ["Use Branch Rules and Protection"](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule)
 
+![](images/gh_template.png){width=50%}
 :::
 
 :::{.notes}
 - Branch protection rules - communicate that someone attempted to go against intended workflow<br>
 - strong way to ensure work progresses as intended<br>
-- predictability/reliablity can limit conflicts
+- predictability/reliability can limit conflicts
 :::
 
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}

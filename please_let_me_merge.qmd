@@ -736,7 +736,6 @@ Have a Third Party handle it...
 :::
 
 :::{.notes}
-- takes practice, but instinct after not panicking is to take a look<br>
 - like i said, most aren't bad - could be simple.
 :::
 
@@ -1194,6 +1193,7 @@ Communication
        - ["Column Names as Contracts"](https://www.emilyriederer.com/post/column-name-contracts/) - Emily Riederer
        - ["Tidyverse Style Guide"](https://style.tidyverse.org/index.html)
        - ["Google Style Guides"](https://google.github.io/styleguide/)
+
 :::
 
 :::{.notes}
@@ -1209,7 +1209,7 @@ Communication
 Communication
 </span>
 
-Annotate your code with headers, comments, and code sections
+- Annotate your code with headers, comments, and code sections
 
   - [Code Sections - R Studio User Guide](https://docs.posit.co/ide/user/ide/guide/code/code-sections.html)
     
@@ -1226,7 +1226,6 @@ Annotate your code with headers, comments, and code sections
 - annotation isn't something that directly reduces conflict<br>
 - But clear intention in code does<br>
 - ex: when you want one part of code untouched if you are working on something
-- if you need to see an example
 :::
 
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1245,128 +1244,6 @@ Annotate your code with headers, comments, and code sections
 ### A Sub-Subsection Header--------------------
 ```
 
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-<span class="midcallout">
-Communication
-</span>
-
-- Use packages to help with styling and styling validation
-    - [`styler`](https://styler.r-lib.org/) package
-    - [`linter`](https://lintr.r-lib.org/index.html) Package
-:::
-
-:::{.notes}
-- also packages can help with styling<br>
-- styler has functions to automatically style files<br>
-- linter helps to validate that a file is styled properly
-:::
-
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-<span class="midcallout">
-Communication
-</span>
-
-- Leverage Developer Platforms
-    - ["Creating GitHub Pull Request Templates"](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
-
-![](images/gh_template.png)
-    
-:::
-
-:::{.notes}
-- My team uses github extensively<br>
-- PR templates to make it easier to give details about work (auto pop - conversation tab when PR created)<br>
-- can insert checklists to ensure things are done before merging
-:::
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-<span class="midcallout">
-Communication
-</span>
-
-- Leverage Developer Platforms
-    - ["Creating GitHub Pull Request Templates"](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
-    - ["Managing labels"](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
-
-
-![](images/gh_labels.png)
-    
-:::
-
-:::{.notes}
-- My team can tell you how colorful my repositroies are on GH b/c labels<br>
-- create tags for anything<br>
-- perfect for organizing needs, status, and context
-:::
-
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-<span class="midcallout">
-Communication
-</span>
-
-- Leverage Developer Platforms
-    - ["Creating GitHub Pull Request Templates"](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
-    - ["Managing labels"](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
-    - ["About GitHub Issues"](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
-
-
-![](images/gh_issues.png)
-    
-:::
-
-:::{.notes}
-- Issues are a parking lot - so everyone aware
-:::
-
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-<span class="midcallout">
-Communication
-</span>
-
-- Leverage Developer Platforms
-    - ["Creating GitHub Pull Request Templates"](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
-    - ["Managing labels"](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
-    - ["About GitHub Issues"](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
-    - ["Use Comments in Pull Requests"](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request)
-
-
-
-![](images/gh_pr_2.png){width=50%}
-    
-:::
-
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-<span class="midcallout">
-Communication
-</span>
-
-- Leverage Developer Platforms
-    - ["Creating GitHub Pull Request Templates"](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
-    - ["Managing labels"](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
-    - ["About GitHub Issues"](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
-    - ["Use Comments in Pull Requests"](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request)
-
-
-
-![](images/gh_pr_1.png)
-    
-:::
-
-:::{.notes}
-- I treat it as a transcript/manifest what in the PR<br>
-- Any relevant external stuff that happened too
-:::
 
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -1382,9 +1259,6 @@ Communication
     - ["Use Comments in Pull Requests"](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request)
     - ["Use Branch Rules and Protection"](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule)
 
-
-![](images/gh_rules.png){width=50%}
-    
 :::
 
 :::{.notes}

@@ -1134,6 +1134,7 @@ Knowledge Gap Problems
 - Links on the slides are active and this information is on my github for you to review later<br>
 - Even though I have to skim by these, I hope I can plant the seed -> inspire you/team to think critically<br>
 - start w/ comms - 'Good Communication' can look like a lot of things<br>
+- first think of talking to people<br>
 :::
 
 
@@ -1154,9 +1155,9 @@ Communication
 :::
 
 :::{.notes}
-- first think of talking to people<br>
-- reduces miscommunication<br>
-- allows for team -> plan about workflow/review process
+- basic, obvious questions, but..
+- explicit convos reduce miscomms<br>
+- convos allows for team to plan workflow and code review process
 :::
 
 
@@ -1176,7 +1177,7 @@ Communication
 
 :::{.notes}
 - Communicating in your code is also import!<br>
-- make sure everyone styling the same <br>
+- make sure everyone styling the same - sounds nitpciky?? <br>
 - sucks having a conflict due to whitespace/formatting<br>
 - annotation isn't something that directly reduces conflict<br>
 - dont have to annotate everything...<br>
@@ -1206,8 +1207,6 @@ Communication
 - My team uses github heavily, wish I could give a whole talk on just this topic<br>
 - But know, these are active links and in my everday toolkit<br>
 - if you use Gh, and don't know things or aren't using them, Strongly encourage you to explore<br>
-- obi conflict mitigation -> Branch protection rules - communicate that someone attempted to go against intended workflow<br>
-- strong way to ensure work progresses as intended<br>
 - Next, probably the most important aspect of mitigation ... addressing workflow
 :::
 
@@ -1224,7 +1223,9 @@ Be thoughtful <span class="highlight">before</span>, <span class="highlight">dur
   - <span class="highlight">Before</span> You Code:
     - Emergencies aren't real 🤷🏾
     - Check staged commits and/or stashes
-    - Consider using the [`usethis` package](https://usethis.r-lib.org/index.html)'s [Git functions](https://usethis.r-lib.org/reference/index.html#git-and-github)
+    - Confirm that branches are ready to be pulled
+    - **ALWAYS** pull first before touching **ANYTHING**
+
   
 :::
 
@@ -1232,52 +1233,9 @@ Be thoughtful <span class="highlight">before</span>, <span class="highlight">dur
 - Think of workflow as three parts: what you should do before, during, after:
 - First off, Don't be bullied into getting flustered for "emergencies"<br>
 - I feel VERY strongly about this<br>
-- usethis -> helpful when working with PRs <br>
-- nice features like ensuring you're branching off of master/main and other things
-:::
-
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-<span class="callout">
-Workflow
-</span>
-
-Be thoughtful <span class="highlight">before</span>, <span class="highlight">during</span>, and <span class="highlight">after</span> your coding sessions
-
-  - <span class="highlight">Before</span> You Code::
-    - Work in line with your team's preferred [Git Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows)
-    - Confirm that branches are ready to be pulled
-    - **ALWAYS** pull first before touching **ANYTHING**
-  
-:::
-
-:::{.notes}
 - Probably the best way to mitigate a lot of conflicts, pulling before doing anything!
 :::
 
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-<span class="callout">
-Workflow
-</span>
-
-Be thoughtful <span class="highlight">before</span>, <span class="highlight">during</span>, and <span class="highlight">after</span> your coding sessions
-
-  - <span class="highlight">During</span> Your Coding:
-    - Commit Often, Push Thoughtfully
-    - Keep commits informative, add amendments to keep them clean
-    - Use [git stashes](https://www.atlassian.com/git/tutorials/saving-changes/git-stash) when there's ✌🏾emergencies✌🏾 
-  
-:::
-
-:::{.notes}
-- large projects should be broken down<br>
-- but related tasks youd put in sep commits can just be in one with amendments<br>
-- Itll make for clean history, and ensure there's no stragglers for someone else<br>
-- Stashes are great for unfinished work that doesnt meet your team's workflow standards yet
-:::
 
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -1290,20 +1248,23 @@ Be thoughtful <span class="highlight">before</span>, <span class="highlight">dur
 
   - <span class="highlight">During</span> Your Coding:
     - Lean into spatial awareness and reasoning
-    - Use tools to make it easier if you'd like
-      - [GitHub Desktop](https://desktop.github.com/download/)
-      - [GitKraken](https://www.gitkraken.com/)
-      - [Sourcetree](https://www.sourcetreeapp.com/)
-    
+    - Commit Often, Push Thoughtfully
+    - Keep commits informative, add amendments to keep them clean
+    - Use [git stashes](https://www.atlassian.com/git/tutorials/saving-changes/git-stash) when there's ✌🏾emergencies✌🏾 
+  
 :::
 
 :::{.notes}
-- Be spatially aware of where you are in work<br>
-- any PRs dependent on your work<br>
-- you waiting for PRs?<br>
 - will you have to merge multiple branches together before rolling into repository?<br>
-- tools can be great - do you want to resolve a conflict with HTML files manually when you could select the version you want in a pretty interface? then you can use a third party..
+- where are you in the workflow?<br>
+- large projects should be broken down<br>
+- commit as often as you want, but push sparingly<br>
+- but related tasks youd put in sep commits can just be in one with amendments<br>
+- It'll make for clean history, improve clarity for collaborators<br>
+- Stashes are great for unfinished work that doesn't meet your team's workflow standards yet<br>
+- Never have branched work away from the main branch too long - don't let perfectionsim hurt you
 :::
+
 
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -1317,7 +1278,7 @@ Be thoughtful <span class="highlight">before</span>, <span class="highlight">dur
   - <span class="highlight">After</span> You Code:
     - Leave nothing behind
     - You are Reviewer #1
-    - Ensure your work is user-friendly by leaving a decent paper trail
+    - Ensure your work is user-friendly and reproducible
     
 :::
 
@@ -1325,9 +1286,8 @@ Be thoughtful <span class="highlight">before</span>, <span class="highlight">dur
 :::{.notes}
 - Big way to avoid conflicts is to leave no trace when done<br>
 - Before sending code to some else, check it yourself and sleep on it if able<br>
-- ensure your work is clear, reproducible, and documented by.. (last two bulls)<br>
+- ensure your work is clear, reproducible, and documented by<br>
 - maybe you need to learn more about git <br>
-- Use rstudio w/o terminal - limited in git fxs 
 :::
 
 
@@ -1338,57 +1298,35 @@ Be thoughtful <span class="highlight">before</span>, <span class="highlight">dur
 Knowledge
 </span>
 
-- Learn what you need to, how you need to: <span>(Readers)</span>
-  - [Git Reference Manual](https://git-scm.com/docs)
-  - [Git Pro Book](https://git-scm.com/book/en/v2) - Scott Chacon and Ben Straub
-  - [Happy Git with R](https://happygitwithr.com/) - Jenny Bryan
 
+<center>
+<span class="midcallout">
+
+Learn what* you need to*, how you need to by *(Reading, Doing, or Skimming)
+
+:::{.fragment}
+Because, sometimes, you may really just need to do more with git
 :::
 
-:::{.notes}
-Learn how you need to, so if you read...
-:::
-
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-<span class="callout">
-Knowledge
 </span>
 
-- Learn what you need to, how you need to: <span>(Doers)</span>
-  - [saperlipopette Package](https://maelle.github.io/saperlipopette/index.html) - Maelle Salmon
-  - [Learn Git Branching Site](https://learngitbranching.js.org/) - Peter Cottle
-  - [Oh My Git Game](https://ohmygit.org/) - bleeptrack and blinry
+<br>
+
+:::{.fragment}
+*You can find learning resources on this talk's GitHub Repository [here]()
+:::
+
+</center>
 
 :::
 
 :::{.notes}
-If you need to actually do things to learn (best way in my xp)<br>
-- package: SAH-PEAR-LEE-POO-PET - (MAI-EllE SAH-MOLN) - practice various git operations on your system<br>
-- LGB - interactive site to learn about branching in git
-- OMG - open source game - learning git
-:::
-
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-<span class="callout">
-Knowledge
-</span>
-
-- Learn what you need to, how you need to: <span>(Skimmers)</span>
-  - [Oh S%@t Git](https://ohshitgit.com/) | [Oh Danggit Git](https://dangitgit.com/en) - Katie Sylor-Miller
-  - [RStudio/Git/GitHub Cheat Sheet](https://rstudio.github.io/cheatsheets/git-github.pdf)
-  - [GitHub Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
-  - [Practical Git](https://practicalgit.com/) - Foad Lind
-
-:::
-
-:::{.notes}
-If you ain't got time for all that, there's good sources to skim too<br><br>
+- Use rstudio w/o terminal - limited in git fxs <br>
+- Most use cases, limitations may be fine<br>
+- depending work you have, you may need to do some niche thing, you know when that time comes<br>
+- Rec -> actively seek out that info when needed, docs/resources on git are rabbit-holey and ALOT (overwhelm)<br><br>
 So I know I just threw so much information at you all, but like I said,
-I hope that when you're back home, you'll return to these resources
+I hope that when you're back home, you'll return to these slides
 and take the time to consider what may work for you and your team.
 <br><br>
 My hope would be that you'd gradually improve your communication, workflows, and overall knowledge with the goal of eventually getting to a point where you see a merge conflict and say...

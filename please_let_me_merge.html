@@ -1802,6 +1802,7 @@
 <li>Links on the slides are active and this information is on my github for you to review later<br></li>
 <li>Even though I have to skim by these, I hope I can plant the seed -&gt; inspire you/team to think critically<br></li>
 <li>start w/ comms - ‘Good Communication’ can look like a lot of things<br></li>
+<li>first think of talking to people<br></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1832,9 +1833,9 @@
 </div>
 <aside class="notes">
 <ul>
-<li>first think of talking to people<br></li>
-<li>reduces miscommunication<br></li>
-<li>allows for team -&gt; plan about workflow/review process</li>
+<li>basic, obvious questions, but..</li>
+<li>explicit convos reduce miscomms<br></li>
+<li>convos allows for team to plan workflow and code review process</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1862,7 +1863,7 @@
 <aside class="notes">
 <ul>
 <li>Communicating in your code is also import!<br></li>
-<li>make sure everyone styling the same <br></li>
+<li>make sure everyone styling the same - sounds nitpciky?? <br></li>
 <li>sucks having a conflict due to whitespace/formatting<br></li>
 <li>annotation isn’t something that directly reduces conflict<br></li>
 <li>dont have to annotate everything…<br></li>
@@ -1902,8 +1903,6 @@
 <li>My team uses github heavily, wish I could give a whole talk on just this topic<br></li>
 <li>But know, these are active links and in my everday toolkit<br></li>
 <li>if you use Gh, and don’t know things or aren’t using them, Strongly encourage you to explore<br></li>
-<li>obi conflict mitigation -&gt; Branch protection rules - communicate that someone attempted to go against intended workflow<br></li>
-<li>strong way to ensure work progresses as intended<br></li>
 <li>Next, probably the most important aspect of mitigation … addressing workflow</li>
 </ul>
 <style type="text/css">
@@ -1928,7 +1927,8 @@
 <ul>
 <li>Emergencies aren’t real 🤷🏾</li>
 <li>Check staged commits and/or stashes</li>
-<li>Consider using the <a href="https://usethis.r-lib.org/index.html"><code>usethis</code> package</a>’s <a href="https://usethis.r-lib.org/reference/index.html#git-and-github">Git functions</a></li>
+<li>Confirm that branches are ready to be pulled</li>
+<li><strong>ALWAYS</strong> pull first before touching <strong>ANYTHING</strong></li>
 </ul></li>
 </ul>
 </div>
@@ -1937,8 +1937,7 @@
 <li>Think of workflow as three parts: what you should do before, during, after:</li>
 <li>First off, Don’t be bullied into getting flustered for “emergencies”<br></li>
 <li>I feel VERY strongly about this<br></li>
-<li>usethis -&gt; helpful when working with PRs <br></li>
-<li>nice features like ensuring you’re branching off of master/main and other things</li>
+<li>Probably the best way to mitigate a lot of conflicts, pulling before doing anything!</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1958,17 +1957,25 @@
 <p><span class="callout"> Workflow </span></p>
 <p>Be thoughtful <span class="highlight">before</span>, <span class="highlight">during</span>, and <span class="highlight">after</span> your coding sessions</p>
 <ul>
-<li><span class="highlight">Before</span> You Code::
+<li><span class="highlight">During</span> Your Coding:
 <ul>
-<li>Work in line with your team’s preferred <a href="https://www.atlassian.com/git/tutorials/comparing-workflows">Git Workflow</a></li>
-<li>Confirm that branches are ready to be pulled</li>
-<li><strong>ALWAYS</strong> pull first before touching <strong>ANYTHING</strong></li>
+<li>Lean into spatial awareness and reasoning</li>
+<li>Commit Often, Push Thoughtfully</li>
+<li>Keep commits informative, add amendments to keep them clean</li>
+<li>Use <a href="https://www.atlassian.com/git/tutorials/saving-changes/git-stash">git stashes</a> when there’s ✌🏾emergencies✌🏾</li>
 </ul></li>
 </ul>
 </div>
 <aside class="notes">
 <ul>
-<li>Probably the best way to mitigate a lot of conflicts, pulling before doing anything!</li>
+<li>will you have to merge multiple branches together before rolling into repository?<br></li>
+<li>where are you in the workflow?<br></li>
+<li>large projects should be broken down<br></li>
+<li>commit as often as you want, but push sparingly<br></li>
+<li>but related tasks youd put in sep commits can just be in one with amendments<br></li>
+<li>It’ll make for clean history, improve clarity for collaborators<br></li>
+<li>Stashes are great for unfinished work that doesn’t meet your team’s workflow standards yet<br></li>
+<li>Never have branched work away from the main branch too long - don’t let perfectionsim hurt you</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -1988,20 +1995,20 @@
 <p><span class="callout"> Workflow </span></p>
 <p>Be thoughtful <span class="highlight">before</span>, <span class="highlight">during</span>, and <span class="highlight">after</span> your coding sessions</p>
 <ul>
-<li><span class="highlight">During</span> Your Coding:
+<li><span class="highlight">After</span> You Code:
 <ul>
-<li>Commit Often, Push Thoughtfully</li>
-<li>Keep commits informative, add amendments to keep them clean</li>
-<li>Use <a href="https://www.atlassian.com/git/tutorials/saving-changes/git-stash">git stashes</a> when there’s ✌🏾emergencies✌🏾</li>
+<li>Leave nothing behind</li>
+<li>You are Reviewer #1</li>
+<li>Ensure your work is user-friendly and reproducible</li>
 </ul></li>
 </ul>
 </div>
 <aside class="notes">
 <ul>
-<li>large projects should be broken down<br></li>
-<li>but related tasks youd put in sep commits can just be in one with amendments<br></li>
-<li>Itll make for clean history, and ensure there’s no stragglers for someone else<br></li>
-<li>Stashes are great for unfinished work that doesnt meet your team’s workflow standards yet</li>
+<li>Big way to avoid conflicts is to leave no trace when done<br></li>
+<li>Before sending code to some else, check it yourself and sleep on it if able<br></li>
+<li>ensure your work is clear, reproducible, and documented by<br></li>
+<li>maybe you need to learn more about git <br></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2018,145 +2025,27 @@
 <section id="git-conflict-mitigation-6" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
 <h2>Git Conflict Mitigation</h2>
 <div class="content">
-<p><span class="callout"> Workflow </span></p>
-<p>Be thoughtful <span class="highlight">before</span>, <span class="highlight">during</span>, and <span class="highlight">after</span> your coding sessions</p>
-<ul>
-<li><span class="highlight">During</span> Your Coding:
-<ul>
-<li>Lean into spatial awareness and reasoning</li>
-<li>Use tools to make it easier if you’d like
-<ul>
-<li><a href="https://desktop.github.com/download/">GitHub Desktop</a></li>
-<li><a href="https://www.gitkraken.com/">GitKraken</a></li>
-<li><a href="https://www.sourcetreeapp.com/">Sourcetree</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</div>
-<aside class="notes">
-<ul>
-<li>Be spatially aware of where you are in work<br></li>
-<li>any PRs dependent on your work<br></li>
-<li>you waiting for PRs?<br></li>
-<li>will you have to merge multiple branches together before rolling into repository?<br></li>
-<li>tools can be great - do you want to resolve a conflict with HTML files manually when you could select the version you want in a pretty interface? then you can use a third party..</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="git-conflict-mitigation-7" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
-<h2>Git Conflict Mitigation</h2>
-<div class="content">
-<p><span class="callout"> Workflow </span></p>
-<p>Be thoughtful <span class="highlight">before</span>, <span class="highlight">during</span>, and <span class="highlight">after</span> your coding sessions</p>
-<ul>
-<li><span class="highlight">After</span> You Code:
-<ul>
-<li>Leave nothing behind</li>
-<li>You are Reviewer #1</li>
-<li>Ensure your work is user-friendly by leaving a decent paper trail</li>
-</ul></li>
-</ul>
-</div>
-<aside class="notes">
-<ul>
-<li>Big way to avoid conflicts is to leave no trace when done<br></li>
-<li>Before sending code to some else, check it yourself and sleep on it if able<br></li>
-<li>ensure your work is clear, reproducible, and documented by.. (last two bulls)<br></li>
-<li>maybe you need to learn more about git <br></li>
-<li>Use rstudio w/o terminal - limited in git fxs</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="git-conflict-mitigation-8" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
-<h2>Git Conflict Mitigation</h2>
-<div class="content">
 <p><span class="callout"> Knowledge </span></p>
-<ul>
-<li>Learn what you need to, how you need to: <span>(Readers)</span>
-<ul>
-<li><a href="https://git-scm.com/docs">Git Reference Manual</a></li>
-<li><a href="https://git-scm.com/book/en/v2">Git Pro Book</a> - Scott Chacon and Ben Straub</li>
-<li><a href="https://happygitwithr.com/">Happy Git with R</a> - Jenny Bryan</li>
-</ul></li>
-</ul>
+<center>
+<p><span class="midcallout"></span></p>
+<p>Learn what* you need to<em>, how you need to by </em>(Reading, Doing, or Skimming)</p>
+<div class="fragment">
+<p>Because, sometimes, you may really just need to do more with git</p>
+</div>
+<p></p>
+<p><br></p>
+<div class="fragment">
+<p>*You can find learning resources on this talk’s GitHub Repository <a href="">here</a></p>
+</div>
+</center>
 </div>
 <aside class="notes">
-<p>Learn how you need to, so if you read…</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="git-conflict-mitigation-9" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
-<h2>Git Conflict Mitigation</h2>
-<div class="content">
-<p><span class="callout"> Knowledge </span></p>
 <ul>
-<li>Learn what you need to, how you need to: <span>(Doers)</span>
-<ul>
-<li><a href="https://maelle.github.io/saperlipopette/index.html">saperlipopette Package</a> - Maelle Salmon</li>
-<li><a href="https://learngitbranching.js.org/">Learn Git Branching Site</a> - Peter Cottle</li>
-<li><a href="https://ohmygit.org/">Oh My Git Game</a> - bleeptrack and blinry</li>
-</ul></li>
+<li>Use rstudio w/o terminal - limited in git fxs <br></li>
+<li>Most use cases, limitations may be fine<br></li>
+<li>depending work you have, you may need to do some niche thing, you know when that time comes<br></li>
+<li>Rec -&gt; actively seek out that info when needed, docs/resources on git are rabbit-holey and ALOT (overwhelm)<br><br> So I know I just threw so much information at you all, but like I said, I hope that when you’re back home, you’ll return to these slides and take the time to consider what may work for you and your team. <br><br> My hope would be that you’d gradually improve your communication, workflows, and overall knowledge with the goal of eventually getting to a point where you see a merge conflict and say…</li>
 </ul>
-</div>
-<aside class="notes">
-<p>If you need to actually do things to learn (best way in my xp)<br> - package: SAH-PEAR-LEE-POO-PET - (MAI-EllE SAH-MOLN) - practice various git operations on your system<br> - LGB - interactive site to learn about branching in git - OMG - open source game - learning git</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="git-conflict-mitigation-10" class="slide level2 content-header" data-background-image="images/content_back.png" data-background-size="contain" data-background-color="#1a1a1a">
-<h2>Git Conflict Mitigation</h2>
-<div class="content">
-<p><span class="callout"> Knowledge </span></p>
-<ul>
-<li>Learn what you need to, how you need to: <span>(Skimmers)</span>
-<ul>
-<li><a href="https://ohshitgit.com/">Oh S%<span class="citation" data-cites="t">@t</span> Git</a> | <a href="https://dangitgit.com/en">Oh Danggit Git</a> - Katie Sylor-Miller</li>
-<li><a href="https://rstudio.github.io/cheatsheets/git-github.pdf">RStudio/Git/GitHub Cheat Sheet</a></li>
-<li><a href="https://education.github.com/git-cheat-sheet-education.pdf">GitHub Git Cheat Sheet</a></li>
-<li><a href="https://practicalgit.com/">Practical Git</a> - Foad Lind</li>
-</ul></li>
-</ul>
-</div>
-<aside class="notes">
-<p>If you ain’t got time for all that, there’s good sources to skim too<br><br> So I know I just threw so much information at you all, but like I said, I hope that when you’re back home, you’ll return to these resources and take the time to consider what may work for you and your team. <br><br> My hope would be that you’d gradually improve your communication, workflows, and overall knowledge with the goal of eventually getting to a point where you see a merge conflict and say…</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;

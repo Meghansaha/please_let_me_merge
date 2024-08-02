@@ -1093,8 +1093,8 @@ Be Careful...
 
 :::{.notes}
 - one of the hardest pills to **swallow was realizing...**<br>
-- spent time being scared
-- need to be scared of ME (flows and process)
+- spent time being scared<br>
+- need to be scared of ME (flows and process)<br>
 - You may not realize..
 :::
 
@@ -1131,33 +1131,11 @@ Knowledge Gap Problems
 - You can probably never completely avoid conflicts working w/ others<br>
 - But you can lessen the frequency and severity of them<br>
 - Not a lot of time left -> can't go in depth<br>
+- Links on the slides are active and this information is on my github for you to review later<br>
 - hope I can plant the seed -> inspire you to think critically<br>
-- Anything highlighted is a link to a resource and is on my github
+- start w/ comms - 'Good Communication' can look like a lot of things<br>
 :::
 
-
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-
-::: columns
-::: {.column width="50%"}
-<span class="callout">
-Communication
-</span>
-:::
-
-::: {.column width="50%"}
-![](images/communication.gif){width=100%}
-:::
-:::
-:::
-
-:::{.notes}
-- Collabing requires good communication
-- Just like we (hopefully) comm w/ others while driving (signaling)
-- 'Good Communication' can look like a lot of things<br>
-:::
 
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -1176,7 +1154,7 @@ Communication
 :::
 
 :::{.notes}
-- reduces miscommunication
+- reduces miscommunication<br>
 - allows for a plan about workflow/review process
 :::
 
@@ -1189,61 +1167,21 @@ Communication
 </span>
 
 - Following a universally accepted naming/styling convention for your codebase
-   - Intentional and consistent names for objects and consistent formatting
-       - ["Column Names as Contracts"](https://www.emilyriederer.com/post/column-name-contracts/) - Emily Riederer
-       - ["Tidyverse Style Guide"](https://style.tidyverse.org/index.html)
-       - ["Google Style Guides"](https://google.github.io/styleguide/)
+- Intentional and consistent names for objects
+- Consistent formatting
+- Annotate your code with headers, comments, and code sections
 
 :::
 
 :::{.notes}
 - make sure everyone styling the same <br>
-- sucks having a conflict due to whitespace/formatting
-
-:::
-
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-<span class="midcallout">
-Communication
-</span>
-
-- Annotate your code with headers, comments, and code sections
-
-  - [Code Sections - R Studio User Guide](https://docs.posit.co/ide/user/ide/guide/code/code-sections.html)
-    
-  - Good things to annotate:
-     - High-level description of outputs
-     - Complicated wrangling operations
-     - Contextual information
-     - Justification of programming decisions
-
-:::
-
-:::{.notes}
-- obv, not everything but list of some things:<br>
+- sucks having a conflict due to whitespace/formatting<br>
 - annotation isn't something that directly reduces conflict<br>
+- dont have to annotate everything...<br>
 - But clear intention in code does<br>
 - ex: when you want one part of code untouched if you are working on something
+
 :::
-
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-```{r echo = TRUE}
-#=============================================#
-# A Section Header-----------------------------
-#=============================================#
-
-# A Comment that explains the section below#
-
-## A Subsection Header-------------------------
-
-# A Comment that explains the section below#
-
-### A Sub-Subsection Header--------------------
-```
-
 
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
 
@@ -1259,30 +1197,17 @@ Communication
     - ["Use Comments in Pull Requests"](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request)
     - ["Use Branch Rules and Protection"](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule)
 
-![](images/gh_template.png){width=50%}
+![](images/gh_template.png){width=45%}
 :::
 
 :::{.notes}
+- My team uses github heavily, wish I could give a whole talk on just this topic<br>
+- But know, these are active links and in my everday toolkit<br>
+- If you don't know about these things/aren't using them, please dig more into it later<br>
 - Branch protection rules - communicate that someone attempted to go against intended workflow<br>
 - strong way to ensure work progresses as intended<br>
-- predictability/reliability can limit conflicts
-:::
-
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-
-::: columns
-::: {.column width="50%"}
-<span class="callout">
-Workflow
-</span>
-:::
-
-::: {.column width="50%"}
-![](images/workflow.gif){width=100%}
-:::
-:::
+- predictability/reliability can limit conflicts<br>
+- Next, probably the most important aspect of mitigation ... addressing workflow
 :::
 
 
@@ -1304,6 +1229,7 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
 
 :::{.notes}
 - First off, Don't be bullied into getting flustered for "emergencies"<br>
+- I feel VERY strongly about this<br>
 - usethis -> helpful when working with PRs <br>
 - nice features like ensuring you're branching off of master/main and other things
 :::
@@ -1319,7 +1245,6 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
 
   - To <span class="highlight">Start</span>:
     - Work in line with your team's preferred [Git Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows)
-    - Play Hot Potato if possible
     - Confirm that branches are ready to be pulled
     - **ALWAYS** pull first before touching **ANYTHING**
   
@@ -1389,8 +1314,7 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
   - To <span class="highlight">End</span>:
     - Leave nothing behind
     - You are Reviewer #1
-    - Ensure your work is user-friendly
-    - Leave a decent paper trail
+    - Ensure your work is user-friendly by leaving a decent paper trail
     
 :::
 
@@ -1401,23 +1325,6 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
 - ensure your work is clear, reproducible, and documented by.. (last two bulls)<br>
 - maybe you need to learn more about git <br>
 - Use rstudio w/o terminal - limited in git fxs 
-:::
-
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-
-::: columns
-::: {.column width="50%"}
-<span class="callout">
-Knowledge
-</span>
-:::
-
-::: {.column width="50%"}
-![](images/knowledge.gif){width=100%}
-:::
-:::
 :::
 
 

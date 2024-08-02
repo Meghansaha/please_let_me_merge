@@ -1130,9 +1130,9 @@ Knowledge Gap Problems
 - Cycle thru the frags (the below notes come after - work/proc)<br>
 - You can probably never completely avoid conflicts working w/ others<br>
 - But you can lessen the frequency and severity of them<br>
-- Not a lot of time left -> can't go in depth<br>
+- As we're all aware, Not a lot of time left -> can't get into too much detail about the following topics<br>
 - Links on the slides are active and this information is on my github for you to review later<br>
-- hope I can plant the seed -> inspire you to think critically<br>
+- Even though I have to skim by these, I hope I can plant the seed -> inspire you/team to think critically<br>
 - start w/ comms - 'Good Communication' can look like a lot of things<br>
 :::
 
@@ -1154,8 +1154,9 @@ Communication
 :::
 
 :::{.notes}
+- first think of talking to people<br>
 - reduces miscommunication<br>
-- allows for a plan about workflow/review process
+- allows for team -> plan about workflow/review process
 :::
 
 
@@ -1174,6 +1175,7 @@ Communication
 :::
 
 :::{.notes}
+- Communicating in your code is also import!<br>
 - make sure everyone styling the same <br>
 - sucks having a conflict due to whitespace/formatting<br>
 - annotation isn't something that directly reduces conflict<br>
@@ -1203,10 +1205,9 @@ Communication
 :::{.notes}
 - My team uses github heavily, wish I could give a whole talk on just this topic<br>
 - But know, these are active links and in my everday toolkit<br>
-- If you don't know about these things/aren't using them, please dig more into it later<br>
-- Branch protection rules - communicate that someone attempted to go against intended workflow<br>
+- if you use Gh, and don't know things or aren't using them, Strongly encourage you to explore<br>
+- obi conflict mitigation -> Branch protection rules - communicate that someone attempted to go against intended workflow<br>
 - strong way to ensure work progresses as intended<br>
-- predictability/reliability can limit conflicts<br>
 - Next, probably the most important aspect of mitigation ... addressing workflow
 :::
 
@@ -1218,9 +1219,9 @@ Communication
 Workflow
 </span>
 
-Be thoughtful about how to <span class="highlight">start</span>, <span class="highlight">do</span>, and <span class="highlight">end</span> your coding sessions
+Be thoughtful <span class="highlight">before</span>, <span class="highlight">during</span>, and <span class="highlight">after</span> your coding sessions
 
-  - To <span class="highlight">Start</span>:
+  - <span class="highlight">Before</span> You Code:
     - Emergencies aren't real 🤷🏾
     - Check staged commits and/or stashes
     - Consider using the [`usethis` package](https://usethis.r-lib.org/index.html)'s [Git functions](https://usethis.r-lib.org/reference/index.html#git-and-github)
@@ -1228,6 +1229,7 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
 :::
 
 :::{.notes}
+- Think of workflow as three parts: what you should do before, during, after:
 - First off, Don't be bullied into getting flustered for "emergencies"<br>
 - I feel VERY strongly about this<br>
 - usethis -> helpful when working with PRs <br>
@@ -1241,9 +1243,9 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
 Workflow
 </span>
 
-Be thoughtful about how to <span class="highlight">start</span>, <span class="highlight">do</span>, and <span class="highlight">end</span> your coding sessions
+Be thoughtful <span class="highlight">before</span>, <span class="highlight">during</span>, and <span class="highlight">after</span> your coding sessions
 
-  - To <span class="highlight">Start</span>:
+  - <span class="highlight">Before</span> You Code::
     - Work in line with your team's preferred [Git Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows)
     - Confirm that branches are ready to be pulled
     - **ALWAYS** pull first before touching **ANYTHING**
@@ -1261,9 +1263,9 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
 Workflow
 </span>
 
-Be thoughtful about how to <span class="highlight">start</span>, <span class="highlight">do</span>, and <span class="highlight">end</span> your coding sessions
+Be thoughtful <span class="highlight">before</span>, <span class="highlight">during</span>, and <span class="highlight">after</span> your coding sessions
 
-  - To <span class="highlight">Do</span>:
+  - <span class="highlight">During</span> Your Coding:
     - Commit Often, Push Thoughtfully
     - Keep commits informative, add amendments to keep them clean
     - Use [git stashes](https://www.atlassian.com/git/tutorials/saving-changes/git-stash) when there's ✌🏾emergencies✌🏾 
@@ -1284,9 +1286,9 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
 Workflow
 </span>
 
-Be thoughtful about how to <span class="highlight">start</span>, <span class="highlight">do</span>, and <span class="highlight">end</span> your coding sessions
+Be thoughtful <span class="highlight">before</span>, <span class="highlight">during</span>, and <span class="highlight">after</span> your coding sessions
 
-  - To <span class="highlight">Do</span>:
+  - <span class="highlight">During</span> Your Coding:
     - Lean into spatial awareness and reasoning
     - Use tools to make it easier if you'd like
       - [GitHub Desktop](https://desktop.github.com/download/)
@@ -1299,7 +1301,8 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
 - Be spatially aware of where you are in work<br>
 - any PRs dependent on your work<br>
 - you waiting for PRs?<br>
-- will you have to merge multiple branches together before rolling into repository?
+- will you have to merge multiple branches together before rolling into repository?<br>
+- tools can be great - do you want to resolve a conflict with HTML files manually when you could select the version you want in a pretty interface? then you can use a third party..
 :::
 
 ## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1309,9 +1312,9 @@ Be thoughtful about how to <span class="highlight">start</span>, <span class="hi
 Workflow
 </span>
 
-Be thoughtful about how to <span class="highlight">start</span>, <span class="highlight">do</span>, and <span class="highlight">end</span> your coding sessions
+Be thoughtful <span class="highlight">before</span>, <span class="highlight">during</span>, and <span class="highlight">after</span> your coding sessions
 
-  - To <span class="highlight">End</span>:
+  - <span class="highlight">After</span> You Code:
     - Leave nothing behind
     - You are Reviewer #1
     - Ensure your work is user-friendly by leaving a decent paper trail

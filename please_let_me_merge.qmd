@@ -1168,10 +1168,9 @@ Communication
 Communication
 </span>
 
-- Following a universally accepted naming/styling convention for your codebase
-- Intentional and consistent names for objects
-- Consistent formatting
-- Annotate your code with headers, comments, and code sections
+- Naming/styling Conventions
+- Consistent Formatting
+- Code Annotations
 
 :::
 
@@ -1194,11 +1193,11 @@ Communication
 </span>
 
 - Leverage Developer Platforms
-    - ["Creating GitHub Pull Request Templates"](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
-    - ["Managing labels"](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
-    - ["About GitHub Issues"](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
-    - ["Use Comments in Pull Requests"](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request)
-    - ["Use Branch Rules and Protection"](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule)
+    - ["Pull Request Templates"](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
+    - ["Labels"](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)
+    - ["Issues"](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
+    - ["Pull Request Comments"](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request)
+    - ["Branch Rules and Protection"](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule)
 
 ![](images/gh_template.png){width=45%}
 :::
@@ -1247,9 +1246,8 @@ Workflow
 Be thoughtful <span class="highlight">before</span>, <span class="highlight">during</span>, and <span class="highlight">after</span> your coding sessions
 
   - <span class="highlight">During</span> Your Coding:
-    - Lean into spatial awareness and reasoning
     - Commit Often, Push Thoughtfully
-    - Keep commits informative, add amendments to keep them clean
+    - Keep commits informative add amendments
     - Use [git stashes](https://www.atlassian.com/git/tutorials/saving-changes/git-stash) when there's ✌🏾emergencies✌🏾 
   
 :::

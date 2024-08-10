@@ -1,7 +1,7 @@
 
-<img src="images/plmm-gh-header.gif" alt="Please Let Me Merge Before I Start Crying: And Other Things I've Said At The Git Terminal" style="max-width=&apos;100%&apos;"/>
+<img src="images/plmm-gh-header.gif" alt="Please Let Me Merge Before I Start Crying: And Other Things I&apos;ve Said At The Git Terminal" style="max-width=&apos;100%&apos;"/>
 
-# **Resources for It’s All About Perspective: Making A Case For Generative Art** <br>
+# **Resources for Please Let Me Merge Before I Start Crying: And Other Things I’ve Said at The Git Terminal** <br>
 
 ## **About**
 
@@ -165,7 +165,7 @@ experienced while collaborating through git.
   Guide***](https://www.youtube.com/watch?v=Sqsz1-o7nXk) (Video) - The
   Modern Coder
 
-#### For the Readers
+#### For the Readers\*
 
 <i>\*You need to **carefully read** something to learn)</i>
 

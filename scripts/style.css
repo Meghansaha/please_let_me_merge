@@ -1,19 +1,13 @@
 /* Style Sheet for please let me merge talk */
 
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Overpass&display=swap');
 
-@font-face {
-    font-family: 'GothicHighway';
-    src:  url('fonts/HWYGOTH.ttf') format('truetype');
-    
-}
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Overpass:wght@700&display=swap');
 
-@font-face {
-font-family: 'GothicHighwaywide';
-    src:  url('fonts/HWYGWDE.ttf') format('truetype');
-}
+
 
 body > div.reveal.focused.has-horizontal-slides.has-dark-background.ready.fade > div.slides{
-  font-family: 'GothicHighway', sans-serif;
+  font-family: 'Overpass', sans-serif;
   color: #ffffff;
 }
 
@@ -30,7 +24,8 @@ body > div.reveal.focused.has-horizontal-slides.has-dark-background.ready.fade >
 
 
 body {
-  font-family: 'GothicHighway', sans-serif;
+  font-family: 'Overpass', sans-serif;
+    font-weight: 300;
 }
 
 blockquote > p:nth-child(n) > a {
@@ -54,7 +49,8 @@ li:nth-child(n) > a {
   position: relative;
   margin-top: 0%;
   margin-left: -15%;
-  font-family: 'GothicHighwaywide';
+  font-family: 'Overpass';
+  font-weight: 700;
 }
 
 .content{

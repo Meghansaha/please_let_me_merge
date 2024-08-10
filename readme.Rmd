@@ -108,7 +108,7 @@ This talk will be presented on August 13<sup>th</sup> 2023, 2:40 PM PDT at the H
 
 - [***Resolve Git Merge Conflicts: The Definitive Guide***](https://www.youtube.com/watch?v=Sqsz1-o7nXk) (Video) - The Modern Coder
 
-#### For the Readers
+#### For the Readers*
 
 <i>*You need to **carefully read** something to learn)</i>
 

@@ -3,13 +3,13 @@
 
 @font-face {
     font-family: 'GothicHighway';
-    src:  url('../fonts/HWYGOTH.ttf') format('truetype');
+    src:  url('fonts/HWYGOTH.ttf') format('truetype');
     
 }
 
 @font-face {
 font-family: 'GothicHighwaywide';
-    src:  url('../fonts/HWYGWDE.ttf') format('truetype');
+    src:  url('fonts/HWYGWDE.ttf') format('truetype');
 }
 
 body > div.reveal.focused.has-horizontal-slides.has-dark-background.ready.fade > div.slides{

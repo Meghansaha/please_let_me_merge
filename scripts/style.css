@@ -801,17 +801,7 @@ li:nth-child(n) {
 #git-conflict-mitigation-6 > div > p:nth-child(2){
   margin-left: 6%;
 }
-#git-conflict-mitigation-6 > div > p:nth-child(3) > img{
-  margin-left:63%;
-  margin-top:-50%;
-    border-style: solid;
-  border-width: 10px;
-  border-color: rgb(4, 135, 129);
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  border-bottom-right-radius: 225px 15px;
-  border-bottom-left-radius:15px 255px;
-}
+
 
 #git-conflict-mitigation-6 > div > p:nth-child(3){
   margin-top: -5%;

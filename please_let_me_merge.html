@@ -1792,6 +1792,9 @@
 <p>Knowledge Gap Problems</p>
 </div>
 </center>
+<div class="fragment">
+<p><img data-src="images/gh_qr.png" style="float:right; width:20%; margin-top:-12%; margin-right:-17%;"></p>
+</div>
 </div>
 <aside class="notes">
 <ul>
@@ -1830,6 +1833,7 @@
 <li><span class="highlight">Why</span> is it being done</li>
 </ul></li>
 </ul>
+<p><img data-src="images/gh_qr.png" style="float:right; width:20%; margin-top:-19%; margin-right:-17%;"></p>
 </div>
 <aside class="notes">
 <ul>
@@ -1858,6 +1862,7 @@
 <li>Consistent Formatting</li>
 <li>Code Annotations</li>
 </ul>
+<p><img data-src="images/gh_qr.png" style="float:right; width:20%; margin-top:-2%; margin-right:-17%;"></p>
 </div>
 <aside class="notes">
 <ul>
@@ -1865,7 +1870,11 @@
 <li>make sure everyone styling the same - sounds nitpciky?? <br></li>
 <li>sucks having a conflict due to whitespace/formatting<br></li>
 <li>annotation isn’t something that directly reduces conflict<br></li>
-<li>dont have to annotate everything…<br></li>
+<li>dont have to annotate everything…<br>
+<ul>
+<li>High-level description of outputs || Complicated wrangling operations<br></li>
+<li>Contextual information || Justification of programming decisions</li>
+</ul></li>
 <li>But clear intention in code does<br></li>
 <li>ex: when you want one part of code untouched if you are working on something</li>
 </ul>
@@ -1896,6 +1905,7 @@
 </ul></li>
 </ul>
 <p><img data-src="images/gh_template.png" style="width:45.0%"></p>
+<p><img data-src="images/gh_qr.png" style="float:right; width:20%; margin-top:-60%; margin-right:-17%;"></p>
 </div>
 <aside class="notes">
 <ul>
@@ -1925,17 +1935,21 @@
 <li><span class="highlight">Before</span> You Code:
 <ul>
 <li>Emergencies aren’t real 🤷🏾</li>
-<li>Check staged commits and/or stashes</li>
-<li>Confirm that branches are ready to be pulled</li>
+<li>Check Git Environment</li>
+<li>Check Branch Status and “Drift”</li>
 <li><strong>ALWAYS</strong> pull first before touching <strong>ANYTHING</strong></li>
 </ul></li>
 </ul>
+<p><img data-src="images/gh_qr.png" style="float:right; width:20%; margin-top:-25%; margin-right:-17%;"></p>
 </div>
 <aside class="notes">
 <ul>
 <li>Think of workflow as three parts: what you should do before, during, after:</li>
 <li>First off, Don’t be bullied into getting flustered for “emergencies”<br></li>
 <li>I feel VERY strongly about this<br></li>
+<li>Git Env: staged commits and/or stashes<br></li>
+<li>branch status: that branches are ready to be pulled<br></li>
+<li>branch drift: If you started a branch of master/main long time ago, chances of conflict increase - consider if easier to start anew.<br></li>
 <li>Probably the best way to mitigate a lot of conflicts, pulling before doing anything!</li>
 </ul>
 <style type="text/css">
@@ -1961,19 +1975,18 @@
 <li>Commit Often, Push Thoughtfully</li>
 <li>Keep commits informative add amendments</li>
 <li>Use <a href="https://www.atlassian.com/git/tutorials/saving-changes/git-stash">git stashes</a> when there’s ✌🏾emergencies✌🏾</li>
+<li>Consider “Branch Drift” risk</li>
 </ul></li>
 </ul>
+<p><img data-src="images/gh_qr.png" style="float:right; width:20%; margin-top:-25%; margin-right:-17%;"></p>
 </div>
 <aside class="notes">
 <ul>
-<li>will you have to merge multiple branches together before rolling into repository?<br></li>
-<li>where are you in the workflow?<br></li>
-<li>large projects should be broken down<br></li>
 <li>commit as often as you want, but push sparingly<br></li>
 <li>but related tasks youd put in sep commits can just be in one with amendments<br></li>
 <li>It’ll make for clean history, improve clarity for collaborators<br></li>
 <li>Stashes are great for unfinished work that doesn’t meet your team’s workflow standards yet<br></li>
-<li>Never have branched work away from the main branch too long - don’t let perfectionsim hurt you</li>
+<li>Branch drift risk: - don’t let perfectionism hurt you, work may be good enough to be merged if documentted and annotated properly</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -2000,12 +2013,13 @@
 <li>Ensure your work is user-friendly and reproducible</li>
 </ul></li>
 </ul>
+<p><img data-src="images/gh_qr.png" style="float:right; width:20%; margin-top:-19.3%; margin-right:-17%;"></p>
 </div>
 <aside class="notes">
 <ul>
-<li>Big way to avoid conflicts is to leave no trace when done<br></li>
-<li>Before sending code to some else, check it yourself and sleep on it if able<br></li>
-<li>ensure your work is clear, reproducible, and documented by<br></li>
+<li>Big way to avoid conflicts is to leave no trace when done (pushing commits, stashing unfinished work)<br></li>
+<li>Before sending code to some else, check it yourself and sleep on it if able, b/c<br></li>
+<li>ensure your work is clear, reproducible, and documented by…<br></li>
 <li>maybe you need to learn more about git <br></li>
 </ul>
 <style type="text/css">
@@ -2026,23 +2040,21 @@
 <p><span class="callout"> Knowledge </span></p>
 <center>
 <p><span class="midcallout"></span></p>
-<p>Learn what* you need to<em>, how you need to by </em>(Reading, Doing, or Skimming)</p>
+<p>Learn what you need to<em>, how you need to by </em>(Reading, Doing, or Skimming)</p>
 <div class="fragment">
-<p>Because, sometimes, you may really just need to do more with git</p>
+<p>Because, sometimes…<br>you may really just need to do more with git</p>
 </div>
 <p></p>
 <p><br></p>
-<div class="fragment">
-<p>*You can find learning resources on this talk’s GitHub Repository <a href="">here</a></p>
-</div>
 </center>
+<p><img data-src="images/gh_qr.png" style="float:right; width:20%; margin-top:-4.9%; margin-right:-17%;"></p>
 </div>
 <aside class="notes">
 <ul>
 <li>Use rstudio w/o terminal - limited in git fxs <br></li>
 <li>Most use cases, limitations may be fine<br></li>
 <li>depending work you have, you may need to do some niche thing, you know when that time comes<br></li>
-<li>Rec -&gt; actively seek out that info when needed, docs/resources on git are rabbit-holey and ALOT (overwhelm)<br><br> So I know I just threw so much information at you all, but like I said, I hope that when you’re back home, you’ll return to these slides and take the time to consider what may work for you and your team. <br><br> My hope would be that you’d gradually improve your communication, workflows, and overall knowledge with the goal of eventually getting to a point where you see a merge conflict and say…</li>
+<li>My Reccomend -&gt; actively seek out that info when needed, docs/resources on git are rabbit-holey and ALOT (overwhelm)<br><br> So I know I just threw so much information at you all, but like I said, I hope that when you’re back home, you’ll return to these slides and take the time to consider what may work for you and your team. <br><br> My hope would be that you’d gradually improve your communication, workflows, and overall knowledge with the goal of eventually getting to a point where you see a merge conflict and say…</li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {

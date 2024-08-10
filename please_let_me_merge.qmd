@@ -1124,6 +1124,10 @@ Knowledge Gap Problems
 
 </center>
 
+:::{.fragment}
+![](images/gh_qr.png){style="float:right; width:20%; margin-top:-12%; margin-right:-17%;"}
+:::
+
 :::
 
 :::{.notes}
@@ -1152,6 +1156,7 @@ Communication
    - <span class="highlight">Where</span> is it being done
    - <span class="highlight">Why</span> is it being done
 
+![](images/gh_qr.png){style="float:right; width:20%; margin-top:-19%; margin-right:-17%;"}
 :::
 
 :::{.notes}
@@ -1172,6 +1177,7 @@ Communication
 - Consistent Formatting
 - Code Annotations
 
+![](images/gh_qr.png){style="float:right; width:20%; margin-top:-2%; margin-right:-17%;"}
 :::
 
 :::{.notes}
@@ -1180,6 +1186,8 @@ Communication
 - sucks having a conflict due to whitespace/formatting<br>
 - annotation isn't something that directly reduces conflict<br>
 - dont have to annotate everything...<br>
+    -   High-level description of outputs || Complicated wrangling operations<br>
+    -   Contextual information || Justification of programming decisions
 - But clear intention in code does<br>
 - ex: when you want one part of code untouched if you are working on something
 
@@ -1200,6 +1208,9 @@ Communication
     - ["Branch Rules and Protection"](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule)
 
 ![](images/gh_template.png){width=45%}
+
+![](images/gh_qr.png){style="float:right; width:20%; margin-top:-60%; margin-right:-17%;"}
+
 :::
 
 :::{.notes}
@@ -1221,17 +1232,20 @@ Be thoughtful <span class="highlight">before</span>, <span class="highlight">dur
 
   - <span class="highlight">Before</span> You Code:
     - Emergencies aren't real 🤷🏾
-    - Check staged commits and/or stashes
-    - Confirm that branches are ready to be pulled
+    - Check Git Environment
+    - Check Branch Status and "Drift"
     - **ALWAYS** pull first before touching **ANYTHING**
 
-  
+![](images/gh_qr.png){style="float:right; width:20%; margin-top:-25%; margin-right:-17%;"}
 :::
 
 :::{.notes}
 - Think of workflow as three parts: what you should do before, during, after:
 - First off, Don't be bullied into getting flustered for "emergencies"<br>
 - I feel VERY strongly about this<br>
+- Git Env: staged commits and/or stashes<br>
+- branch status: that branches are ready to be pulled<br>
+- branch drift: If you started a branch of master/main long time ago, chances of conflict increase - consider if easier to start anew.<br>
 - Probably the best way to mitigate a lot of conflicts, pulling before doing anything!
 :::
 
@@ -1249,18 +1263,17 @@ Be thoughtful <span class="highlight">before</span>, <span class="highlight">dur
     - Commit Often, Push Thoughtfully
     - Keep commits informative add amendments
     - Use [git stashes](https://www.atlassian.com/git/tutorials/saving-changes/git-stash) when there's ✌🏾emergencies✌🏾 
-  
+    - Consider "Branch Drift" risk
+
+![](images/gh_qr.png){style="float:right; width:20%; margin-top:-25%; margin-right:-17%;"}
 :::
 
 :::{.notes}
-- will you have to merge multiple branches together before rolling into repository?<br>
-- where are you in the workflow?<br>
-- large projects should be broken down<br>
 - commit as often as you want, but push sparingly<br>
 - but related tasks youd put in sep commits can just be in one with amendments<br>
 - It'll make for clean history, improve clarity for collaborators<br>
 - Stashes are great for unfinished work that doesn't meet your team's workflow standards yet<br>
-- Never have branched work away from the main branch too long - don't let perfectionsim hurt you
+- Branch drift risk: - don't let perfectionism hurt you, work may be good enough to be merged if documentted and annotated properly
 :::
 
 
@@ -1277,14 +1290,15 @@ Be thoughtful <span class="highlight">before</span>, <span class="highlight">dur
     - Leave nothing behind
     - You are Reviewer #1
     - Ensure your work is user-friendly and reproducible
-    
+
+![](images/gh_qr.png){style="float:right; width:20%; margin-top:-19.3%; margin-right:-17%;"}
 :::
 
 
 :::{.notes}
-- Big way to avoid conflicts is to leave no trace when done<br>
-- Before sending code to some else, check it yourself and sleep on it if able<br>
-- ensure your work is clear, reproducible, and documented by<br>
+- Big way to avoid conflicts is to leave no trace when done (pushing commits, stashing unfinished work)<br>
+- Before sending code to some else, check it yourself and sleep on it if able, b/c<br>
+- ensure your work is clear, reproducible, and documented by...<br>
 - maybe you need to learn more about git <br>
 :::
 
@@ -1300,29 +1314,26 @@ Knowledge
 <center>
 <span class="midcallout">
 
-Learn what* you need to*, how you need to by *(Reading, Doing, or Skimming)
+Learn what you need to*, how you need to by *(Watching, Reading, Doing, or Skimming)
 
 :::{.fragment}
-Because, sometimes, you may really just need to do more with git
+Because, sometimes...<br>you may really just need to do more with git
 :::
 
 </span>
 
 <br>
 
-:::{.fragment}
-*You can find learning resources on this talk's GitHub Repository [here]()
-:::
-
 </center>
 
+![](images/gh_qr.png){style="float:right; width:20%; margin-top:-4.9%; margin-right:-17%;"}
 :::
 
 :::{.notes}
 - Use rstudio w/o terminal - limited in git fxs <br>
 - Most use cases, limitations may be fine<br>
 - depending work you have, you may need to do some niche thing, you know when that time comes<br>
-- Rec -> actively seek out that info when needed, docs/resources on git are rabbit-holey and ALOT (overwhelm)<br><br>
+- My Reccomend -> actively seek out that info when needed, docs/resources on git are rabbit-holey and ALOT (overwhelm)<br><br>
 So I know I just threw so much information at you all, but like I said,
 I hope that when you're back home, you'll return to these slides
 and take the time to consider what may work for you and your team.

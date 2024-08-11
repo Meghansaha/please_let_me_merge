@@ -39,7 +39,7 @@ reduce git merge conflicts.
 
 ## **Slides and Talk Recording**
 
-The slides for *“Please Let Me Merege”* can be found on this repository
+The slides for *“Please Let Me Merge”* can be found on this repository
 [here](https://meghansaha.github.io/please_let_me_merge/#/title-slide).
 
 This talk will be presented on August 13<sup>th</sup> 2023, 2:40 PM PDT
@@ -96,7 +96,7 @@ experienced while collaborating through git.
 - [***Annotating Code Examples***](Annotating%20code%20examples) -
   GitHub Docs
 
-#### Leveraing Developer Platforms
+#### Leveraging Developer Platforms
 
 - [***Creating a pull request template for your
   repository***](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository) -
@@ -167,7 +167,7 @@ experienced while collaborating through git.
 
 #### For the Readers\*
 
-<i>(\*You need to **carefully read** something to learn)</i>
+<i>\*You need to **carefully read** something to learn)</i>
 
 - [***Git Reference Manual***](https://git-scm.com/docs)
 

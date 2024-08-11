@@ -1,6 +1,6 @@
 /* Style Sheet for please let me merge talk */
 
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
 
 body > div.reveal.focused.has-horizontal-slides.has-dark-background.ready.fade > div.slides{
   font-family: 'Overpass', sans-serif;

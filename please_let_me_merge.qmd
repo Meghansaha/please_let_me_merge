@@ -342,7 +342,7 @@ If scared of merges, might I suggest.. **scared of conflicts?**
 
 :::
 
-<br>
+<br><br>
 
 <small>- [GitHub Docs](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line) *("Resolving a merge conflict using the command line")*</small>
 

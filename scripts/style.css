@@ -49,6 +49,17 @@ li:nth-child(n) > a {
   font-weight: 700;
 }
 
+h2 {
+  color: #ffffff;
+  font-size: 85px;
+  line-height: 200px;
+  position: relative;
+  margin-top: 0%;
+  margin-left: -15%;
+  font-family: 'Overpass';
+  font-weight: 700;
+}
+
 .content{
   margin-top: 3%;
   margin-left: -25%;

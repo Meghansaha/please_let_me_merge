@@ -1008,7 +1008,7 @@ vendor_3_data_cut: "2023-12-15"
 - You can make something completely new
 - doesn't have to be one or the other
 - you can leave the conflict markers in (code wont work)
-- you can **even throw in...**
+- you can **even throw in SOME...**
 :::
 
 
@@ -1064,7 +1064,6 @@ vendor_3_data_cut: "2023-12-15"
 ```
 
 :::{.notes}
-- the code that broke crowdstrike last month<br>
 - ASCII art for a little razzle dazzle if ya want<br>
 - When you have to resolve a conflict ANYTHING GOES
 :::
@@ -1134,7 +1133,7 @@ Knowledge Gap Problems
 - Cycle thru the frags (the below notes come after - work/proc)<br>
 - You can probably never completely avoid conflicts working w/ others<br>
 - But you can lessen the frequency and severity of them<br>
-- As we're all aware, Not a lot of time left -> can't get into too much detail about the following topics<br>
+- Unfortunately can't get into too much detail about the following topics<br>
 - Links on the slides are active and this information is on my github for you to review later<br>
 - Even though I have to skim by these, I hope I can plant the seed -> inspire you/team to think critically<br>
 - start w/ comms - 'Good Communication' can look like a lot of things<br>
@@ -1160,8 +1159,8 @@ Communication
 :::
 
 :::{.notes}
-- basic, obvious questions, but..
-- explicit convos reduce miscomms<br>
+- these seem like basic, obvious questions, but..
+- these will encourage explicit convos that can reduce miscomms<br>
 - convos allows for team to plan workflow and code review process
 :::
 
@@ -1215,7 +1214,7 @@ Communication
 
 :::{.notes}
 - My team uses github heavily, wish I could give a whole talk on just this topic<br>
-- But know, these are active links and in my everday toolkit<br>
+- These are things that I use in my everday toolkit<br>
 - if you use Gh, and don't know things or aren't using them, Strongly encourage you to explore<br>
 - Next, probably the most important aspect of mitigation ... addressing workflow
 :::

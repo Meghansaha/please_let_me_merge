@@ -20,7 +20,7 @@ format:
     code-block-height: 1000px
 css: "scripts/style.css"
 title-slide-attributes: 
-  data-background-image: "images/plmm.gif"
+  data-background-image: "images/title.gif"
   data-background-size: "contain"
   data-background-position: "center"
   data-background-color: "#1a1a1a"
@@ -1091,10 +1091,8 @@ Be Careful...
 ## Maybe This Won't Be So Bad {.section-header background-image="images/4.png" background-size="contain" background-color="#1a1a1a"}
 
 :::{.notes}
-- one of the hardest pills to **swallow was realizing...**<br>
-- spent time being scared<br>
-- need to be scared of ME (flows and process)<br>
-- You may not realize..
+- When you start to become receptive to exploring git merge conflicts<br>
+- You may start to realize that..
 :::
 
 ## Conflicts are Not Git Problems {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
@@ -1133,8 +1131,8 @@ Knowledge Gap Problems
 - Cycle thru the frags (the below notes come after - work/proc)<br>
 - You can probably never completely avoid conflicts working w/ others<br>
 - But you can lessen the frequency and severity of them<br>
-- Unfortunately can't get into too much detail about the following topics<br>
-- Links on the slides are active and this information is on my github for you to review later<br>
+- Unfortunately, I can only give the highlights of these important concepts<br>
+- but, Links are active and use this QR code to go to this talk's repository<br>
 - Even though I have to skim by these, I hope I can plant the seed -> inspire you/team to think critically<br>
 - start w/ comms - 'Good Communication' can look like a lot of things<br>
 - first think of talking to people<br>
@@ -1148,47 +1146,24 @@ Knowledge Gap Problems
 Communication
 </span>
 
-- Talking with others before doing any work
-   - <span class="highlight">Who</span> is doing what
-   - <span class="highlight">What</span> is being done
-   - <span class="highlight">When</span> is it being done
-   - <span class="highlight">Where</span> is it being done
-   - <span class="highlight">Why</span> is it being done
-
-![](images/gh_qr.png){style="float:right; width:20%; margin-top:-19%; margin-right:-17%;"}
-:::
-
-:::{.notes}
-- these seem like basic, obvious questions, but..
-- these will encourage explicit convos that can reduce miscomms<br>
-- convos allows for team to plan workflow and code review process
-:::
-
-
-## Git Conflict Mitigation {.content-header background-image="images/content_back.png" background-size="contain" background-color="#1a1a1a"}
-
-::: content
-<span class="midcallout">
-Communication
-</span>
-
+- Talking with Others
 - Naming/styling Conventions
 - Consistent Formatting
 - Code Annotations
 
-![](images/gh_qr.png){style="float:right; width:20%; margin-top:-2%; margin-right:-17%;"}
+![](images/gh_qr.png){style="float:right; width:20%; margin-top:-7.5%; margin-right:-17%;"}
 :::
 
 :::{.notes}
+- these will encourage explicit convos that can reduce miscomms<br>
+- convos allows for team to plan workflow and code review process<br>
 - Communicating in your code is also import!<br>
 - make sure everyone styling the same - sounds nitpciky?? <br>
 - sucks having a conflict due to whitespace/formatting<br>
 - annotation isn't something that directly reduces conflict<br>
 - dont have to annotate everything...<br>
-    -   High-level description of outputs || Complicated wrangling operations<br>
-    -   Contextual information || Justification of programming decisions
-- But clear intention in code does<br>
-- ex: when you want one part of code untouched if you are working on something
+- But enough to have clear intention in code as it can increasing comms qual<br>
+
 
 :::
 

@@ -1,4 +1,3 @@
-
 <img src="images/plmm-gh-header.gif" alt="Please Let Me Merge Before I Start Crying: And Other Things I&apos;ve Said At The Git Terminal" style="max-width=&apos;100%&apos;"/>
 
 # **Resources for Please Let Me Merge Before I Start Crying: And Other Things I've Said at The Git Terminal** <br>
@@ -87,11 +86,13 @@ This talk will be presented on August 13<sup>th</sup> 2024, 2:40 PM PDT at the H
 
 -   [***Git Branching - Branching Workflows***](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows) - git scm Documentation
 
--   [***The gitflow workflow - in less than 5 mins.***](https://www.youtube.com/watch?v=1SXpE08hvGs) - Devchild
+-   [***The gitflow workflow - in less than 5 mins.***](https://www.youtube.com/watch?v=1SXpE08hvGs) (Video) - Devchild
 
 -   [***Git patterns and anti-patterns for successful developers : Build 2018***](https://www.youtube.com/watch?v=ykZbBD-CmP8) (Video) - Microsoft Developer w/ Edward Thomson
 
 -   The [***`usethis` package***](https://usethis.r-lib.org/index.html)'s [***Git functions***](https://usethis.r-lib.org/reference/index.html#git-and-github)
+
+-   [The Repeated Amend](https://happygitwithr.com/repeated-amend) (Book Chapter) - Happy With Git R - Jenny Bryan
 
 ------------------------------------------------------------------------
 

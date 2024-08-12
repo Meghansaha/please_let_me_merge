@@ -1234,19 +1234,20 @@ Workflow
 Be thoughtful <span class="highlight">before</span>, <span class="highlight">during</span>, and <span class="highlight">after</span> your coding sessions
 
   - <span class="highlight">During</span> Your Coding:
-    - Commit Often, Push Thoughtfully
+    - Commit Often (with [repeated amends](https://happygitwithr.com/repeated-amend))
+    - Push Thoughtfully but consider "Branch Drift" risk
     - Use [git stashes](https://www.atlassian.com/git/tutorials/saving-changes/git-stash) when there's ✌🏾emergencies✌🏾 
-    - Consider "Branch Drift" risk
 
 ![](images/gh_qr.png){style="float:right; width:20%; margin-top:-25%; margin-right:-17%;"}
 :::
 
 :::{.notes}
-- commit as often as you want, but push sparingly<br>
-- but related tasks youd put in sep commits can just be in one with amendments<br>
-- It'll make for clean history, improve clarity for collaborators<br>
+- working on large tasks<br>
+- break it down and commit as often as you want, but use commits amendments<br>
+- to keep your git history clean for yourself and others<br>
+- and push only when it's at a good "enough" spot to merge in<br>
+Branch drift risk: - don't let perfectionism hurt you, work may be good enough to be merged if documentted and annotated properly<br>
 - Stashes are great for unfinished work that doesn't meet your team's workflow standards yet<br>
-- Branch drift risk: - don't let perfectionism hurt you, work may be good enough to be merged if documentted and annotated properly
 :::
 
 
@@ -1262,16 +1263,16 @@ Be thoughtful <span class="highlight">before</span>, <span class="highlight">dur
   - <span class="highlight">After</span> You Code:
     - Leave nothing behind
     - You are Reviewer #1
-    - Ensure your work is user-friendly and reproducible
 
 ![](images/gh_qr.png){style="float:right; width:20%; margin-top:-19.3%; margin-right:-17%;"}
 :::
 
 
 :::{.notes}
-- Big way to avoid conflicts is to leave no trace when done (pushing commits, stashing unfinished work)<br>
-- Before sending code to some else, check it yourself and sleep on it if able, b/c<br>
-- ensure your work is clear, reproducible, and documented by...<br>
+- Big way to avoid conflicts is to leave no trace when done (pushing commits and stashing unfinished work)<br>
+- Before sending code to some else (review/work on), check it yourself and sleep on it if able, b/c<br>
+- ensure your work is clear, reproducible, and documented, so anyone could pick it up, run it, and understand it<br><br>
+
 - maybe you need to learn more about git <br>
 :::
 

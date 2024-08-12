@@ -42,7 +42,7 @@ reduce git merge conflicts.
 The slides for *“Please Let Me Merge”* can be found on this repository
 [here](https://meghansaha.github.io/please_let_me_merge/#/title-slide).
 
-This talk will be presented on August 13<sup>th</sup> 2023, 2:40 PM PDT
+This talk will be presented on August 13<sup>th</sup> 2024, 2:40 PM PDT
 at the Hyatt Regency Seattle (Seattle, Washington) United States. A
 recording of this talk will be available on YouTube on a later date.
 

@@ -167,7 +167,7 @@ experienced while collaborating through git.
 
 #### For the Readers\*
 
-<i>\*You need to **carefully read** something to learn)</i>
+<i>(\*You need to **carefully read** something to learn)</i>
 
 - [***Git Reference Manual***](https://git-scm.com/docs)
 

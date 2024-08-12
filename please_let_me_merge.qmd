@@ -1235,7 +1235,6 @@ Be thoughtful <span class="highlight">before</span>, <span class="highlight">dur
 
   - <span class="highlight">During</span> Your Coding:
     - Commit Often, Push Thoughtfully
-    - Keep commits informative add amendments
     - Use [git stashes](https://www.atlassian.com/git/tutorials/saving-changes/git-stash) when there's ✌🏾emergencies✌🏾 
     - Consider "Branch Drift" risk
 

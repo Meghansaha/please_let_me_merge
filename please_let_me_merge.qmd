@@ -53,8 +53,8 @@ This talk today is geared towards those of you who may feel that you're
 
 ::: notes
 Right here in the middle.<br>
-Maybe, you've figured out the basics of Git and have general knowledge of what merging in git is<br>
-Maybe have even done a few merges already<br>
+Maybe, you've figured out the basics of Git and have<br>
+have even done a few merges already<br>
 but might be a little hesitant like I once was to even deal with merge conflicts.<br>
 Understanding Git merges and conflicts felt impossible at first, but it started to make sense when I realized that using Git collaboratively is alot like…
 :::
@@ -111,7 +111,7 @@ Having my mother in the car, providing maybe a little too much **love and care t
 
 ::: notes
 ...felt like Git wanting to help me with my code, but actually creating more work for justified reasons.<br><br>
-I was Stressed on this road trip. I knew how to take care of my baby and drive, but I suddenly felt like I had to learn these things all over again.
+needless to say, I was Stressed on this road trip. I knew how to take care of my baby and drive, but I suddenly felt like I had to learn these things all over again.
 <br><br>
 And honestly, I felt the same with Git. To understand how to work collaboratively with Git, I realized I needed to have a better understanding of it, because that lack of knowledge **lead me to say things like...**
 :::
@@ -1308,17 +1308,15 @@ Because, sometimes...<br>you may really just need to do more with git
 - Most use cases, limitations may be fine<br>
 - depending work you have, you may need to do some niche thing, you know when that time comes<br>
 - My Reccomend -> actively seek out that info when needed, docs/resources on git are rabbit-holey and ALOT (overwhelm)<br><br>
-So I know I just threw so much information at you all, but like I said,
-I hope that when you're back home, you'll return to these slides
-and take the time to consider what may work for you and your team.
-<br><br>
-My hope would be that you'd gradually improve your communication, workflows, and overall knowledge with the goal of eventually getting to a point where you see a merge conflict and say...
+So I know I this was alot<br>
+but, My hope would be that you'd gradually improve your communication, workflows, and overall knowledge<br>
+so you can get to a point where you see a merge conflict and say...
 :::
 
 ## I Got This {.section-header background-image="images/5.png" background-size="contain" background-color="#1a1a1a"}
 
 ::: {.notes}
-Because, just like with parenting, travelling, and most difficult things in life, there's no tried and true method to success that anyone can just follow. This is especially true when learning how to resolve merge conflicts. You'll find plenty of resources explaining the basic concept of merge conflict resolution, but it's a tricky thing to teach because while most conflicts are simple, all of them require some type of contextual knowledge. The only reliable method to learning how to resolve merge conflicts is through preparation, practice, and exposure.<br>
+Because, just like with parenting, travelling, and most difficult things in life, there's no tried and true method to success that anyone can just follow. You'll find plenty of resources explaining the basic concept of merge conflict resolution, but it's a tricky thing to teach because while most conflicts are simple, all of them require some type of contextual knowledge. The only reliable method to learning how to resolve merge conflicts is through preparation, practice, and exposure.<br>
 But for those of you that have been afraid of merge conflicts, or are still afraid, I know that this.. (click)
 :::
 

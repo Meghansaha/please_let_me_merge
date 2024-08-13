@@ -1149,7 +1149,6 @@ Communication
 - Talking with Others
 - Naming/styling Conventions
 - Consistent Formatting
-- Code Annotations
 
 ![](images/gh_qr.png){style="float:right; width:20%; margin-top:-7.5%; margin-right:-17%;"}
 :::
@@ -1160,9 +1159,6 @@ Communication
 - Communicating in your code is also import!<br>
 - make sure everyone styling the same - sounds nitpciky?? <br>
 - sucks having a conflict due to whitespace/formatting<br>
-- annotation isn't something that directly reduces conflict<br>
-- dont have to annotate everything...<br>
-- But enough to have clear intention in code as it can increasing comms qual<br>
 
 
 :::
